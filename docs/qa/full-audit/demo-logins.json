@@ -1,0 +1,73 @@
+﻿[
+    {
+        "email":  "linh@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "ADMIN",
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "anh@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "nam@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "vy@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "bao@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "huy@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "ha@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "swap-ship-a@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "swap-ship-b@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    },
+    {
+        "email":  "swap-ship-c@remarket.example.test",
+        "loginVerified":  true,
+        "roles":  [
+                      "USER"
+                  ]
+    }
+]

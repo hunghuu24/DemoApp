@@ -1,0 +1,4 @@
+﻿Build started...
+Build succeeded.
+Applying migration '20261112080514_GiaoNhanSmartSwap'.
+Done.

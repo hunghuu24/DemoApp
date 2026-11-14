@@ -1,0 +1,120 @@
+﻿PASS Real registration Buyer [201]
+PASS Real login Buyer [200]
+PASS Real registration Seller [201]
+PASS Real login Seller [200]
+PASS Real registration Stranger [201]
+PASS Real login Stranger [200]
+PASS Real registration Moderator [201]
+PASS Real login Moderator [200]
+PASS Create listing for purchase [201]
+PASS Upload sale picture [200]
+PASS Submit sale listing [200]
+PASS Approve listing through real role boundary [200]
+PASS Anonymous cannot checkout [401]
+PASS Cannot buy own product [403]
+PASS Buyer opens negotiation [200]
+PASS Repeated open reuses conversation [200]
+PASS Unique buyer/listing conversation
+PASS Stranger cannot read chat [404]
+PASS Stranger cannot send into chat [404]
+PASS Send persisted message [200]
+PASS Retry same message [200]
+PASS Message idempotence prevents duplicates
+PASS Cannot reuse message ID for new content [409]
+PASS Blank chat message rejected [400]
+PASS Unread count uses message sequence
+PASS Opening chat clears unread watermark
+PASS Participant sees sanitized chat image [200]
+PASS Nonmember cannot see chat image [404]
+PASS Chat image needs authentication [401]
+PASS Discount cannot consume entire product price [400]
+PASS Seller cannot impersonate buyer's proposal [403]
+PASS Create negotiation voucher [200]
+PASS Buyer cannot approve own reduction [403]
+PASS Unaccepted voucher not applied [409]
+PASS Seller rejects offer [200]
+PASS Rejection state persisted
+PASS New proposal after rejection [200]
+PASS Seller accepts voucher [200]
+PASS Voucher bound to exact buyer [400]
+PASS Create listing for purchase [201]
+PASS Upload sale picture [200]
+PASS Submit sale listing [200]
+PASS Approve listing through real role boundary [200]
+PASS Voucher bound to exact product [400]
+PASS Server computes checkout quote [200]
+PASS Totals computed server-side with accepted discount and shipping
+PASS Real bank method not accepted [400]
+PASS Recipient phone validation [400]
+PASS Create reserved order atomically [201]
+PASS Order parties and initial simulation state
+PASS Retry creation after response loss [201]
+PASS Order request key prevents duplicate order
+PASS Request key cannot be reused for changed checkout [409]
+PASS Stranger cannot read order or address [404]
+PASS Seller may read own sold order [200]
+PASS Reserved product removed from public catalog [404]
+PASS Buyer still sees own order picture after reservation [200]
+PASS Order picture ownership checked [404]
+PASS Catalog cannot manually sell reserved inventory [409]
+PASS One active reservation stored in SQL
+PASS Seller order list uses owner filter
+PASS Other buyer sees no private orders
+PASS Cannot receive before payment/delivery [409]
+PASS Cannot review incomplete transaction [409]
+PASS Seller cannot pay as buyer [403]
+PASS Persist simulated payment failure [200]
+PASS Failed payment keeps unpaid order for retry/cancel
+PASS Payment result replay idempotent [200]
+PASS Payment key cannot change result [409]
+PASS Successful payment retry [200]
+PASS Simulated held amount and paid state persisted
+PASS Buyer cannot impersonate shipping/seller [403]
+PASS Shipping cannot skip handover/transit [409]
+PASS Persist shipping step DaLayHang [200]
+PASS Persist shipping step DangVanChuyen [200]
+PASS Persist shipping step GiaoThatBai [200]
+PASS Persist shipping step DangVanChuyen [200]
+PASS Persist shipping step DaGiao [200]
+PASS Shipping history retains exact event order, including retry
+PASS Seller cannot confirm buyer receipt [403]
+PASS No cancellation after shipping handover [409]
+PASS Buyer confirms completion [200]
+PASS Receipt releases simulated held amount
+PASS Transaction completed in SQL after valid receipt
+PASS Receipt retry does not duplicate confirmation [200]
+PASS Buyer rates product and seller [200]
+PASS Separate product and seller ratings stored
+PASS Same review submission is idempotent [200]
+PASS Duplicate review rejected [409]
+PASS Seller cannot rate itself [403]
+PASS Cannot request support for stranger's order [404]
+PASS Create support request bound to own order [201]
+PASS Retry support request [201]
+PASS Support idempotence
+PASS Support privacy enforced [404]
+PASS Order seller cannot read buyer's private support ticket [404]
+PASS User cannot impersonate support admin [403]
+PASS User adds information [200]
+PASS Admin processes support [200]
+PASS Admin resolves support [200]
+PASS Support history ordered even within the same second
+PASS Closed support immutable [409]
+PASS Legacy support replies remain visible after migration
+PASS Legacy replies do not fabricate historical processing states
+PASS Server computes checkout quote [200]
+PASS Server computes checkout quote [200]
+PASS Two buyers cannot reserve the same one-off product
+PASS Cancel releases unpaid reservation [200]
+PASS Cancelled stock returns to public catalog [200]
+PASS Server computes checkout quote [200]
+PASS Rebuy released product [201]
+PASS Pay before cancellation [200]
+PASS Cancel paid but unshipped order [200]
+PASS Simulated refund persisted without bank integration
+PASS Server computes checkout quote [200]
+PASS Reserve checkout for expiration check [201]
+PASS Reading expired unpaid order persists cancellation
+PASS Expired reservation released in SQL
+PASS Expired stock available again [200]
+Commerce HTTP/SQL checks: 119 passed. No credentials or tokens printed.

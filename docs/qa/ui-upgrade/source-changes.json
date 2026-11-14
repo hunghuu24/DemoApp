@@ -1,0 +1,55 @@
+﻿{
+    "modifiedUiFiles":  [
+                            "core/designsystem/ReMarketTheme.kt",
+                            "core/designsystem/TaiKhoanComponents.kt",
+                            "feature/account/HoSoScreens.kt",
+                            "feature/admin/QuanTriApp.kt",
+                            "feature/admin/QuanTriComponents.kt",
+                            "feature/admin/QuanTriDashboard.kt",
+                            "feature/admin/QuanTriTransactions.kt",
+                            "feature/auth/TaiKhoanApp.kt",
+                            "feature/catalog/BanHangApp.kt",
+                            "feature/catalog/BanHangComponents.kt",
+                            "feature/catalog/KhamPhaScreens.kt",
+                            "feature/catalog/QuanLyTinScreens.kt",
+                            "feature/catalog/TinDangScreens.kt",
+                            "feature/commerce/ChatScreens.kt",
+                            "feature/commerce/DonHangScreens.kt",
+                            "feature/commerce/MuaBanApp.kt",
+                            "feature/commerce/MuaBanComponents.kt",
+                            "feature/exchange/TraoDoiApp.kt",
+                            "feature/exchange/TraoDoiComponents.kt",
+                            "feature/exchange/TraoDoiExplore.kt",
+                            "feature/exchange/TraoDoiOfferScreens.kt",
+                            "feature/smartswap/SmartSwapApp.kt",
+                            "feature/smartswap/SmartSwapChat.kt",
+                            "feature/smartswap/SmartSwapCircle.kt",
+                            "feature/smartswap/SmartSwapComponents.kt",
+                            "feature/smartswap/SmartSwapDeliveryScreens.kt",
+                            "feature/smartswap/SmartSwapDiscovery.kt"
+                        ],
+    "addedUiFiles":  [
+                         "core/designsystem/MarketplaceComponents.kt"
+                     ],
+    "unchangedViewModels":  [
+                                "feature/admin/QuanTriViewModel.kt",
+                                "feature/auth/TaiKhoanViewModel.kt",
+                                "feature/bootstrap/KhoiTaoViewModel.kt",
+                                "feature/catalog/BanHangViewModel.kt",
+                                "feature/commerce/MuaBanViewModel.kt",
+                                "feature/exchange/TraoDoiViewModel.kt",
+                                "feature/smartswap/SmartSwapViewModel.kt"
+                            ],
+    "modifiedTestFiles":  [
+                              "TaiKhoanEndToEndTest.kt",
+                              "QuanTriEndToEndTest.kt",
+                              "SanPhamEndToEndTest.kt",
+                              "MuaBanEndToEndTest.kt",
+                              "TraoDoiEndToEndTest.kt",
+                              "SmartSwapEndToEndTest.kt",
+                              "KiemTraGiaoDienTest.kt"
+                          ],
+    "addedTestFiles":  [
+                           "UiTestPacing.kt"
+                       ]
+}

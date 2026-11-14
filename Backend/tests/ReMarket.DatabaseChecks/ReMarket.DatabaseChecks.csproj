@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/ReMarket.Infrastructure/ReMarket.Infrastructure.csproj" />
+    <ProjectReference Include="../../src/ReMarket.Api/ReMarket.Api.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.33" />
+  </ItemGroup>
+</Project>

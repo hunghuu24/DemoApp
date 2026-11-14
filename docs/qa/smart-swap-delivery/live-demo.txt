@@ -1,0 +1,5 @@
+﻿Health ready: HTTP200; actual ReMarketDemo schema10.
+Account A: real JWT/USER, three shipments, progress2/3; assigned incoming leg verified.
+Account B: real JWT/USER, three shipments, progress2/3; assigned incoming leg verified.
+Account C: real JWT/USER, three shipments, progress2/3; assigned incoming leg verified.
+All three smoke sessions logged out; final demo receipt left pending; no credentials or tokens printed.

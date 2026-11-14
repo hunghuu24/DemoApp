@@ -1,0 +1,6 @@
+AppliedMigrations
+-----------------
+               11
+TrangThai                                TransactionState                         Received   
+---------------------------------------- ---------------------------------------- -----------
+DangBanGiao                              DangThucHien                                       2

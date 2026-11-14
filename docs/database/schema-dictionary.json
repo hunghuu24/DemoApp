@@ -1,0 +1,2797 @@
+{
+  "enums": {
+    "LoaiGiaoDich": [
+      "MuaBan",
+      "TraoDoiMotMot",
+      "SmartSwap"
+    ],
+    "LoaiThongBao": [
+      "HeThong",
+      "TinDang",
+      "DonHang",
+      "TraoDoi",
+      "TinNhan",
+      "KhieuNai"
+    ],
+    "LoaiTinDang": [
+      "MuaBan",
+      "TraoDoi",
+      "CaHai"
+    ],
+    "LoaiTinNhan": [
+      "VanBan",
+      "HinhAnh",
+      "HeThong",
+      "DeNghiGia"
+    ],
+    "LoaiTroChuyen": [
+      "TrucTiep",
+      "NhomSmartSwap"
+    ],
+    "LoaiXacNhan": [
+      "DaGiao",
+      "DaNhan"
+    ],
+    "LoaiYeuCauHoTro": [
+      "DonHangVanChuyen",
+      "ThanhToanHoanTien",
+      "TaiKhoanKhac"
+    ],
+    "QuyetDinhDongY": [
+      "ChoPhanHoi",
+      "DongY",
+      "TuChoi"
+    ],
+    "TinhTrangSanPham": [
+      "NhuMoi",
+      "DaSuDungTot",
+      "CoLoiNhe"
+    ],
+    "TrangThaiDeNghi": [
+      "ChoPhanHoi",
+      "DeXuatLai",
+      "DaChapNhan",
+      "TuChoi",
+      "DaHuy",
+      "HetHan"
+    ],
+    "TrangThaiDonHang": [
+      "ChoThanhToan",
+      "DaThanhToan",
+      "DangGiao",
+      "DaNhan",
+      "DaHuy"
+    ],
+    "TrangThaiGiaoDich": [
+      "KhoiTao",
+      "ChoDongY",
+      "DangThucHien",
+      "HoanTat",
+      "DaHuy",
+      "TranhChap"
+    ],
+    "TrangThaiHoTro": [
+      "Moi",
+      "DangXuLy",
+      "DaGiaiQuyet"
+    ],
+    "TrangThaiKhieuNai": [
+      "Moi",
+      "DangXuLy",
+      "ChoThucHien",
+      "DaGiaiQuyet",
+      "TuChoi"
+    ],
+    "TrangThaiNguoiDung": [
+      "HoatDong",
+      "DaKhoa",
+      "DaXoa"
+    ],
+    "TrangThaiThanhToan": [
+      "ChoXuLy",
+      "ThanhCong",
+      "ThatBai",
+      "HoanTien"
+    ],
+    "TrangThaiThoaThuan": [
+      "DeXuat",
+      "DaChot",
+      "DaThayThe"
+    ],
+    "TrangThaiTinDang": [
+      "BanNhap",
+      "ChoDuyet",
+      "DangHienThi",
+      "TuChoi",
+      "DaAn",
+      "DaBan",
+      "DangGiuCho",
+      "DaTraoDoi"
+    ],
+    "TrangThaiVanChuyen": [
+      "ChoLayHang",
+      "DaLayHang",
+      "DangVanChuyen",
+      "DaGiao",
+      "GiaoThatBai",
+      "ChoGui",
+      "DaGui"
+    ],
+    "TrangThaiVong": [
+      "ChoDongY",
+      "SanSangBanGiao",
+      "DangBanGiao",
+      "HoanTat",
+      "DaHuy",
+      "TamDung"
+    ]
+  },
+  "entities": [
+    {
+      "group": "SanPham",
+      "name": "AnhSanPham",
+      "fields": {
+        "DuongDan": "string:1000",
+        "LaAnhBia": "bool",
+        "SanPhamId": "Guid",
+        "ThuTu": "int"
+      },
+      "unique": [
+        [
+          "SanPhamId"
+        ],
+        [
+          "SanPhamId",
+          "ThuTu"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "SanPhamId"
+          ],
+          "sql": "[LaAnhBia] = 1"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "SanPham",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_AnhSanPham_ThuTu",
+          "sql": "[ThuTu] >= 0"
+        }
+      ]
+    },
+    {
+      "group": "VanChuyen",
+      "name": "BangChungGiaoNhan",
+      "fields": {
+        "BamNoiDung": "string?:64",
+        "DuongDan": "string:1000",
+        "LoaiMime": "string:100",
+        "MaYeuCau": "Guid?",
+        "NguoiTaiLenId": "Guid",
+        "XacNhanGiaoNhanId": "Guid"
+      },
+      "unique": [
+        [
+          "XacNhanGiaoNhanId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "XacNhanGiaoNhanId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "NguoiTaiLen",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiTaiLenId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "XacNhanGiaoNhan",
+          "target": "XacNhanGiaoNhan",
+          "fields": [
+            "XacNhanGiaoNhanId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "KhieuNai",
+      "name": "BangChungKhieuNai",
+      "fields": {
+        "DuongDan": "string:1000",
+        "KhieuNaiId": "Guid",
+        "LoaiMime": "string:100",
+        "MoTa": "string:1000",
+        "NguoiTaiLenId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "KhieuNai",
+          "target": "KhieuNai",
+          "fields": [
+            "KhieuNaiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiTaiLen",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiTaiLenId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "SmartSwap",
+      "name": "ChangTraoDoi",
+      "fields": {
+        "SanPhamId": "Guid",
+        "ThanhVienGiaoId": "Guid",
+        "ThanhVienNhanId": "Guid",
+        "VongSmartSwapId": "Guid"
+      },
+      "unique": [
+        [
+          "VongSmartSwapId",
+          "ThanhVienGiaoId"
+        ],
+        [
+          "VongSmartSwapId",
+          "ThanhVienNhanId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "VongSmartSwap",
+          "target": "VongSmartSwap",
+          "fields": [
+            "VongSmartSwapId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "ThanhVienNhan",
+          "target": "ThanhVienVong",
+          "fields": [
+            "ThanhVienNhanId",
+            "VongSmartSwapId"
+          ],
+          "principal": [
+            "Id",
+            "VongSmartSwapId"
+          ]
+        },
+        {
+          "nav": "ThanhVienGiao",
+          "target": "ThanhVienVong",
+          "fields": [
+            "ThanhVienGiaoId",
+            "VongSmartSwapId",
+            "SanPhamId"
+          ],
+          "principal": [
+            "Id",
+            "VongSmartSwapId",
+            "SanPhamId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_ChangTraoDoi_KhacThanhVien",
+          "sql": "[ThanhVienGiaoId] <> [ThanhVienNhanId]"
+        }
+      ]
+    },
+    {
+      "group": "DonHang",
+      "name": "ChiTietDonHang",
+      "fields": {
+        "DonGia": "long",
+        "DonHangId": "Guid",
+        "GiaNiemYet": "long?",
+        "SanPhamId": "Guid",
+        "SoLuong": "int",
+        "SoTienGiam": "long",
+        "TenSanPham": "string:200",
+        "TinDangId": "Guid"
+      },
+      "unique": [
+        [
+          "DonHangId",
+          "SanPhamId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "DonHang",
+          "target": "DonHang",
+          "fields": [
+            "DonHangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "TinDang",
+          "target": "TinDang",
+          "fields": [
+            "TinDangId",
+            "SanPhamId"
+          ],
+          "principal": [
+            "Id",
+            "SanPhamId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_ChiTietDonHang_GiaSoLuong",
+          "sql": "[DonGia] > 0 AND [SoLuong] = 1"
+        },
+        {
+          "name": "CK_ChiTietDonHang_GiamGia",
+          "sql": "[SoTienGiam]>=0 AND ([GiaNiemYet] IS NULL OR ([GiaNiemYet]>0 AND [DonGia]=[GiaNiemYet]-[SoTienGiam]))"
+        }
+      ]
+    },
+    {
+      "group": "Chat",
+      "name": "CuocTroChuyen",
+      "fields": {
+        "GiaoDichId": "Guid?",
+        "Loai": "LoaiTroChuyen:40",
+        "NguoiMuaId": "Guid?",
+        "TieuDe": "string:200",
+        "TinDangId": "Guid?"
+      },
+      "unique": [
+        [
+          "GiaoDichId"
+        ],
+        [
+          "TinDangId",
+          "NguoiMuaId"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "GiaoDichId"
+          ],
+          "sql": "[GiaoDichId] IS NOT NULL"
+        },
+        {
+          "fields": [
+            "TinDangId",
+            "NguoiMuaId"
+          ],
+          "sql": "[NguoiMuaId] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": null,
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiMuaId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "TinDang",
+          "target": "TinDang",
+          "fields": [
+            "TinDangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_CuocTroChuyen_Loai",
+          "sql": "[Loai] IN (N'TrucTiep', N'NhomSmartSwap')"
+        }
+      ]
+    },
+    {
+      "group": "DanhGia",
+      "name": "DanhGia",
+      "fields": {
+        "GiaoDichId": "Guid",
+        "MaYeuCau": "Guid?",
+        "NguoiDanhGiaId": "Guid",
+        "NguoiDuocDanhGiaId": "Guid",
+        "NoiDung": "string:2000",
+        "SoSao": "int",
+        "SoSaoSanPham": "int?"
+      },
+      "unique": [
+        [
+          "GiaoDichId",
+          "NguoiDanhGiaId",
+          "NguoiDuocDanhGiaId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiDanhGia",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiDanhGiaId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiDuocDanhGia",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiDuocDanhGiaId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_DanhGia_SanPham",
+          "sql": "[SoSaoSanPham] IS NULL OR [SoSaoSanPham] BETWEEN 1 AND 5"
+        },
+        {
+          "name": "CK_DanhGia_SoSaoVaNguoi",
+          "sql": "[SoSao] BETWEEN 1 AND 5 AND [NguoiDanhGiaId] <> [NguoiDuocDanhGiaId]"
+        }
+      ]
+    },
+    {
+      "group": "DanhGia",
+      "name": "DanhGiaTieuChi",
+      "fields": {
+        "DanhGiaId": "Guid",
+        "TieuChiDanhGiaId": "Guid"
+      },
+      "unique": [
+        [
+          "DanhGiaId",
+          "TieuChiDanhGiaId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "DanhGia",
+          "target": "DanhGia",
+          "fields": [
+            "DanhGiaId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "TieuChiDanhGia",
+          "target": "TieuChiDanhGia",
+          "fields": [
+            "TieuChiDanhGiaId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "SanPham",
+      "name": "DanhMuc",
+      "fields": {
+        "BieuTuong": "string:30",
+        "DangHienThi": "bool",
+        "DanhMucChaId": "Guid?",
+        "Ma": "string:60",
+        "Ten": "string:120",
+        "ThuTu": "int"
+      },
+      "unique": [
+        [
+          "Ma"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "DanhMucCha",
+          "target": "DanhMuc",
+          "fields": [
+            "DanhMucChaId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_DanhMuc_KhongTuThamChieu",
+          "sql": "[DanhMucChaId] IS NULL OR [DanhMucChaId] <> [Id]"
+        },
+        {
+          "name": "CK_DanhMuc_ThuTu",
+          "sql": "[ThuTu] >= 0"
+        }
+      ]
+    },
+    {
+      "group": "TraoDoi",
+      "name": "DeNghiTraoDoi",
+      "fields": {
+        "BamYeuCau": "string?:64",
+        "GiaoDichId": "Guid",
+        "LyDoKetThuc": "string?:500",
+        "MaYeuCau": "Guid?",
+        "NgayHetHan": "DateTimeOffset",
+        "NguoiGuiId": "Guid",
+        "NguoiNhanId": "Guid",
+        "SanPhamGuiId": "Guid",
+        "SanPhamNhanId": "Guid",
+        "TinGuiId": "Guid?",
+        "TinNhanId": "Guid?",
+        "TrangThai": "TrangThaiDeNghi:40"
+      },
+      "unique": [
+        [
+          "GiaoDichId"
+        ],
+        [
+          "NguoiGuiId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "NguoiGuiId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiGui",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiNhan",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiNhanId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "SanPhamGui",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamGuiId",
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "Id",
+            "ChuSoHuuId"
+          ]
+        },
+        {
+          "nav": "SanPhamNhan",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamNhanId",
+            "NguoiNhanId"
+          ],
+          "principal": [
+            "Id",
+            "ChuSoHuuId"
+          ]
+        },
+        {
+          "nav": "TinGui",
+          "target": "TinDang",
+          "fields": [
+            "TinGuiId",
+            "SanPhamGuiId"
+          ],
+          "principal": [
+            "Id",
+            "SanPhamId"
+          ]
+        },
+        {
+          "nav": "TinNhan",
+          "target": "TinDang",
+          "fields": [
+            "TinNhanId",
+            "SanPhamNhanId"
+          ],
+          "principal": [
+            "Id",
+            "SanPhamId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_DeNghiTraoDoi_KhacNguoiVaMon",
+          "sql": "[NguoiGuiId] <> [NguoiNhanId] AND [SanPhamGuiId] <> [SanPhamNhanId]"
+        },
+        {
+          "name": "CK_DeNghiTraoDoi_ThoiHan",
+          "sql": "[NgayHetHan] > [NgayTao]"
+        },
+        {
+          "name": "CK_DeNghiTraoDoi_Tin",
+          "sql": "([TinGuiId] IS NULL AND [TinNhanId] IS NULL) OR ([TinGuiId] IS NOT NULL AND [TinNhanId] IS NOT NULL AND [TinGuiId]<>[TinNhanId])"
+        },
+        {
+          "name": "CK_DeNghiTraoDoi_TrangThai",
+          "sql": "[TrangThai] IN (N'ChoPhanHoi', N'DeXuatLai', N'DaChapNhan', N'TuChoi', N'DaHuy', N'HetHan')"
+        }
+      ]
+    },
+    {
+      "group": "TraoDoi",
+      "name": "DongYThoaThuan",
+      "fields": {
+        "GiaoDichId": "Guid",
+        "NgayPhanHoi": "DateTimeOffset?",
+        "NguoiDungId": "Guid",
+        "PhienBanThoaThuanId": "Guid",
+        "QuyetDinh": "QuyetDinhDongY:40"
+      },
+      "unique": [
+        [
+          "PhienBanThoaThuanId",
+          "NguoiDungId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "ThanhVien",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "PhienBanThoaThuan",
+          "target": "PhienBanThoaThuan",
+          "fields": [
+            "PhienBanThoaThuanId",
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id",
+            "GiaoDichId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_DongYThoaThuan_NgayPhanHoi",
+          "sql": "([QuyetDinh] = N'ChoPhanHoi' AND [NgayPhanHoi] IS NULL) OR ([QuyetDinh] <> N'ChoPhanHoi' AND [NgayPhanHoi] IS NOT NULL)"
+        },
+        {
+          "name": "CK_DongYThoaThuan_QuyetDinh",
+          "sql": "[QuyetDinh] IN (N'ChoPhanHoi', N'DongY', N'TuChoi')"
+        }
+      ]
+    },
+    {
+      "group": "DonHang",
+      "name": "DonHang",
+      "fields": {
+        "BamYeuCau": "string?:64",
+        "DiaChiNhan": "string:500",
+        "GiaoDichId": "Guid",
+        "HanThanhToan": "DateTimeOffset?",
+        "LyDoHuy": "string?:500",
+        "MaYeuCau": "Guid?",
+        "NgayHuy": "DateTimeOffset?",
+        "NguoiBanId": "Guid",
+        "NguoiMuaId": "Guid",
+        "PhiVanChuyen": "long",
+        "PhieuThuongLuongId": "Guid?",
+        "SoDienThoaiNhan": "string:20",
+        "TenNguoiNhan": "string:120",
+        "TienHang": "long",
+        "TongTien": "long",
+        "TrangThai": "TrangThaiDonHang:40"
+      },
+      "unique": [
+        [
+          "GiaoDichId"
+        ],
+        [
+          "PhieuThuongLuongId"
+        ],
+        [
+          "NguoiMuaId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "PhieuThuongLuongId"
+          ],
+          "sql": "[PhieuThuongLuongId] IS NOT NULL"
+        },
+        {
+          "fields": [
+            "NguoiMuaId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "PhieuThuongLuong",
+          "target": "PhieuThuongLuong",
+          "fields": [
+            "PhieuThuongLuongId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiBan",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiBanId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiMua",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiMuaId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_DonHang_KhacNguoi",
+          "sql": "[NguoiMuaId] <> [NguoiBanId]"
+        },
+        {
+          "name": "CK_DonHang_TongTien",
+          "sql": "[TienHang] > 0 AND [PhiVanChuyen] >= 0 AND [TongTien] = [TienHang] + [PhiVanChuyen]"
+        },
+        {
+          "name": "CK_DonHang_TrangThai",
+          "sql": "[TrangThai] IN (N'ChoThanhToan', N'DaThanhToan', N'DangGiao', N'DaNhan', N'DaHuy')"
+        }
+      ]
+    },
+    {
+      "group": "GiaoDich",
+      "name": "GiaoDich",
+      "fields": {
+        "Loai": "LoaiGiaoDich:40",
+        "Ma": "string:30",
+        "NgayHoanTat": "DateTimeOffset?",
+        "TrangThai": "TrangThaiGiaoDich:40"
+      },
+      "unique": [
+        [
+          "Ma"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_GiaoDich_Loai",
+          "sql": "[Loai] IN (N'MuaBan', N'TraoDoiMotMot', N'SmartSwap')"
+        },
+        {
+          "name": "CK_GiaoDich_NgayHoanTat",
+          "sql": "([TrangThai] = N'HoanTat' AND [NgayHoanTat] IS NOT NULL) OR ([TrangThai] <> N'HoanTat' AND [NgayHoanTat] IS NULL)"
+        },
+        {
+          "name": "CK_GiaoDich_TrangThai",
+          "sql": "[TrangThai] IN (N'KhoiTao', N'ChoDongY', N'DangThucHien', N'HoanTat', N'DaHuy', N'TranhChap')"
+        }
+      ]
+    },
+    {
+      "group": "GiaoDich",
+      "name": "GiuChoSanPham",
+      "fields": {
+        "DaGiaiPhong": "bool",
+        "GiaoDichId": "Guid",
+        "NgayHetHan": "DateTimeOffset",
+        "SanPhamId": "Guid"
+      },
+      "unique": [
+        [
+          "SanPhamId"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "SanPhamId"
+          ],
+          "sql": "[DaGiaiPhong] = 0"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "SanPham",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_GiuChoSanPham_ThoiHan",
+          "sql": "[NgayHetHan] > [NgayTao]"
+        }
+      ]
+    },
+    {
+      "group": "TaiKhoan",
+      "name": "HoSoCaNhan",
+      "fields": {
+        "AnhDaiDienUrl": "string?:1000",
+        "DaXacMinhDienThoai": "bool",
+        "DaXacMinhEmail": "bool",
+        "DiaChi": "string?:500",
+        "HoTen": "string:120",
+        "NguoiDungId": "Guid",
+        "TinhThanh": "string?:100"
+      },
+      "unique": [
+        [
+          "NguoiDungId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "KhieuNai",
+      "name": "KhieuNai",
+      "fields": {
+        "BamYeuCau": "string?:64",
+        "GiaoDichId": "Guid",
+        "HanPhanHoi": "DateTimeOffset?",
+        "LoaiSuCo": "string?:40",
+        "Ma": "string:30",
+        "MaYeuCau": "Guid?",
+        "NguoiBiKhieuNaiId": "Guid",
+        "NguoiGuiId": "Guid",
+        "NoiDung": "string:4000",
+        "TieuDe": "string:200",
+        "TrangThai": "TrangThaiKhieuNai:40",
+        "VanChuyenMoPhongId": "Guid?"
+      },
+      "unique": [
+        [
+          "Ma"
+        ],
+        [
+          "NguoiGuiId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "NguoiGuiId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "VanChuyenMoPhong",
+          "target": "VanChuyenMoPhong",
+          "fields": [
+            "VanChuyenMoPhongId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiBiKhieuNai",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiBiKhieuNaiId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiGui",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_KhieuNai_KhacNguoi",
+          "sql": "[NguoiGuiId] <> [NguoiBiKhieuNaiId]"
+        },
+        {
+          "name": "CK_KhieuNai_SuCoSmartSwap",
+          "sql": "([VanChuyenMoPhongId] IS NULL AND [LoaiSuCo] IS NULL) OR ([VanChuyenMoPhongId] IS NOT NULL AND [LoaiSuCo] IN ('SaiHang','ChuaNhanHang'))"
+        },
+        {
+          "name": "CK_KhieuNai_TrangThai",
+          "sql": "[TrangThai] IN (N'Moi', N'DangXuLy', N'ChoThucHien', N'DaGiaiQuyet', N'TuChoi')"
+        }
+      ]
+    },
+    {
+      "group": "QuanTri",
+      "name": "KhoaTaiKhoan",
+      "fields": {
+        "LyDo": "string:1000",
+        "NgayBatDau": "DateTimeOffset",
+        "NgayKetThuc": "DateTimeOffset?",
+        "NgayMoKhoa": "DateTimeOffset?",
+        "NguoiDungId": "Guid",
+        "QuanTriVienId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "QuanTriVien",
+          "target": "NguoiDung",
+          "fields": [
+            "QuanTriVienId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_KhoaTaiKhoan_KhongTuKhoa",
+          "sql": "[NguoiDungId] <> [QuanTriVienId]"
+        },
+        {
+          "name": "CK_KhoaTaiKhoan_ThoiHan",
+          "sql": "([NgayKetThuc] IS NULL OR [NgayKetThuc] > [NgayBatDau]) AND ([NgayMoKhoa] IS NULL OR [NgayMoKhoa] >= [NgayBatDau])"
+        }
+      ]
+    },
+    {
+      "group": "HoTro",
+      "name": "LichSuHoTro",
+      "fields": {
+        "NguoiThucHienId": "Guid",
+        "NoiDung": "string:4000",
+        "SoThuTu": "long",
+        "TrangThai": "TrangThaiHoTro:40",
+        "YeuCauHoTroId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiThucHien",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiThucHienId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "YeuCauHoTro",
+          "target": "YeuCauHoTro",
+          "fields": [
+            "YeuCauHoTroId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_LichSuHoTro_TrangThai",
+          "sql": "[TrangThai] IN ('Moi','DangXuLy','DaGiaiQuyet')"
+        }
+      ]
+    },
+    {
+      "group": "VanChuyen",
+      "name": "LichSuVanChuyen",
+      "fields": {
+        "MoTa": "string:1000",
+        "SoThuTu": "long",
+        "ThoiDiem": "DateTimeOffset",
+        "TrangThai": "TrangThaiVanChuyen:40",
+        "VanChuyenMoPhongId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "VanChuyenMoPhong",
+          "target": "VanChuyenMoPhong",
+          "fields": [
+            "VanChuyenMoPhongId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_LichSuVanChuyen_TrangThai",
+          "sql": "[TrangThai] IN (N'ChoLayHang', N'DaLayHang', N'DangVanChuyen', N'DaGiao', N'GiaoThatBai', N'ChoGui', N'DaGui')"
+        }
+      ]
+    },
+    {
+      "group": "TaiKhoan",
+      "name": "NguoiDung",
+      "fields": {
+        "Email": "string:256",
+        "EmailChuanHoa": "string:256",
+        "MatKhauBam": "string:512",
+        "SoDienThoai": "string?:20",
+        "TrangThai": "TrangThaiNguoiDung:40"
+      },
+      "unique": [
+        [
+          "EmailChuanHoa"
+        ],
+        [
+          "SoDienThoai"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "SoDienThoai"
+          ],
+          "sql": "[SoDienThoai] IS NOT NULL"
+        }
+      ],
+      "fks": [],
+      "computed": {
+        "EmailChuanHoa": "UPPER(LTRIM(RTRIM([Email])))"
+      },
+      "checks": [
+        {
+          "name": "CK_NguoiDung_Email",
+          "sql": "LEN(LTRIM(RTRIM([Email]))) > 3"
+        },
+        {
+          "name": "CK_NguoiDung_TrangThai",
+          "sql": "[TrangThai] IN (N'HoatDong', N'DaKhoa', N'DaXoa')"
+        }
+      ]
+    },
+    {
+      "group": "TaiKhoan",
+      "name": "NguoiDungVaiTro",
+      "fields": {
+        "NguoiDungId": "Guid",
+        "VaiTroId": "Guid"
+      },
+      "unique": [
+        [
+          "NguoiDungId",
+          "VaiTroId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "VaiTro",
+          "target": "VaiTro",
+          "fields": [
+            "VaiTroId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "QuanTri",
+      "name": "NhatKyKiemDuyet",
+      "fields": {
+        "LyDo": "string:1000",
+        "QuanTriVienId": "Guid",
+        "TinDangId": "Guid",
+        "TrangThaiSau": "TrangThaiTinDang:40",
+        "TrangThaiTruoc": "TrangThaiTinDang:40"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "QuanTriVien",
+          "target": "NguoiDung",
+          "fields": [
+            "QuanTriVienId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "TinDang",
+          "target": "TinDang",
+          "fields": [
+            "TinDangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_NhatKyKiemDuyet_TrangThaiSau",
+          "sql": "[TrangThaiSau] IN (N'BanNhap', N'ChoDuyet', N'DangHienThi', N'TuChoi', N'DaAn', N'DaBan')"
+        },
+        {
+          "name": "CK_NhatKyKiemDuyet_TrangThaiTruoc",
+          "sql": "[TrangThaiTruoc] IN (N'BanNhap', N'ChoDuyet', N'DangHienThi', N'TuChoi', N'DaAn', N'DaBan')"
+        }
+      ]
+    },
+    {
+      "group": "QuanTri",
+      "name": "NhatKyQuanTri",
+      "fields": {
+        "ChiTietJson": "string:4000",
+        "DoiTuongId": "Guid?",
+        "HanhDong": "string:100",
+        "LoaiDoiTuong": "string:100",
+        "NguoiThucHienId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiThucHien",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiThucHienId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_NhatKyQuanTri_Json",
+          "sql": "ISJSON([ChiTietJson]) = 1"
+        }
+      ]
+    },
+    {
+      "group": "SanPham",
+      "name": "NhuCauTraoDoi",
+      "fields": {
+        "ChoPhepBuTien": "bool",
+        "ChoPhepMotMot": "bool",
+        "ChoPhepSmartSwap": "bool",
+        "DanhMucMongMuonId": "Guid?",
+        "GhiChu": "string?:1000",
+        "GiaTriMongMuonDen": "long?",
+        "GiaTriMongMuonTu": "long?",
+        "MoTaMongMuon": "string:2000",
+        "SoTienBuToiDa": "long",
+        "TinDangId": "Guid",
+        "TinhTrangToiThieu": "TinhTrangSanPham?:40",
+        "TuKhoaMongMuon": "string?:200"
+      },
+      "unique": [
+        [
+          "TinDangId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "DanhMucMongMuon",
+          "target": "DanhMuc",
+          "fields": [
+            "DanhMucMongMuonId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "TinDang",
+          "target": "TinDang",
+          "fields": [
+            "TinDangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_NhuCauTraoDoi_GiaMongMuon",
+          "sql": "([GiaTriMongMuonTu] IS NULL OR [GiaTriMongMuonTu] BETWEEN 0 AND 1000000000000) AND ([GiaTriMongMuonDen] IS NULL OR [GiaTriMongMuonDen] BETWEEN 0 AND 1000000000000) AND ([GiaTriMongMuonTu] IS NULL OR [GiaTriMongMuonDen] IS NULL OR [GiaTriMongMuonTu]<=[GiaTriMongMuonDen])"
+        },
+        {
+          "name": "CK_NhuCauTraoDoi_HinhThuc",
+          "sql": "[ChoPhepMotMot]=1 OR [ChoPhepSmartSwap]=1"
+        },
+        {
+          "name": "CK_NhuCauTraoDoi_TienBu",
+          "sql": "[SoTienBuToiDa] >= 0 AND ([ChoPhepBuTien] = 1 OR [SoTienBuToiDa] = 0)"
+        },
+        {
+          "name": "CK_NhuCauTraoDoi_TinhTrang",
+          "sql": "[TinhTrangToiThieu] IS NULL OR [TinhTrangToiThieu] IN ('NhuMoi','DaSuDungTot','CoLoiNhe')"
+        }
+      ]
+    },
+    {
+      "group": "HoTro",
+      "name": "PhanHoiHoTro",
+      "fields": {
+        "NguoiGuiId": "Guid",
+        "NoiDung": "string:2000",
+        "YeuCauHoTroId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiGui",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "YeuCauHoTro",
+          "target": "YeuCauHoTro",
+          "fields": [
+            "YeuCauHoTroId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "KhieuNai",
+      "name": "PhanHoiKhieuNai",
+      "fields": {
+        "KhieuNaiId": "Guid",
+        "NguoiGuiId": "Guid",
+        "NoiDung": "string:2000"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "KhieuNai",
+          "target": "KhieuNai",
+          "fields": [
+            "KhieuNaiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiGui",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "TraoDoi",
+      "name": "PhienBanThoaThuan",
+      "fields": {
+        "BamYeuCau": "string?:64",
+        "DiaDiemHen": "string?:500",
+        "GiaoDichId": "Guid",
+        "MaYeuCau": "Guid?",
+        "NguoiTaoId": "Guid",
+        "NoiDung": "string:2000",
+        "SoPhienBan": "int",
+        "ThoiGianHen": "DateTimeOffset?",
+        "TrangThai": "TrangThaiThoaThuan:40"
+      },
+      "unique": [
+        [
+          "GiaoDichId"
+        ],
+        [
+          "GiaoDichId",
+          "SoPhienBan"
+        ],
+        [
+          "GiaoDichId",
+          "NguoiTaoId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "GiaoDichId"
+          ],
+          "sql": "[TrangThai] = 'DaChot'"
+        },
+        {
+          "fields": [
+            "GiaoDichId",
+            "NguoiTaoId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiTao",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiTaoId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_PhienBanThoaThuan_PhienBan",
+          "sql": "[SoPhienBan] > 0"
+        },
+        {
+          "name": "CK_PhienBanThoaThuan_TrangThai",
+          "sql": "[TrangThai] IN (N'DeXuat', N'DaChot', N'DaThayThe')"
+        }
+      ]
+    },
+    {
+      "group": "TaiKhoan",
+      "name": "PhienDangNhap",
+      "fields": {
+        "BamRefreshToken": "string:64",
+        "MaTruyCap": "string:32",
+        "NgayHetHan": "DateTimeOffset",
+        "NgayThuHoi": "DateTimeOffset?",
+        "NguoiDungId": "Guid"
+      },
+      "unique": [
+        [
+          "BamRefreshToken"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_PhienDangNhap_HetHan",
+          "sql": "[NgayHetHan] > [NgayTao]"
+        }
+      ]
+    },
+    {
+      "group": "DonHang",
+      "name": "PhieuThuongLuong",
+      "fields": {
+        "CuocTroChuyenId": "Guid",
+        "GiaNiemYet": "long",
+        "NgayHetHan": "DateTimeOffset",
+        "NguoiBanId": "Guid",
+        "NguoiMuaId": "Guid",
+        "SoTienGiam": "long",
+        "TinNhanId": "Guid",
+        "TrangThai": "string:40"
+      },
+      "unique": [
+        [
+          "CuocTroChuyenId"
+        ],
+        [
+          "TinNhanId"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "CuocTroChuyenId"
+          ],
+          "sql": "[TrangThai]='DaChapNhan'"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "CuocTroChuyen",
+          "target": "CuocTroChuyen",
+          "fields": [
+            "CuocTroChuyenId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiBan",
+          "target": "ThanhVienTroChuyen",
+          "fields": [
+            "CuocTroChuyenId",
+            "NguoiBanId"
+          ],
+          "principal": [
+            "CuocTroChuyenId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiMua",
+          "target": "ThanhVienTroChuyen",
+          "fields": [
+            "CuocTroChuyenId",
+            "NguoiMuaId"
+          ],
+          "principal": [
+            "CuocTroChuyenId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "TinNhan",
+          "target": "TinNhan",
+          "fields": [
+            "TinNhanId",
+            "CuocTroChuyenId"
+          ],
+          "principal": [
+            "Id",
+            "CuocTroChuyenId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_PhieuThuongLuong_Gia",
+          "sql": "[GiaNiemYet]>0 AND [SoTienGiam]>0 AND [SoTienGiam]<[GiaNiemYet]"
+        },
+        {
+          "name": "CK_PhieuThuongLuong_Han",
+          "sql": "[NgayHetHan]>[NgayTao]"
+        },
+        {
+          "name": "CK_PhieuThuongLuong_Nguoi",
+          "sql": "[NguoiMuaId]<>[NguoiBanId]"
+        },
+        {
+          "name": "CK_PhieuThuongLuong_TrangThai",
+          "sql": "[TrangThai] IN ('ChoPhanHoi','DaChapNhan','TuChoi','DaHuy','DaSuDung','HetHan')"
+        }
+      ]
+    },
+    {
+      "group": "KhieuNai",
+      "name": "QuyetDinhXuLy",
+      "fields": {
+        "BamYeuCau": "string?:64",
+        "BienPhap": "string:2000",
+        "CanCu": "string:2000",
+        "DaXacMinhThucHien": "bool",
+        "HuongXuLy": "string:20",
+        "KetLuan": "string:2000",
+        "KhieuNaiId": "Guid",
+        "MaYeuCau": "Guid?",
+        "QuanTriVienId": "Guid",
+        "ThongBao": "string:2000"
+      },
+      "unique": [
+        [
+          "KhieuNaiId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "KhieuNaiId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "KhieuNai",
+          "target": "KhieuNai",
+          "fields": [
+            "KhieuNaiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "QuanTriVien",
+          "target": "NguoiDung",
+          "fields": [
+            "QuanTriVienId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "SanPham",
+      "name": "SanPham",
+      "fields": {
+        "ChuSoHuuId": "Guid",
+        "DanhMucId": "Guid",
+        "GiaTriThamKhao": "long",
+        "MoTa": "string:4000",
+        "Ten": "string:200",
+        "TinhTrang": "TinhTrangSanPham:40"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "ChuSoHuu",
+          "target": "NguoiDung",
+          "fields": [
+            "ChuSoHuuId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "DanhMuc",
+          "target": "DanhMuc",
+          "fields": [
+            "DanhMucId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_SanPham_GiaTri",
+          "sql": "[GiaTriThamKhao] >= 0"
+        },
+        {
+          "name": "CK_SanPham_TinhTrang",
+          "sql": "[TinhTrang] IN (N'NhuMoi', N'DaSuDungTot', N'CoLoiNhe')"
+        }
+      ]
+    },
+    {
+      "group": "Chat",
+      "name": "TepTinNhan",
+      "fields": {
+        "DungLuong": "long",
+        "DuongDan": "string:1000",
+        "LoaiMime": "string:100",
+        "TenTep": "string:200",
+        "TinNhanId": "Guid"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "TinNhan",
+          "target": "TinNhan",
+          "fields": [
+            "TinNhanId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_TepTinNhan_DungLuong",
+          "sql": "[DungLuong] > 0"
+        }
+      ]
+    },
+    {
+      "group": "DonHang",
+      "name": "ThanhToan",
+      "fields": {
+        "DonHangId": "Guid",
+        "KetQuaCuoi": "bool?",
+        "LaMoPhong": "bool",
+        "MaThamChieu": "string?:100",
+        "MaYeuCauCuoi": "Guid?",
+        "NgayGiaiNgan": "DateTimeOffset?",
+        "NgayHoanTien": "DateTimeOffset?",
+        "NgayThanhToan": "DateTimeOffset?",
+        "SoTien": "long",
+        "TrangThai": "TrangThaiThanhToan:40"
+      },
+      "unique": [
+        [
+          "MaThamChieu"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "MaThamChieu"
+          ],
+          "sql": "[MaThamChieu] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "DonHang",
+          "target": "DonHang",
+          "fields": [
+            "DonHangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_ThanhToan_SoTien",
+          "sql": "[SoTien] > 0"
+        },
+        {
+          "name": "CK_ThanhToan_TrangThai",
+          "sql": "[TrangThai] IN (N'ChoXuLy', N'ThanhCong', N'ThatBai', N'HoanTien')"
+        }
+      ]
+    },
+    {
+      "group": "GiaoDich",
+      "name": "ThanhVienGiaoDich",
+      "fields": {
+        "GiaoDichId": "Guid",
+        "NguoiDungId": "Guid",
+        "VaiTroHienThi": "string:40"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "Chat",
+      "name": "ThanhVienTroChuyen",
+      "fields": {
+        "CuocTroChuyenId": "Guid",
+        "LanDocCuoi": "DateTimeOffset?",
+        "NguoiDungId": "Guid",
+        "SoThuTuDaDoc": "long"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "CuocTroChuyen",
+          "target": "CuocTroChuyen",
+          "fields": [
+            "CuocTroChuyenId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "SmartSwap",
+      "name": "ThanhVienVong",
+      "fields": {
+        "GiaoDichId": "Guid",
+        "NguoiDungId": "Guid",
+        "SanPhamId": "Guid",
+        "TinDangId": "Guid?",
+        "ViTri": "int",
+        "VongSmartSwapId": "Guid"
+      },
+      "unique": [
+        [
+          "VongSmartSwapId",
+          "NguoiDungId"
+        ],
+        [
+          "VongSmartSwapId",
+          "SanPhamId"
+        ],
+        [
+          "VongSmartSwapId",
+          "ViTri"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "ThanhVien",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "SanPham",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamId",
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id",
+            "ChuSoHuuId"
+          ]
+        },
+        {
+          "nav": "TinDang",
+          "target": "TinDang",
+          "fields": [
+            "TinDangId",
+            "SanPhamId"
+          ],
+          "principal": [
+            "Id",
+            "SanPhamId"
+          ]
+        },
+        {
+          "nav": "VongSmartSwap",
+          "target": "VongSmartSwap",
+          "fields": [
+            "VongSmartSwapId",
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id",
+            "GiaoDichId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_ThanhVienVong_ViTri",
+          "sql": "[ViTri] BETWEEN 1 AND 3"
+        }
+      ]
+    },
+    {
+      "group": "Chat",
+      "name": "ThongBao",
+      "fields": {
+        "DaDoc": "bool",
+        "GiaoDichId": "Guid?",
+        "Loai": "LoaiThongBao:40",
+        "NguoiDungId": "Guid",
+        "NoiDung": "string:2000",
+        "TieuDe": "string:200"
+      },
+      "unique": [],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_ThongBao_Loai",
+          "sql": "[Loai] IN (N'HeThong', N'TinDang', N'DonHang', N'TraoDoi', N'TinNhan', N'KhieuNai')"
+        }
+      ]
+    },
+    {
+      "group": "Khac",
+      "name": "ThongTinGiaoNhanSmartSwap",
+      "fields": {
+        "BamYeuCau": "string:64",
+        "DiaChiGui": "string:500",
+        "DiaChiNhan": "string:500",
+        "MaYeuCau": "Guid",
+        "NgayXacNhan": "DateTimeOffset",
+        "PhienBanThoaThuanId": "Guid",
+        "SoDienThoai": "string:10",
+        "TenLienHe": "string:120",
+        "ThanhVienVongId": "Guid"
+      },
+      "unique": [
+        [
+          "ThanhVienVongId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "PhienBanThoaThuan",
+          "target": "PhienBanThoaThuan",
+          "fields": [
+            "PhienBanThoaThuanId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "ThanhVienVong",
+          "target": "ThanhVienVong",
+          "fields": [
+            "ThanhVienVongId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "TraoDoi",
+      "name": "TienBu",
+      "fields": {
+        "GiaoDichId": "Guid",
+        "NguoiNhanDaXacNhan": "bool",
+        "NguoiNhanId": "Guid",
+        "NguoiTraDaXacNhan": "bool",
+        "NguoiTraId": "Guid",
+        "PhienBanThoaThuanId": "Guid",
+        "SoTien": "long"
+      },
+      "unique": [
+        [
+          "PhienBanThoaThuanId",
+          "NguoiTraId",
+          "NguoiNhanId"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiNhan",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiNhanId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiTra",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiTraId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "PhienBanThoaThuan",
+          "target": "PhienBanThoaThuan",
+          "fields": [
+            "PhienBanThoaThuanId",
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id",
+            "GiaoDichId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_TienBu_SoTienVaNguoi",
+          "sql": "[SoTien] > 0 AND [NguoiTraId] <> [NguoiNhanId]"
+        }
+      ]
+    },
+    {
+      "group": "DanhGia",
+      "name": "TieuChiDanhGia",
+      "fields": {
+        "Ma": "string:40",
+        "Ten": "string:150"
+      },
+      "unique": [
+        [
+          "Ma"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "SanPham",
+      "name": "TinDang",
+      "fields": {
+        "DiaDiem": "string:500",
+        "GiaBan": "long?",
+        "LoaiTin": "LoaiTinDang:40",
+        "LuotXem": "int",
+        "LyDoTuChoi": "string?:1000",
+        "NgayCapNhat": "DateTimeOffset?",
+        "NgayDang": "DateTimeOffset?",
+        "NgayXoa": "DateTimeOffset?",
+        "NguoiDangId": "Guid",
+        "NguoiDuyetId": "Guid?",
+        "SanPhamId": "Guid",
+        "TinhThanh": "string:100",
+        "TrangThai": "TrangThaiTinDang:40"
+      },
+      "unique": [
+        [
+          "SanPhamId"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "SanPhamId"
+          ],
+          "sql": "[TrangThai] IN ('ChoDuyet', 'DangHienThi')"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "NguoiDuyet",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDuyetId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "SanPham",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamId",
+            "NguoiDangId"
+          ],
+          "principal": [
+            "Id",
+            "ChuSoHuuId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_TinDang_GiaBan",
+          "sql": "([LoaiTin] = N'TraoDoi' AND ([GiaBan] IS NULL OR [GiaBan] >= 0)) OR ([LoaiTin] IN (N'MuaBan', N'CaHai') AND [GiaBan] IS NOT NULL AND [GiaBan] > 0)"
+        },
+        {
+          "name": "CK_TinDang_LoaiTin",
+          "sql": "[LoaiTin] IN (N'MuaBan', N'TraoDoi', N'CaHai')"
+        },
+        {
+          "name": "CK_TinDang_LuotXem",
+          "sql": "[LuotXem] >= 0"
+        },
+        {
+          "name": "CK_TinDang_TrangThai",
+          "sql": "[TrangThai] IN (N'BanNhap', N'ChoDuyet', N'DangHienThi', N'TuChoi', N'DaAn', N'DaBan', N'DangGiuCho', N'DaTraoDoi')"
+        }
+      ]
+    },
+    {
+      "group": "Chat",
+      "name": "TinNhan",
+      "fields": {
+        "CuocTroChuyenId": "Guid",
+        "Loai": "LoaiTinNhan:40",
+        "MaPhiaClient": "Guid",
+        "NguoiGuiId": "Guid",
+        "NoiDung": "string?:4000",
+        "PhienBanThoaThuanId": "Guid?",
+        "SoThuTu": "long"
+      },
+      "unique": [
+        [
+          "PhienBanThoaThuanId"
+        ],
+        [
+          "CuocTroChuyenId",
+          "NguoiGuiId",
+          "MaPhiaClient"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "PhienBanThoaThuanId"
+          ],
+          "sql": "[PhienBanThoaThuanId] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "PhienBanThoaThuan",
+          "target": "PhienBanThoaThuan",
+          "fields": [
+            "PhienBanThoaThuanId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiGui",
+          "target": "ThanhVienTroChuyen",
+          "fields": [
+            "CuocTroChuyenId",
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "CuocTroChuyenId",
+            "NguoiDungId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_TinNhan_Loai",
+          "sql": "[Loai] IN (N'VanBan', N'HinhAnh', N'HeThong', N'DeNghiGia')"
+        },
+        {
+          "name": "CK_TinNhan_VanBan",
+          "sql": "[Loai] <> N'VanBan' OR ([NoiDung] IS NOT NULL AND LEN(LTRIM(RTRIM([NoiDung]))) > 0)"
+        }
+      ]
+    },
+    {
+      "group": "TaiKhoan",
+      "name": "VaiTro",
+      "fields": {
+        "Ma": "string:40",
+        "Ten": "string:100"
+      },
+      "unique": [
+        [
+          "Ma"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [],
+      "computed": {},
+      "checks": []
+    },
+    {
+      "group": "VanChuyen",
+      "name": "VanChuyenMoPhong",
+      "fields": {
+        "ChangTraoDoiId": "Guid?",
+        "DiaChiGui": "string?:500",
+        "DiaChiNhan": "string?:500",
+        "DienThoaiGui": "string?:10",
+        "DienThoaiNhan": "string?:10",
+        "DonHangId": "Guid?",
+        "MaVanDon": "string:40",
+        "MaVanDonTuNhap": "string?:40",
+        "NgayGiaoDuKien": "DateTimeOffset",
+        "NgayNhanDungHang": "DateTimeOffset?",
+        "PhienBanThoaThuanId": "Guid?",
+        "TenNguoiGui": "string?:120",
+        "TenNguoiNhan": "string?:120",
+        "TrangThai": "TrangThaiVanChuyen:40"
+      },
+      "unique": [
+        [
+          "ChangTraoDoiId"
+        ],
+        [
+          "DonHangId"
+        ],
+        [
+          "MaVanDon"
+        ],
+        [
+          "MaVanDonTuNhap"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "ChangTraoDoiId"
+          ],
+          "sql": "[ChangTraoDoiId] IS NOT NULL"
+        },
+        {
+          "fields": [
+            "DonHangId"
+          ],
+          "sql": "[DonHangId] IS NOT NULL"
+        },
+        {
+          "fields": [
+            "MaVanDonTuNhap"
+          ],
+          "sql": "[MaVanDonTuNhap] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "ChangTraoDoi",
+          "target": "ChangTraoDoi",
+          "fields": [
+            "ChangTraoDoiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "DonHang",
+          "target": "DonHang",
+          "fields": [
+            "DonHangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "PhienBanThoaThuan",
+          "target": "PhienBanThoaThuan",
+          "fields": [
+            "PhienBanThoaThuanId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_VanChuyenMoPhong_Nguon",
+          "sql": "([DonHangId] IS NOT NULL AND [ChangTraoDoiId] IS NULL AND [PhienBanThoaThuanId] IS NULL) OR ([DonHangId] IS NULL AND [ChangTraoDoiId] IS NOT NULL AND [PhienBanThoaThuanId] IS NOT NULL)"
+        },
+        {
+          "name": "CK_VanChuyenMoPhong_SmartSwap",
+          "sql": "[ChangTraoDoiId] IS NULL OR ([TenNguoiGui] IS NOT NULL AND [DienThoaiGui] IS NOT NULL AND [DiaChiGui] IS NOT NULL AND [TenNguoiNhan] IS NOT NULL AND [DienThoaiNhan] IS NOT NULL AND [DiaChiNhan] IS NOT NULL AND [TrangThai] IN ('ChoGui','DaGui','DangVanChuyen','DaGiao') AND ([TrangThai]='ChoGui' OR [MaVanDonTuNhap] IS NOT NULL) AND ([NgayNhanDungHang] IS NULL OR [TrangThai]='DaGiao'))"
+        },
+        {
+          "name": "CK_VanChuyenMoPhong_TrangThai",
+          "sql": "[TrangThai] IN (N'ChoLayHang', N'DaLayHang', N'DangVanChuyen', N'DaGiao', N'GiaoThatBai', N'ChoGui', N'DaGui')"
+        }
+      ]
+    },
+    {
+      "group": "SmartSwap",
+      "name": "VongSmartSwap",
+      "fields": {
+        "BamYeuCau": "string?:64",
+        "GiaoDichId": "Guid",
+        "LyDoKetThuc": "string?:500",
+        "MaDeXuat": "string?:98",
+        "MaKetThuc": "string?:40",
+        "MaYeuCau": "Guid?",
+        "NgayChapNhan": "DateTimeOffset?",
+        "NgayHetHan": "DateTimeOffset",
+        "NguoiKhoiTaoId": "Guid?",
+        "TrangThai": "TrangThaiVong:40"
+      },
+      "unique": [
+        [
+          "GiaoDichId"
+        ],
+        [
+          "MaDeXuat"
+        ],
+        [
+          "NguoiKhoiTaoId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "MaDeXuat"
+          ],
+          "sql": "[MaDeXuat] IS NOT NULL AND [TrangThai]='ChoDongY'"
+        },
+        {
+          "fields": [
+            "NguoiKhoiTaoId",
+            "MaYeuCau"
+          ],
+          "sql": "[NguoiKhoiTaoId] IS NOT NULL AND [MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": null,
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiKhoiTaoId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_VongSmartSwap_KetThuc",
+          "sql": "[MaKetThuc] IS NULL OR ([TrangThai]='DaHuy' AND [MaKetThuc] IN ('TuChoi','HetHan','DaHuy'))"
+        },
+        {
+          "name": "CK_VongSmartSwap_ThoiHan",
+          "sql": "[NgayHetHan] > [NgayTao]"
+        },
+        {
+          "name": "CK_VongSmartSwap_TrangThai",
+          "sql": "[TrangThai] IN (N'ChoDongY', N'SanSangBanGiao', N'DangBanGiao', N'HoanTat', N'DaHuy', N'TamDung')"
+        }
+      ]
+    },
+    {
+      "group": "VanChuyen",
+      "name": "XacNhanGiaoNhan",
+      "fields": {
+        "GiaoDichId": "Guid",
+        "Loai": "LoaiXacNhan:40",
+        "NgayXacNhan": "DateTimeOffset",
+        "NguoiDoiTacId": "Guid",
+        "NguoiXacNhanId": "Guid",
+        "PhienBanThoaThuanId": "Guid?",
+        "SanPhamId": "Guid"
+      },
+      "unique": [
+        [
+          "GiaoDichId",
+          "NguoiXacNhanId",
+          "Loai"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "GiaoDich",
+          "target": "GiaoDich",
+          "fields": [
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "SanPham",
+          "target": "SanPham",
+          "fields": [
+            "SanPhamId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiDoiTac",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiDoiTacId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "NguoiXacNhan",
+          "target": "ThanhVienGiaoDich",
+          "fields": [
+            "GiaoDichId",
+            "NguoiXacNhanId"
+          ],
+          "principal": [
+            "GiaoDichId",
+            "NguoiDungId"
+          ]
+        },
+        {
+          "nav": "PhienBanThoaThuan",
+          "target": "PhienBanThoaThuan",
+          "fields": [
+            "PhienBanThoaThuanId",
+            "GiaoDichId"
+          ],
+          "principal": [
+            "Id",
+            "GiaoDichId"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_XacNhanGiaoNhan_KhacNguoi",
+          "sql": "[NguoiXacNhanId] <> [NguoiDoiTacId]"
+        },
+        {
+          "name": "CK_XacNhanGiaoNhan_Loai",
+          "sql": "[Loai] IN (N'DaGiao', N'DaNhan')"
+        }
+      ]
+    },
+    {
+      "group": "TaiKhoan",
+      "name": "YeuCauDatLaiMatKhau",
+      "fields": {
+        "BamToken": "string:64",
+        "NgayHetHan": "DateTimeOffset",
+        "NgaySuDung": "DateTimeOffset?",
+        "NguoiDungId": "Guid"
+      },
+      "unique": [
+        [
+          "BamToken"
+        ]
+      ],
+      "uniqueFilters": [],
+      "fks": [
+        {
+          "nav": "NguoiDung",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiDungId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_YeuCauDatLaiMatKhau_HetHan",
+          "sql": "[NgayHetHan] > [NgayTao]"
+        }
+      ]
+    },
+    {
+      "group": "HoTro",
+      "name": "YeuCauHoTro",
+      "fields": {
+        "DonHangId": "Guid?",
+        "Loai": "LoaiYeuCauHoTro:40",
+        "Ma": "string:30",
+        "MaYeuCau": "Guid?",
+        "NguoiGuiId": "Guid",
+        "NoiDung": "string:4000",
+        "TieuDe": "string:200",
+        "TrangThai": "TrangThaiHoTro:40"
+      },
+      "unique": [
+        [
+          "Ma"
+        ],
+        [
+          "NguoiGuiId",
+          "MaYeuCau"
+        ]
+      ],
+      "uniqueFilters": [
+        {
+          "fields": [
+            "NguoiGuiId",
+            "MaYeuCau"
+          ],
+          "sql": "[MaYeuCau] IS NOT NULL"
+        }
+      ],
+      "fks": [
+        {
+          "nav": "DonHang",
+          "target": "DonHang",
+          "fields": [
+            "DonHangId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        },
+        {
+          "nav": "NguoiGui",
+          "target": "NguoiDung",
+          "fields": [
+            "NguoiGuiId"
+          ],
+          "principal": [
+            "Id"
+          ]
+        }
+      ],
+      "computed": {},
+      "checks": [
+        {
+          "name": "CK_YeuCauHoTro_Loai",
+          "sql": "[Loai] IN (N'DonHangVanChuyen', N'ThanhToanHoanTien', N'TaiKhoanKhac')"
+        },
+        {
+          "name": "CK_YeuCauHoTro_TrangThai",
+          "sql": "[TrangThai] IN (N'Moi', N'DangXuLy', N'DaGiaiQuyet')"
+        }
+      ]
+    }
+  ]
+}

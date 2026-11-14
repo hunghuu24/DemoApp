@@ -1,0 +1,22 @@
+[
+    {
+        "name":  "listing-keyboard-description.png",
+        "bytes":  40548,
+        "sha256":  "6042253F269FC3C3A330F043126ED9CF95B308E34098B28B5A8056014D1C4B51"
+    },
+    {
+        "name":  "listing-keyboard-name.png",
+        "bytes":  43720,
+        "sha256":  "26889EA37189BD9CF5AC71924EA3785082AEECBD6EAAF7D92191823AF43EFD91"
+    },
+    {
+        "name":  "smart-swap-320-font130.png",
+        "bytes":  35740,
+        "sha256":  "AD8F712AF75DEED54BCB15D6F3020E5232930303CEC9B02929FACCEE21FF9256"
+    },
+    {
+        "name":  "smart-swap-long-draft.png",
+        "bytes":  50624,
+        "sha256":  "48EF965BB477CDEACB43C336B6F1B997FBDF874D70C180735E4CBE2E8AADDD16"
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "uiTestCases":  22,
+    "uiTestsPassed":  true,
+    "rateLimitErrors":  0,
+    "screenshots":  121,
+    "lintErrors":  0,
+    "lintWarnings":  24,
+    "physicalPhoneUiVerified":  false,
+    "physicalPhoneBlock":  "Automatic approval review rejected install and inspection: blocked by policy",
+    "backendSourceChanged":  false,
+    "viewModelsChanged":  false,
+    "finalResponsiveTestsPassed":  true,
+    "finalResponsiveChecks":  [
+                                  "keyboard-visible form and action",
+                                  "320x640 / font130 three-person diagram",
+                                  "30-line draft preserved with a four-line composer",
+                                  "Vietnamese system status labels"
+                              ],
+    "finalBuild":  "12-final-validation-build.txt",
+    "apkSha256":  "A82576C3CF868A8AEAD2B91F162AB4A5A9312F91329666555D744DC920B7B387"
+}

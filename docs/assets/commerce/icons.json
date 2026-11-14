@@ -1,0 +1,22 @@
+[
+  {
+    "name": "paperclip",
+    "nodeId": "205:118300",
+    "vectors": [
+      "205:118301"
+    ],
+    "file": "ic_fg_commerce_paperclip.xml",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "name": "send",
+    "nodeId": "205:118304",
+    "vectors": [
+      "205:118305"
+    ],
+    "file": "ic_fg_commerce_send.xml",
+    "width": 18,
+    "height": 18
+  }
+]

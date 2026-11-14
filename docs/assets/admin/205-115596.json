@@ -1,0 +1,1719 @@
+{
+  "id": "205:115596",
+  "name": "Admin · Xử lý tranh chấp",
+  "type": "FRAME",
+  "size": {
+    "x": 360,
+    "y": 800
+  },
+  "transform": {
+    "m00": 1,
+    "m01": 0,
+    "m02": 3563,
+    "m10": 0,
+    "m11": 1,
+    "m12": 6320
+  },
+  "fill": [
+    {
+      "type": "SOLID",
+      "color": {
+        "r": 0.9882352948188782,
+        "g": 0.9921568632125854,
+        "b": 0.9843137264251709,
+        "a": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "blendMode": "NORMAL",
+      "authoredColor": {
+        "space": "DEFAULT",
+        "c0": 0.9882352948188782,
+        "c1": 0.9921568632125854,
+        "c2": 0.9843137264251709,
+        "c3": 1
+      }
+    }
+  ],
+  "layout": "VERTICAL",
+  "children": [
+    {
+      "id": "205:115597",
+      "name": "Thanh trạng thái Android",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 28
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 0
+      },
+      "layout": "HORIZONTAL",
+      "children": [
+        {
+          "id": "205:115598",
+          "name": "Giờ",
+          "type": "TEXT",
+          "size": {
+            "x": 24,
+            "y": 14
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 7
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.125490203499794,
+                "g": 0.18039216101169586,
+                "b": 0.14901961386203766,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.125490203499794,
+                "c1": 0.18039216101169586,
+                "c2": 0.14901961386203766,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "SemiBold",
+            "postscript": ""
+          },
+          "fontSize": 12,
+          "lineHeight": {
+            "value": 100,
+            "units": "PERCENT"
+          },
+          "text": "9:41",
+          "children": []
+        },
+        {
+          "id": "205:115599",
+          "name": "Kết nối và pin",
+          "type": "FRAME",
+          "size": {
+            "x": 48,
+            "y": 14
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 288,
+            "m10": 0,
+            "m11": 1,
+            "m12": 7
+          },
+          "layout": "HORIZONTAL",
+          "gap": 5,
+          "children": [
+            {
+              "id": "205:115600",
+              "name": "Biểu tượng",
+              "type": "VECTOR",
+              "size": {
+                "x": 12,
+                "y": 12
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 1
+              },
+              "children": []
+            },
+            {
+              "id": "205:115601",
+              "name": "Biểu tượng",
+              "type": "VECTOR",
+              "size": {
+                "x": 12,
+                "y": 12
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 17,
+                "m10": 0,
+                "m11": 1,
+                "m12": 1
+              },
+              "children": []
+            },
+            {
+              "id": "205:115602",
+              "name": "Biểu tượng",
+              "type": "VECTOR",
+              "size": {
+                "x": 14,
+                "y": 14
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 34,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "205:115603",
+      "name": "Thanh tiêu đề",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 56
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 28
+      },
+      "layout": "HORIZONTAL",
+      "gap": 14,
+      "children": [
+        {
+          "id": "205:115604",
+          "name": "Biểu tượng",
+          "type": "VECTOR",
+          "size": {
+            "x": 20,
+            "y": 20
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 18
+          },
+          "children": []
+        },
+        {
+          "id": "205:115605",
+          "name": "Tiêu đề",
+          "type": "TEXT",
+          "size": {
+            "x": 246,
+            "y": 24
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 58,
+            "m10": 0,
+            "m11": 1,
+            "m12": 16
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.125490203499794,
+                "g": 0.18039216101169586,
+                "b": 0.14901961386203766,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.125490203499794,
+                "c1": 0.18039216101169586,
+                "c2": 0.14901961386203766,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "SemiBold",
+            "postscript": ""
+          },
+          "fontSize": 20,
+          "lineHeight": {
+            "value": 1.2000000476837158,
+            "units": "RAW"
+          },
+          "text": "Xử lý KN-031",
+          "children": []
+        },
+        {
+          "id": "205:115606",
+          "name": "shield-check",
+          "type": "FRAME",
+          "size": {
+            "x": 18,
+            "y": 18
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 318,
+            "m10": 0,
+            "m11": 1,
+            "m12": 19
+          },
+          "children": [
+            {
+              "id": "205:115607",
+              "name": "Vector",
+              "type": "VECTOR",
+              "size": {
+                "x": 11.998800277709961,
+                "y": 15.003000259399414
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 3.0006000995635986,
+                "m10": 0,
+                "m11": 1,
+                "m12": 1.499400019645691
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "205:115608",
+      "name": "Nội dung",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 629
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 84
+      },
+      "layout": "VERTICAL",
+      "gap": 12,
+      "children": [
+        {
+          "id": "205:115609",
+          "name": "Nội dung",
+          "type": "TEXT",
+          "size": {
+            "x": 312,
+            "y": 17
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 12
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3960784375667572,
+                "g": 0.45490196347236633,
+                "b": 0.4156862795352936,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.3960784375667572,
+                "c1": 0.45490196347236633,
+                "c2": 0.4156862795352936,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "Regular",
+            "postscript": ""
+          },
+          "fontSize": 12,
+          "lineHeight": {
+            "value": 1.3799999952316284,
+            "units": "RAW"
+          },
+          "text": "TD-1018 · Trần Gia Huy và Lê Thu Hà",
+          "children": []
+        },
+        {
+          "id": "205:115628",
+          "name": "Trường nhập liệu",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 100
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 354
+          },
+          "layout": "VERTICAL",
+          "gap": 5,
+          "children": [
+            {
+              "id": "205:115629",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 312,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Medium",
+                "postscript": ""
+              },
+              "fontSize": 13,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Nội dung thông báo cho hai bên",
+              "children": []
+            },
+            {
+              "id": "205:115630",
+              "name": "Ô nhập",
+              "type": "FRAME",
+              "size": {
+                "x": 312,
+                "y": 77
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 23
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 12,
+              "layout": "HORIZONTAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:115631",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 284,
+                    "y": 57
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 14,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 10
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 14,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Hai bên hoàn trả JBL và bàn phím trước 31/10. Huy hoàn lại Hà 200.000đ. Cung cấp ảnh xác nhận giao trả.",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "205:115610",
+          "name": "Thẻ thông tin",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 127
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 41
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 1,
+                "c1": 1,
+                "c2": 1,
+                "c3": 1
+              }
+            }
+          ],
+          "radius": 20,
+          "layout": "VERTICAL",
+          "gap": 8,
+          "children": [
+            {
+              "id": "205:115611",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 288,
+                "y": 21
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 12
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "SemiBold",
+                "postscript": ""
+              },
+              "fontSize": 15,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Căn cứ đã xác minh",
+              "children": []
+            },
+            {
+              "id": "205:115612",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 288,
+                "y": 51
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 41
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Regular",
+                "postscript": ""
+              },
+              "fontSize": 12,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Video 09:18 ngày 29/10 cho thấy loa JBL rè trên 50% âm lượng. Tin đăng và chat của Huy ghi “hoạt động tốt”.",
+              "children": []
+            },
+            {
+              "id": "205:115613",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 288,
+                "y": 15
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 100
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.1568627506494522,
+                    "g": 0.45098039507865906,
+                    "b": 0.30980393290519714,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.1568627506494522,
+                    "c1": 0.45098039507865906,
+                    "c2": 0.30980393290519714,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Regular",
+                "postscript": ""
+              },
+              "fontSize": 11,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Xem 3 bằng chứng & lịch sử phản hồi ›",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:115632",
+          "name": "Ô đánh dấu",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 19
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 466
+          },
+          "layout": "HORIZONTAL",
+          "gap": 9,
+          "children": [
+            {
+              "id": "205:115633",
+              "name": "Chỉ báo lựa chọn",
+              "type": "FRAME",
+              "size": {
+                "x": 19,
+                "y": 19
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.1568627506494522,
+                    "g": 0.45098039507865906,
+                    "b": 0.30980393290519714,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.1568627506494522,
+                    "c1": 0.45098039507865906,
+                    "c2": 0.30980393290519714,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 4,
+              "layout": "HORIZONTAL",
+              "children": [
+                {
+                  "id": "205:115634",
+                  "name": "check",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 13,
+                    "y": 13
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 3,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 3
+                  },
+                  "children": [
+                    {
+                      "id": "205:115635",
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "size": {
+                        "x": 8.665800094604492,
+                        "y": 5.957900047302246
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 2.167099952697754,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 3.25
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "205:115636",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 284,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 28,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Regular",
+                "postscript": ""
+              },
+              "fontSize": 13,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Gửi thông báo cho cả Huy và Hà",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:115637",
+          "name": "Thông báo",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 75
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 497
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.9803921580314636,
+                "g": 0.9333333373069763,
+                "b": 0.8941176533699036,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.9803921580314636,
+                "c1": 0.9333333373069763,
+                "c2": 0.8941176533699036,
+                "c3": 1
+              }
+            }
+          ],
+          "radius": 12,
+          "layout": "HORIZONTAL",
+          "gap": 8,
+          "children": [
+            {
+              "id": "205:115638",
+              "name": "triangle-alert",
+              "type": "FRAME",
+              "size": {
+                "x": 18,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 12
+              },
+              "children": [
+                {
+                  "id": "205:115639",
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "size": {
+                    "x": 15.011959075927734,
+                    "y": 13.510482788085938
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 1.486799955368042,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 2.2392001152038574
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "205:115640",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 262,
+                "y": 51
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 38,
+                "m10": 0,
+                "m11": 1,
+                "m12": 12
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.6078431606292725,
+                    "g": 0.3686274588108063,
+                    "b": 0.19607843458652496,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.6078431606292725,
+                    "c1": 0.3686274588108063,
+                    "c2": 0.19607843458652496,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Regular",
+                "postscript": ""
+              },
+              "fontSize": 12,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Quyết định được ghi vào nhật ký. Chỉ đóng khiếu nại sau khi xác minh hai bên đã thực hiện; ứng dụng không tự hoàn tiền.",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:115625",
+          "name": "Lựa chọn đơn",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 19
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 323
+          },
+          "layout": "HORIZONTAL",
+          "gap": 9,
+          "children": [
+            {
+              "id": "205:115626",
+              "name": "Chỉ báo lựa chọn",
+              "type": "FRAME",
+              "size": {
+                "x": 19,
+                "y": 19
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 100,
+              "layout": "HORIZONTAL",
+              "children": []
+            },
+            {
+              "id": "205:115627",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 284,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 28,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Regular",
+                "postscript": ""
+              },
+              "fontSize": 13,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Giữ giao dịch, thương lượng hỗ trợ",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:115614",
+          "name": "Trường nhập liệu",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 69
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 180
+          },
+          "layout": "VERTICAL",
+          "gap": 5,
+          "children": [
+            {
+              "id": "205:115615",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 312,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Medium",
+                "postscript": ""
+              },
+              "fontSize": 13,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Kết luận",
+              "children": []
+            },
+            {
+              "id": "205:115616",
+              "name": "Ô nhập",
+              "type": "FRAME",
+              "size": {
+                "x": 312,
+                "y": 46
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 23
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 12,
+              "layout": "HORIZONTAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:115617",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 258,
+                    "y": 19
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 14,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 13.5
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 14,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Chấp nhận khiếu nại của Hà",
+                  "children": []
+                },
+                {
+                  "id": "205:115618",
+                  "name": "chevron-down",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 18,
+                    "y": 18
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 280,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 14
+                  },
+                  "children": [
+                    {
+                      "id": "205:115619",
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "size": {
+                        "x": 9,
+                        "y": 4.5
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 4.5,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 6.75
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "205:115621",
+          "name": "Lựa chọn đơn",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 19
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 292
+          },
+          "layout": "HORIZONTAL",
+          "gap": 9,
+          "children": [
+            {
+              "id": "205:115622",
+              "name": "Chỉ báo lựa chọn",
+              "type": "FRAME",
+              "size": {
+                "x": 19,
+                "y": 19
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.1568627506494522,
+                    "g": 0.45098039507865906,
+                    "b": 0.30980393290519714,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.1568627506494522,
+                    "c1": 0.45098039507865906,
+                    "c2": 0.30980393290519714,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 100,
+              "layout": "HORIZONTAL",
+              "children": [
+                {
+                  "id": "205:115623",
+                  "name": "Đã chọn",
+                  "type": "ELLIPSE",
+                  "size": {
+                    "x": 7,
+                    "y": 7
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 6,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 6
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 1,
+                        "c1": 1,
+                        "c2": 1,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "205:115624",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 284,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 28,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "Regular",
+                "postscript": ""
+              },
+              "fontSize": 13,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Hoàn trả hai sản phẩm và 200.000đ tiền bù",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:115620",
+          "name": "Nội dung",
+          "type": "TEXT",
+          "size": {
+            "x": 312,
+            "y": 19
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 261
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.125490203499794,
+                "g": 0.18039216101169586,
+                "b": 0.14901961386203766,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.125490203499794,
+                "c1": 0.18039216101169586,
+                "c2": 0.14901961386203766,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "SemiBold",
+            "postscript": ""
+          },
+          "fontSize": 14,
+          "lineHeight": {
+            "value": 1.3799999952316284,
+            "units": "RAW"
+          },
+          "text": "Biện pháp xử lý",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "205:115644",
+      "name": "Text",
+      "type": "TEXT",
+      "size": {
+        "x": 0,
+        "y": 15
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 785
+      },
+      "fill": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "authoredColor": {
+            "space": "DEFAULT",
+            "c0": 0,
+            "c1": 0,
+            "c2": 0,
+            "c3": 1
+          }
+        }
+      ],
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "postscript": ""
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "value": 100,
+        "units": "PERCENT"
+      },
+      "text": " ",
+      "children": []
+    },
+    {
+      "id": "205:115641",
+      "name": "Hành động cố định",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 72
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 713
+      },
+      "fill": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.9882352948188782,
+            "g": 0.9921568632125854,
+            "b": 0.9843137264251709,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "authoredColor": {
+            "space": "DEFAULT",
+            "c0": 0.9882352948188782,
+            "c1": 0.9921568632125854,
+            "c2": 0.9843137264251709,
+            "c3": 1
+          }
+        }
+      ],
+      "layout": "VERTICAL",
+      "gap": 8,
+      "children": [
+        {
+          "id": "205:115642",
+          "name": "Nút hành động",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 48
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 12
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.1568627506494522,
+                "g": 0.45098039507865906,
+                "b": 0.30980393290519714,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.1568627506494522,
+                "c1": 0.45098039507865906,
+                "c2": 0.30980393290519714,
+                "c3": 1
+              }
+            }
+          ],
+          "radius": 100,
+          "layout": "HORIZONTAL",
+          "children": [
+            {
+              "id": "205:115643",
+              "name": "Nhãn",
+              "type": "TEXT",
+              "size": {
+                "x": 162,
+                "y": 16
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 75,
+                "m10": 0,
+                "m11": 1,
+                "m12": 16
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "SemiBold",
+                "postscript": ""
+              },
+              "fontSize": 14,
+              "lineHeight": {
+                "value": 100,
+                "units": "PERCENT"
+              },
+              "text": "Xác nhận quyết định xử lý",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

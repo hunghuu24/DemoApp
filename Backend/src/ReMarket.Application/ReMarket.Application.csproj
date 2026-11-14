@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../ReMarket.Domain/ReMarket.Domain.csproj" />
+  </ItemGroup>
+</Project>

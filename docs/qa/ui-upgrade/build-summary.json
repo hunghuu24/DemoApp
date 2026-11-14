@@ -1,0 +1,62 @@
+[
+    {
+        "log":  "01-theme-build.txt",
+        "successful":  true,
+        "duration":  "3m 11s"
+    },
+    {
+        "log":  "02-home-build.txt",
+        "successful":  true,
+        "duration":  "48s"
+    },
+    {
+        "log":  "03-search-detail-build.txt",
+        "successful":  true,
+        "duration":  "36s"
+    },
+    {
+        "log":  "04-listings-build.txt",
+        "successful":  true,
+        "duration":  "36s"
+    },
+    {
+        "log":  "05-commerce-build.txt",
+        "successful":  true,
+        "duration":  "35s"
+    },
+    {
+        "log":  "06-exchange-build.txt",
+        "successful":  true,
+        "duration":  "37s"
+    },
+    {
+        "log":  "07-smart-swap-build.txt",
+        "successful":  true,
+        "duration":  "37s"
+    },
+    {
+        "log":  "08-chat-account-admin-build.txt",
+        "successful":  true,
+        "duration":  "3m 4s"
+    },
+    {
+        "log":  "09-polish-build.txt",
+        "successful":  true,
+        "duration":  "2m 7s"
+    },
+    {
+        "log":  "10-final-build.txt",
+        "successful":  true,
+        "duration":  "2m"
+    },
+    {
+        "log":  "11-chat-responsive-build.txt",
+        "successful":  true,
+        "duration":  "2m 31s"
+    },
+    {
+        "log":  "12-final-validation-build.txt",
+        "successful":  true,
+        "duration":  "2m 1s"
+    }
+]

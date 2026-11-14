@@ -1,0 +1,9 @@
+Bang        KhoaNgoai   CheckConstraints Triggers    Migrations 
+----------- ----------- ---------------- ----------- -----------
+         48         100               70          22          11
+TrangThai                                GiaoDich                                 NguoiNhan  
+---------------------------------------- ---------------------------------------- -----------
+DangBanGiao                              DangThucHien                                       2
+ActiveAdminUiTestHolds
+----------------------
+                     0

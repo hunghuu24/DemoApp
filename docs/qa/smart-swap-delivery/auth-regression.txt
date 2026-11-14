@@ -1,0 +1,55 @@
+﻿PASS Fresh SQL migrations and USER/ADMIN roles
+PASS Weak password rejected [400]
+PASS Real registration creates account [201]
+PASS Registration only grants USER
+PASS Password stored as a valid salted PBKDF2 hash
+PASS Duplicate normalized email rejected [409]
+PASS Client cannot add ADMIN field [400]
+PASS Wrong password rejected [401]
+PASS Anonymous profile rejected [401]
+PASS Login through real password verification [200]
+PASS USER can access home [200]
+PASS USER forbidden from ADMIN endpoint [403]
+PASS Profile identity comes from JWT subject
+PASS Profile persists to SQL [200]
+PASS Saved profile returned
+PASS Stale profile rowversion rejected [409]
+PASS Tampered signature rejected [401]
+PASS Wrong issuer rejected [401]
+PASS Wrong audience rejected [401]
+PASS Expired access token rejected [401]
+PASS Refresh rotates session credentials [200]
+PASS Old refresh token cannot replay [401]
+PASS Old access invalid after refresh [401]
+PASS Avatar decoded, sanitized and saved [200]
+PASS Authenticated avatar served as JPEG
+PASS Unsupported avatar format rejected [400]
+PASS Forgot password queues recovery message [202]
+PASS Forgot response does not reveal account or token
+PASS Only hash of recovery token stored in SQL
+PASS Expired recovery token rejected [400]
+PASS Invalid recovery token rejected [400]
+PASS Recovery token resets real password [204]
+PASS Recovery token is single use [400]
+PASS Password reset revokes existing access [401]
+PASS Password reset revokes refresh [401]
+PASS Old password no longer works [401]
+PASS Login through real password verification [200]
+PASS Logout revokes server session [204]
+PASS Logged-out access rejected [401]
+PASS Logged-out refresh rejected [401]
+PASS Login through real password verification [200]
+PASS Change password checks current password [400]
+PASS Authenticated password change persists [204]
+PASS Password change revokes current token [401]
+PASS Login through real password verification [200]
+PASS Login through real password verification [200]
+PASS Current device logout succeeds [204]
+PASS Other device session survives current-device logout [200]
+PASS Login through real password verification [200]
+PASS Database role emitted as ADMIN
+PASS ADMIN can access management [200]
+PASS Removing SQL role immediately changes authorization [403]
+PASS Locked account token rejected [401]
+PASS Locked account cannot log in [401]
+Account HTTP/SQL checks: 54 passed. No credentials or tokens printed.

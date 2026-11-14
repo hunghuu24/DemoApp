@@ -1,0 +1,38 @@
+{
+    "date":  "2026-11-14",
+    "changedUiFiles":  [
+                           "feature/admin/QuanTriApp.kt",
+                           "feature/admin/QuanTriDashboard.kt",
+                           "feature/admin/TaiKhoanQuanTriScreen.kt",
+                           "feature/auth/TaiKhoanApp.kt",
+                           "feature/account/HoSoScreens.kt",
+                           "feature/account/TrangChinhScreens.kt"
+                       ],
+    "entry":  "Drawer avatar/name/role row",
+    "dashboardAccountButtonRemoved":  true,
+    "dedicatedAdminAccountScreen":  true,
+    "marketplaceLinksShownToAdmin":  false,
+    "sectionPreservedOnBack":  true,
+    "backendSourceChanged":  false,
+    "viewModelsChanged":  false,
+    "buildSuccessful":  true,
+    "lintErrors":  0,
+    "lintWarnings":  24,
+    "uiTestsPassed":  2,
+    "uiTestSeconds":  68.283,
+    "coverage":  [
+                     "USER registration/login/profile update/logout",
+                     "Admin drawer entry and dedicated account",
+                     "Admin profile/edit/password navigation",
+                     "Toolbar and system Back preserve Admin section",
+                     "Admin role preserved after Activity restart",
+                     "Logged-out Admin JWT rejected with HTTP 401"
+                 ],
+    "adminPasswordChangeScope":  "Navigation and blank-input validation only; existing Admin password and profile unchanged",
+    "initialFailures":  [
+                            "Test compile reference corrected",
+                            "Emulator System UI ANR stole window focus; recovered emulator and reran the same tests successfully"
+                        ],
+    "physicalPhoneInstalled":  false,
+    "apkSha256":  "B53CC157E01837260D3FA0AC1602A17B6CE81CEAA893DA3FADACC0C7DADD3DFC"
+}

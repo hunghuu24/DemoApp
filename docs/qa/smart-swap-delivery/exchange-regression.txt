@@ -1,0 +1,126 @@
+﻿PASS Register real MinhAnhDemo [201]
+PASS Login real MinhAnhDemo [200]
+PASS Register real HoangNamDemo [201]
+PASS Login real HoangNamDemo [200]
+PASS Register real Stranger [201]
+PASS Login real Stranger [200]
+PASS Register real Moderator [201]
+PASS Login real Moderator [200]
+PASS Anonymous cannot post exchange [401]
+PASS At least one exchange mode required [400]
+PASS Disabled compensation cannot retain nonzero cap [400]
+PASS /api/tindang [201]
+PASS Exchange value and needs persisted separately from sale price
+PASS Cannot publish without picture [400]
+PASS Upload exchange picture [200]
+PASS Upload exchange picture [200]
+PASS Upload exchange picture [200]
+PASS Upload exchange picture [200]
+PASS Upload exchange picture [200]
+PASS Upload exchange picture [200]
+PASS Upload exchange picture [400]
+PASS Draft not selectable
+PASS Create exchange draft [201]
+PASS Upload exchange picture [200]
+PASS /api/tindang/0c83cb9f-67aa-4a8f-81a8-c166d373774e/gui-duyet [200]
+PASS /api/admin/tindang/0c83cb9f-67aa-4a8f-81a8-c166d373774e/duyet [200]
+PASS Create exchange draft [201]
+PASS Upload exchange picture [200]
+PASS /api/tindang/196f5c62-403a-46cc-a946-69b0acb3ccf3/gui-duyet [200]
+PASS /api/admin/tindang/196f5c62-403a-46cc-a946-69b0acb3ccf3/duyet [200]
+PASS Create exchange draft [201]
+PASS Upload exchange picture [200]
+PASS /api/tindang/32bcf32a-9b2b-4e70-9ca2-cac505ffe657/gui-duyet [200]
+PASS /api/admin/tindang/32bcf32a-9b2b-4e70-9ca2-cac505ffe657/duyet [200]
+PASS Create exchange draft [201]
+PASS Upload exchange picture [200]
+PASS /api/tindang/c4a83328-b94e-4a23-9366-e5245ef060aa/gui-duyet [200]
+PASS /api/admin/tindang/c4a83328-b94e-4a23-9366-e5245ef060aa/duyet [200]
+PASS False 1-to-1 flag survives SQL default
+PASS View exchange detail [200]
+PASS Accent-insensitive exchange search and filter
+PASS Selector owns items and excludes Smart-Swap-only listings
+PASS Discovery/detail/selector GETs never create transactions
+PASS Cannot offer another owner's item [403]
+PASS Cannot exchange with self [400]
+PASS Draft cannot enter offer [409]
+PASS Smart-only listing cannot enter 1-to-1 [409]
+PASS Payer cap enforced [400]
+PASS Send real offer [201]
+PASS Offer creates version1 with sender consent only
+PASS Sending pending offer does not reserve stock
+PASS Retry same creation [201]
+PASS Creation key avoids duplicate transaction
+PASS Creation key cannot change payload [409]
+PASS Offer privacy [404]
+PASS Creator cannot self-approve [403]
+PASS Handover locked before mutual consent [409]
+PASS Receiver inbox uses authenticated identity
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/dexuatlai [200]
+PASS Counter preserves old terms and resets consent
+PASS Stale agreement cannot be accepted [409]
+PASS Counter creator cannot approve for partner [403]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/hoithoai [200]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/hoithoai [200]
+PASS Private exchange chat reused for both parties
+PASS /api/hoithoai/4073a2f1-4840-4d41-909a-faa278b8103b/tinnhan [200]
+PASS Stranger cannot enter exchange chat [404]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/phanhoi [200]
+PASS Mutual consent finalizes exact version
+PASS Both items reserved atomically
+PASS Held item disappears from selector
+PASS Held item withdrawn from public catalog [404]
+PASS Participant still sees held picture [200]
+PASS Private offer picture protected [404]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/dexuatlai [200]
+PASS Counter after acceptance locks handover and resets both-side agreement
+PASS Cannot hand over superseded agreement [409]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/phanhoi [200]
+PASS No review before completion [409]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/giaonhan [200]
+PASS First receipt waits for partner and only sets payer confirmation
+PASS No cancellation after handover [409]
+PASS No counter after handover [409]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/giaonhan [200]
+PASS Upload handover evidence [200]
+PASS Upload handover evidence [200]
+PASS Evidence retry avoids duplicates
+PASS Evidence privacy enforced [404]
+PASS Upload handover evidence [409]
+PASS Upload handover evidence [200]
+PASS Upload handover evidence [200]
+PASS Upload handover evidence [200]
+PASS Upload handover evidence [200]
+PASS Upload handover evidence [400]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/giaonhan [200]
+PASS Two receipts and compensation confirmations complete transaction
+PASS Completed items marked exchanged and holds released
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/danhgia [200]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/danhgia [200]
+PASS Duplicate review rejected [409]
+PASS /api/traodoi/f961da5a-504e-4395-8a1d-ed3196a7cd80/danhgia [200]
+PASS Both partners may rate exactly once
+PASS Create exchange draft [201]
+PASS Upload exchange picture [200]
+PASS /api/tindang/1a24894c-ea95-4b6d-8a6e-fa0ff7ceac5a/gui-duyet [200]
+PASS /api/admin/tindang/1a24894c-ea95-4b6d-8a6e-fa0ff7ceac5a/duyet [200]
+PASS /api/traodoi [201]
+PASS /api/traodoi/a02e9900-1326-4a16-81e8-8a9232f97407/phanhoi [200]
+PASS Decline persists without reserving items
+PASS /api/traodoi [201]
+PASS /api/traodoi/1fc0250f-716e-4360-a0c5-d2de22c6f769/phanhoi [200]
+PASS /api/traodoi/1fc0250f-716e-4360-a0c5-d2de22c6f769/huy [200]
+PASS Cancel accepted exchange releases both reservations
+PASS /api/traodoi [201]
+PASS Expired pending offer persists cancellation
+PASS Create exchange draft [201]
+PASS Upload exchange picture [200]
+PASS /api/tindang/7aefb633-1299-4fe7-823e-29190fbae639/gui-duyet [200]
+PASS /api/admin/tindang/7aefb633-1299-4fe7-823e-29190fbae639/duyet [200]
+PASS /api/traodoi [201]
+PASS /api/traodoi [201]
+PASS Competing exchanges cannot reserve the same product twice
+PASS /api/traodoi/b6eaad97-776b-4156-b955-5a82592e4439/huy [200]
+PASS Disputed transaction cannot be cancelled [409]
+PASS Reading expired legacy dispute preserves dispute state
+Exchange HTTP/SQL checks: 125 passed. Two demo participants, real JWT/SQL. No credentials printed.

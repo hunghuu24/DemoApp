@@ -1,0 +1,7 @@
+﻿{
+    "backendReady":  true,
+    "sqlReady":  true,
+    "demoLogin":  "PASS",
+    "authenticatedProfile":  "PASS",
+    "logoutStatus":  204
+}

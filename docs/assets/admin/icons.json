@@ -1,0 +1,47 @@
+[
+  {
+    "name": "layout-dashboard",
+    "nodeId": "205:116774",
+    "file": "ic_fg_admin_layout_dashboard.xml"
+  },
+  {
+    "name": "users",
+    "nodeId": "205:116778",
+    "file": "ic_fg_admin_users.xml"
+  },
+  {
+    "name": "package",
+    "nodeId": "205:116782",
+    "file": "ic_fg_admin_package.xml"
+  },
+  {
+    "name": "arrow-left-right",
+    "nodeId": "205:116786",
+    "file": "ic_fg_admin_arrow_left_right.xml"
+  },
+  {
+    "name": "flag",
+    "nodeId": "205:116790",
+    "file": "ic_fg_admin_flag.xml"
+  },
+  {
+    "name": "layout-grid",
+    "nodeId": "205:116795",
+    "file": "ic_fg_admin_layout_grid.xml"
+  },
+  {
+    "name": "chart-column",
+    "nodeId": "205:116799",
+    "file": "ic_fg_admin_chart_column.xml"
+  },
+  {
+    "name": "log-out",
+    "nodeId": "205:116803",
+    "file": "ic_fg_admin_log_out.xml"
+  },
+  {
+    "name": "menu",
+    "nodeId": "205:116660",
+    "file": "ic_fg_admin_menu.xml"
+  }
+]

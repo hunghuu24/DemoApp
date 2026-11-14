@@ -1,0 +1,3762 @@
+{
+  "id": "205:116809",
+  "name": "Admin · Tổng quan",
+  "type": "FRAME",
+  "size": {
+    "x": 360,
+    "y": 800
+  },
+  "transform": {
+    "m00": 1,
+    "m01": 0,
+    "m02": 2731,
+    "m10": 0,
+    "m11": 1,
+    "m12": 4480
+  },
+  "fill": [
+    {
+      "type": "SOLID",
+      "color": {
+        "r": 0.9882352948188782,
+        "g": 0.9921568632125854,
+        "b": 0.9843137264251709,
+        "a": 1
+      },
+      "opacity": 1,
+      "visible": true,
+      "blendMode": "NORMAL",
+      "authoredColor": {
+        "space": "DEFAULT",
+        "c0": 0.9882352948188782,
+        "c1": 0.9921568632125854,
+        "c2": 0.9843137264251709,
+        "c3": 1
+      }
+    }
+  ],
+  "layout": "VERTICAL",
+  "children": [
+    {
+      "id": "205:116810",
+      "name": "Thanh trạng thái Android",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 28
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 0
+      },
+      "layout": "HORIZONTAL",
+      "children": [
+        {
+          "id": "205:116811",
+          "name": "Giờ",
+          "type": "TEXT",
+          "size": {
+            "x": 24,
+            "y": 14
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 7
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.125490203499794,
+                "g": 0.18039216101169586,
+                "b": 0.14901961386203766,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.125490203499794,
+                "c1": 0.18039216101169586,
+                "c2": 0.14901961386203766,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "SemiBold",
+            "postscript": ""
+          },
+          "fontSize": 12,
+          "lineHeight": {
+            "value": 100,
+            "units": "PERCENT"
+          },
+          "text": "9:41",
+          "children": []
+        },
+        {
+          "id": "205:116812",
+          "name": "Kết nối và pin",
+          "type": "FRAME",
+          "size": {
+            "x": 48,
+            "y": 14
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 288,
+            "m10": 0,
+            "m11": 1,
+            "m12": 7
+          },
+          "layout": "HORIZONTAL",
+          "gap": 5,
+          "children": [
+            {
+              "id": "205:116813",
+              "name": "Biểu tượng",
+              "type": "VECTOR",
+              "size": {
+                "x": 12,
+                "y": 12
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 1
+              },
+              "children": []
+            },
+            {
+              "id": "205:116814",
+              "name": "Biểu tượng",
+              "type": "VECTOR",
+              "size": {
+                "x": 12,
+                "y": 12
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 17,
+                "m10": 0,
+                "m11": 1,
+                "m12": 1
+              },
+              "children": []
+            },
+            {
+              "id": "205:116815",
+              "name": "Biểu tượng",
+              "type": "VECTOR",
+              "size": {
+                "x": 14,
+                "y": 14
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 34,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "205:116816",
+      "name": "Thanh tiêu đề",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 56
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 28
+      },
+      "layout": "HORIZONTAL",
+      "gap": 14,
+      "children": [
+        {
+          "id": "205:116817",
+          "name": "menu",
+          "type": "FRAME",
+          "size": {
+            "x": 20,
+            "y": 20
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 18
+          },
+          "children": [
+            {
+              "id": "205:116818",
+              "name": "Vector",
+              "type": "VECTOR",
+              "size": {
+                "x": 13.331999778747559,
+                "y": 11.668000221252441
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 3.3340001106262207,
+                "m10": 0,
+                "m11": 1,
+                "m12": 4.165999889373779
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:116819",
+          "name": "Tiêu đề",
+          "type": "TEXT",
+          "size": {
+            "x": 246,
+            "y": 24
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 58,
+            "m10": 0,
+            "m11": 1,
+            "m12": 16
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.125490203499794,
+                "g": 0.18039216101169586,
+                "b": 0.14901961386203766,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.125490203499794,
+                "c1": 0.18039216101169586,
+                "c2": 0.14901961386203766,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "SemiBold",
+            "postscript": ""
+          },
+          "fontSize": 20,
+          "lineHeight": {
+            "value": 1.2000000476837158,
+            "units": "RAW"
+          },
+          "text": "Tổng quan",
+          "children": []
+        },
+        {
+          "id": "205:116820",
+          "name": "shield-check",
+          "type": "FRAME",
+          "size": {
+            "x": 18,
+            "y": 18
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 318,
+            "m10": 0,
+            "m11": 1,
+            "m12": 19
+          },
+          "children": [
+            {
+              "id": "205:116821",
+              "name": "Vector",
+              "type": "VECTOR",
+              "size": {
+                "x": 11.998800277709961,
+                "y": 15.003000259399414
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 3.0006000995635986,
+                "m10": 0,
+                "m11": 1,
+                "m12": 1.499400019645691
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "205:116822",
+      "name": "Nội dung",
+      "type": "FRAME",
+      "size": {
+        "x": 360,
+        "y": 701
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 84
+      },
+      "layout": "VERTICAL",
+      "gap": 12,
+      "children": [
+        {
+          "id": "205:116823",
+          "name": "Hàng nội dung",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 46
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 12
+          },
+          "layout": "HORIZONTAL",
+          "gap": 10,
+          "children": [
+            {
+              "id": "205:116824",
+              "name": "Chào quản trị viên",
+              "type": "FRAME",
+              "size": {
+                "x": 282,
+                "y": 46
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "layout": "VERTICAL",
+              "gap": 3,
+              "children": [
+                {
+                  "id": "205:116825",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 282,
+                    "y": 26
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Bold",
+                    "postscript": ""
+                  },
+                  "fontSize": 19,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Chào Linh Nguyễn",
+                  "children": []
+                },
+                {
+                  "id": "205:116826",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 282,
+                    "y": 17
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 29
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.3960784375667572,
+                        "g": 0.45490196347236633,
+                        "b": 0.4156862795352936,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.3960784375667572,
+                        "c1": 0.45490196347236633,
+                        "c2": 0.4156862795352936,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 12,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Tổng quan hoạt động cộng đồng",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "205:116827",
+              "name": "bell",
+              "type": "FRAME",
+              "size": {
+                "x": 20,
+                "y": 20
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 292,
+                "m10": 0,
+                "m11": 1,
+                "m12": 13
+              },
+              "children": [
+                {
+                  "id": "205:116828",
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "size": {
+                    "x": 15,
+                    "y": 16.667999267578125
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 2.5,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 1.6660000085830688
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "205:116914",
+          "name": "Nội dung",
+          "type": "TEXT",
+          "size": {
+            "x": 312,
+            "y": 14
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 649
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.3960784375667572,
+                "g": 0.45490196347236633,
+                "b": 0.4156862795352936,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.3960784375667572,
+                "c1": 0.45490196347236633,
+                "c2": 0.4156862795352936,
+                "c3": 1
+              }
+            }
+          ],
+          "font": {
+            "family": "Roboto",
+            "style": "Regular",
+            "postscript": ""
+          },
+          "fontSize": 10,
+          "lineHeight": {
+            "value": 1.3799999952316284,
+            "units": "RAW"
+          },
+          "text": "Cập nhật 16:30 · 29/10/2026",
+          "children": []
+        },
+        {
+          "id": "205:116829",
+          "name": "Trạng thái",
+          "type": "FRAME",
+          "size": {
+            "x": 157,
+            "y": 21
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 70
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 0.9176470637321472,
+                "g": 0.9529411792755127,
+                "b": 0.9254902005195618,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 0.9176470637321472,
+                "c1": 0.9529411792755127,
+                "c2": 0.9254902005195618,
+                "c3": 1
+              }
+            }
+          ],
+          "radius": 100,
+          "layout": "HORIZONTAL",
+          "children": [
+            {
+              "id": "205:116830",
+              "name": "Nhãn",
+              "type": "TEXT",
+              "size": {
+                "x": 139,
+                "y": 13
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 9,
+                "m10": 0,
+                "m11": 1,
+                "m12": 4
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.1568627506494522,
+                    "g": 0.45098039507865906,
+                    "b": 0.30980393290519714,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.1568627506494522,
+                    "c1": 0.45098039507865906,
+                    "c2": 0.30980393290519714,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "SemiBold",
+                "postscript": ""
+              },
+              "fontSize": 11,
+              "lineHeight": {
+                "value": 100,
+                "units": "PERCENT"
+              },
+              "text": "01–29/10/2026 · Tháng này",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "205:116899",
+          "name": "Thẻ thông tin",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 106
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 531
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 1,
+                "c1": 1,
+                "c2": 1,
+                "c3": 1
+              }
+            }
+          ],
+          "radius": 20,
+          "layout": "VERTICAL",
+          "gap": 8,
+          "children": [
+            {
+              "id": "205:116900",
+              "name": "Nội dung",
+              "type": "TEXT",
+              "size": {
+                "x": 288,
+                "y": 21
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 12
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.125490203499794,
+                    "g": 0.18039216101169586,
+                    "b": 0.14901961386203766,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.125490203499794,
+                    "c1": 0.18039216101169586,
+                    "c2": 0.14901961386203766,
+                    "c3": 1
+                  }
+                }
+              ],
+              "font": {
+                "family": "Roboto",
+                "style": "SemiBold",
+                "postscript": ""
+              },
+              "fontSize": 15,
+              "lineHeight": {
+                "value": 1.3799999952316284,
+                "units": "RAW"
+              },
+              "text": "Việc cần làm",
+              "children": []
+            },
+            {
+              "id": "205:116901",
+              "name": "Hàng nội dung",
+              "type": "FRAME",
+              "size": {
+                "x": 288,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 41
+              },
+              "layout": "HORIZONTAL",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "205:116902",
+                  "name": "clipboard-check",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 18,
+                    "y": 18
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0
+                  },
+                  "children": [
+                    {
+                      "id": "205:116903",
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "size": {
+                        "x": 11.998800277709961,
+                        "y": 15.001199722290039
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 3.0006000995635986,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 1.499400019645691
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "205:116904",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 235,
+                    "y": 17
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 28,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0.5
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 12,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "28 tin đang chờ kiểm duyệt",
+                  "children": []
+                },
+                {
+                  "id": "205:116905",
+                  "name": "chevron-right",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 15,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 273,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 1.5
+                  },
+                  "children": [
+                    {
+                      "id": "205:116906",
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "size": {
+                        "x": 3.75,
+                        "y": 7.5
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 5.625,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 3.75
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "205:116907",
+              "name": "Đường phân cách",
+              "type": "ROUNDED_RECTANGLE",
+              "size": {
+                "x": 288,
+                "y": 1
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 67
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 0.8627451062202454,
+                    "g": 0.8941176533699036,
+                    "b": 0.8666666746139526,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 0.8627451062202454,
+                    "c1": 0.8941176533699036,
+                    "c2": 0.8666666746139526,
+                    "c3": 1
+                  }
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "205:116908",
+              "name": "Hàng nội dung",
+              "type": "FRAME",
+              "size": {
+                "x": 288,
+                "y": 18
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 76
+              },
+              "layout": "HORIZONTAL",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "205:116909",
+                  "name": "triangle-alert",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 18,
+                    "y": 18
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0
+                  },
+                  "children": [
+                    {
+                      "id": "205:116910",
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "size": {
+                        "x": 15.011959075927734,
+                        "y": 13.510482788085938
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 1.486799955368042,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 2.2392001152038574
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "205:116911",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 235,
+                    "y": 17
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 28,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0.5
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 12,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "TD-1018 · Sắp hết hạn phản hồi",
+                  "children": []
+                },
+                {
+                  "id": "205:116912",
+                  "name": "chevron-right",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 15,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 273,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 1.5
+                  },
+                  "children": [
+                    {
+                      "id": "205:116913",
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "size": {
+                        "x": 3.75,
+                        "y": 7.5
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 5.625,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 3.75
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "205:116831",
+          "name": "Hàng nội dung",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 103
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 103
+          },
+          "layout": "HORIZONTAL",
+          "gap": 10,
+          "children": [
+            {
+              "id": "205:116832",
+              "name": "Thẻ thông tin",
+              "type": "FRAME",
+              "size": {
+                "x": 151,
+                "y": 103
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 20,
+              "layout": "VERTICAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:116833",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 12
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.3960784375667572,
+                        "g": 0.45490196347236633,
+                        "b": 0.4156862795352936,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.3960784375667572,
+                        "c1": 0.45490196347236633,
+                        "c2": 0.4156862795352936,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 11,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Tổng người dùng",
+                  "children": []
+                },
+                {
+                  "id": "205:116834",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 34
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 35
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Bold",
+                    "postscript": ""
+                  },
+                  "fontSize": 25,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "1.284",
+                  "children": []
+                },
+                {
+                  "id": "205:116835",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 14
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 77
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.1568627506494522,
+                        "g": 0.45098039507865906,
+                        "b": 0.30980393290519714,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.1568627506494522,
+                        "c1": 0.45098039507865906,
+                        "c2": 0.30980393290519714,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 10,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "+112 trong kỳ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "205:116836",
+              "name": "Thẻ thông tin",
+              "type": "FRAME",
+              "size": {
+                "x": 151,
+                "y": 103
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 161,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 20,
+              "layout": "VERTICAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:116837",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 12
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.3960784375667572,
+                        "g": 0.45490196347236633,
+                        "b": 0.4156862795352936,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.3960784375667572,
+                        "c1": 0.45490196347236633,
+                        "c2": 0.4156862795352936,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 11,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Tin chờ duyệt",
+                  "children": []
+                },
+                {
+                  "id": "205:116838",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 34
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 35
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Bold",
+                    "postscript": ""
+                  },
+                  "fontSize": 25,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "28",
+                  "children": []
+                },
+                {
+                  "id": "205:116839",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 14
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 77
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.1568627506494522,
+                        "g": 0.45098039507865906,
+                        "b": 0.30980393290519714,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.1568627506494522,
+                        "c1": 0.45098039507865906,
+                        "c2": 0.30980393290519714,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 10,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "480 tin tiếp nhận",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "205:116849",
+          "name": "Thẻ thông tin",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 186
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 333
+          },
+          "fill": [
+            {
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              },
+              "opacity": 1,
+              "visible": true,
+              "blendMode": "NORMAL",
+              "authoredColor": {
+                "space": "DEFAULT",
+                "c0": 1,
+                "c1": 1,
+                "c2": 1,
+                "c3": 1
+              }
+            }
+          ],
+          "radius": 20,
+          "layout": "VERTICAL",
+          "gap": 8,
+          "children": [
+            {
+              "id": "205:116850",
+              "name": "Hàng nội dung",
+              "type": "FRAME",
+              "size": {
+                "x": 288,
+                "y": 21
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 12
+              },
+              "layout": "HORIZONTAL",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "205:116851",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 139,
+                    "y": 21
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "SemiBold",
+                    "postscript": ""
+                  },
+                  "fontSize": 15,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Lượng giao dịch",
+                  "children": []
+                },
+                {
+                  "id": "205:116852",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 139,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 149,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 3
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.1568627506494522,
+                        "g": 0.45098039507865906,
+                        "b": 0.30980393290519714,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.1568627506494522,
+                        "c1": 0.45098039507865906,
+                        "c2": 0.30980393290519714,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 11,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Báo cáo ›",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "205:116853",
+              "name": "Biểu đồ giao dịch",
+              "type": "FRAME",
+              "size": {
+                "x": 288,
+                "y": 133
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 12,
+                "m10": 0,
+                "m11": 1,
+                "m12": 41
+              },
+              "layout": "VERTICAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:116854",
+                  "name": "Hàng nội dung",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 288,
+                    "y": 17
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 0
+                  },
+                  "layout": "HORIZONTAL",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "id": "205:116855",
+                      "name": "Nội dung",
+                      "type": "TEXT",
+                      "size": {
+                        "x": 139,
+                        "y": 17
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 0,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "fill": [
+                        {
+                          "type": "SOLID",
+                          "color": {
+                            "r": 0.1568627506494522,
+                            "g": 0.45098039507865906,
+                            "b": 0.30980393290519714,
+                            "a": 1
+                          },
+                          "opacity": 1,
+                          "visible": true,
+                          "blendMode": "NORMAL",
+                          "authoredColor": {
+                            "space": "DEFAULT",
+                            "c0": 0.1568627506494522,
+                            "c1": 0.45098039507865906,
+                            "c2": 0.30980393290519714,
+                            "c3": 1
+                          }
+                        }
+                      ],
+                      "font": {
+                        "family": "Roboto",
+                        "style": "Regular",
+                        "postscript": ""
+                      },
+                      "fontSize": 12,
+                      "lineHeight": {
+                        "value": 1.3799999952316284,
+                        "units": "RAW"
+                      },
+                      "text": "● Mua bán: 248",
+                      "children": []
+                    },
+                    {
+                      "id": "205:116856",
+                      "name": "Nội dung",
+                      "type": "TEXT",
+                      "size": {
+                        "x": 139,
+                        "y": 17
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 149,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "fill": [
+                        {
+                          "type": "SOLID",
+                          "color": {
+                            "r": 0.3960784375667572,
+                            "g": 0.45490196347236633,
+                            "b": 0.4156862795352936,
+                            "a": 1
+                          },
+                          "opacity": 1,
+                          "visible": true,
+                          "blendMode": "NORMAL",
+                          "authoredColor": {
+                            "space": "DEFAULT",
+                            "c0": 0.3960784375667572,
+                            "c1": 0.45490196347236633,
+                            "c2": 0.4156862795352936,
+                            "c3": 1
+                          }
+                        }
+                      ],
+                      "font": {
+                        "family": "Roboto",
+                        "style": "Regular",
+                        "postscript": ""
+                      },
+                      "fontSize": 12,
+                      "lineHeight": {
+                        "value": 1.3799999952316284,
+                        "units": "RAW"
+                      },
+                      "text": "● Trao đổi: 96",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "205:116857",
+                  "name": "Biểu đồ cột theo kỳ",
+                  "type": "FRAME",
+                  "size": {
+                    "x": 288,
+                    "y": 86
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 25
+                  },
+                  "layout": "HORIZONTAL",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "id": "205:116858",
+                      "name": "Trục số giao dịch",
+                      "type": "FRAME",
+                      "size": {
+                        "x": 22,
+                        "y": 70
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 0,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "layout": "VERTICAL",
+                      "children": [
+                        {
+                          "id": "205:116859",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 22,
+                            "y": 14
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 0
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 10,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "100",
+                          "children": []
+                        },
+                        {
+                          "id": "205:116860",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 22,
+                            "y": 14
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 28
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 10,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "50",
+                          "children": []
+                        },
+                        {
+                          "id": "205:116861",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 22,
+                            "y": 14
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 56
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 10,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "0",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "205:116862",
+                      "name": "Nhóm cột",
+                      "type": "FRAME",
+                      "size": {
+                        "x": 58.5,
+                        "y": 86
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 30,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "layout": "VERTICAL",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "id": "205:116863",
+                          "name": "Số giao dịch",
+                          "type": "FRAME",
+                          "size": {
+                            "x": 58.5,
+                            "y": 70
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 0
+                          },
+                          "layout": "HORIZONTAL",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "id": "205:116864",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 46.599998474121094
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 8.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 23.400001525878906
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116865",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "48",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116866",
+                                  "name": "Mua bán",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 33.599998474121094
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "205:116867",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 22.799999237060547
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 31.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 47.20000076293945
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116868",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.3960784375667572,
+                                        "g": 0.45490196347236633,
+                                        "b": 0.4156862795352936,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.3960784375667572,
+                                        "c1": 0.45490196347236633,
+                                        "c2": 0.4156862795352936,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "14",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116869",
+                                  "name": "Trao đổi",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 9.800000190734863
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.7176470756530762,
+                                        "g": 0.8078431487083435,
+                                        "b": 0.7490196228027344,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.7176470756530762,
+                                        "c1": 0.8078431487083435,
+                                        "c2": 0.7490196228027344,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "205:116870",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 58.5,
+                            "y": 12
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 74
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 9,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "01–07",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "205:116871",
+                      "name": "Nhóm cột",
+                      "type": "FRAME",
+                      "size": {
+                        "x": 58.5,
+                        "y": 86
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 96.5,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "layout": "VERTICAL",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "id": "205:116872",
+                          "name": "Số giao dịch",
+                          "type": "FRAME",
+                          "size": {
+                            "x": 58.5,
+                            "y": 70
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 0
+                          },
+                          "layout": "HORIZONTAL",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "id": "205:116873",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 53.599998474121094
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 8.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 16.400001525878906
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116874",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "58",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116875",
+                                  "name": "Mua bán",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 40.599998474121094
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "205:116876",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 28.399999618530273
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 31.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 41.599998474121094
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116877",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.3960784375667572,
+                                        "g": 0.45490196347236633,
+                                        "b": 0.4156862795352936,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.3960784375667572,
+                                        "c1": 0.45490196347236633,
+                                        "c2": 0.4156862795352936,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "22",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116878",
+                                  "name": "Trao đổi",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 15.399999618530273
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.7176470756530762,
+                                        "g": 0.8078431487083435,
+                                        "b": 0.7490196228027344,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.7176470756530762,
+                                        "c1": 0.8078431487083435,
+                                        "c2": 0.7490196228027344,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "205:116879",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 58.5,
+                            "y": 12
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 74
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 9,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "08–14",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "205:116889",
+                      "name": "Nhóm cột",
+                      "type": "FRAME",
+                      "size": {
+                        "x": 58.5,
+                        "y": 86
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 229.5,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "layout": "VERTICAL",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "id": "205:116890",
+                          "name": "Số giao dịch",
+                          "type": "FRAME",
+                          "size": {
+                            "x": 58.5,
+                            "y": 70
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 0
+                          },
+                          "layout": "HORIZONTAL",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "id": "205:116891",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 67.5999984741211
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 8.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 2.4000015258789062
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116892",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "78",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116893",
+                                  "name": "Mua bán",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 54.599998474121094
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "205:116894",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 36.79999923706055
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 31.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 33.19999694824219
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116895",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.3960784375667572,
+                                        "g": 0.45490196347236633,
+                                        "b": 0.4156862795352936,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.3960784375667572,
+                                        "c1": 0.45490196347236633,
+                                        "c2": 0.4156862795352936,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "34",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116896",
+                                  "name": "Trao đổi",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 23.799999237060547
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.7176470756530762,
+                                        "g": 0.8078431487083435,
+                                        "b": 0.7490196228027344,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.7176470756530762,
+                                        "c1": 0.8078431487083435,
+                                        "c2": 0.7490196228027344,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "205:116897",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 58.5,
+                            "y": 12
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 74
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 9,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "22–29",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "205:116880",
+                      "name": "Nhóm cột",
+                      "type": "FRAME",
+                      "size": {
+                        "x": 58.5,
+                        "y": 86
+                      },
+                      "transform": {
+                        "m00": 1,
+                        "m01": 0,
+                        "m02": 163,
+                        "m10": 0,
+                        "m11": 1,
+                        "m12": 0
+                      },
+                      "layout": "VERTICAL",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "id": "205:116881",
+                          "name": "Số giao dịch",
+                          "type": "FRAME",
+                          "size": {
+                            "x": 58.5,
+                            "y": 70
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 0
+                          },
+                          "layout": "HORIZONTAL",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "id": "205:116882",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 57.79999923706055
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 8.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 12.200000762939453
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116883",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "64",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116884",
+                                  "name": "Mua bán",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 44.79999923706055
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.1568627506494522,
+                                        "g": 0.45098039507865906,
+                                        "b": 0.30980393290519714,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.1568627506494522,
+                                        "c1": 0.45098039507865906,
+                                        "c2": 0.30980393290519714,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "id": "205:116885",
+                              "name": "Cột giao dịch",
+                              "type": "FRAME",
+                              "size": {
+                                "x": 19,
+                                "y": 31.200000762939453
+                              },
+                              "transform": {
+                                "m00": 1,
+                                "m01": 0,
+                                "m02": 31.25,
+                                "m10": 0,
+                                "m11": 1,
+                                "m12": 38.79999923706055
+                              },
+                              "layout": "VERTICAL",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "id": "205:116886",
+                                  "name": "Nội dung",
+                                  "type": "TEXT",
+                                  "size": {
+                                    "x": 19,
+                                    "y": 11
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 0,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 0
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.3960784375667572,
+                                        "g": 0.45490196347236633,
+                                        "b": 0.4156862795352936,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.3960784375667572,
+                                        "c1": 0.45490196347236633,
+                                        "c2": 0.4156862795352936,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "font": {
+                                    "family": "Roboto",
+                                    "style": "Regular",
+                                    "postscript": ""
+                                  },
+                                  "fontSize": 8,
+                                  "lineHeight": {
+                                    "value": 1.3799999952316284,
+                                    "units": "RAW"
+                                  },
+                                  "text": "26",
+                                  "children": []
+                                },
+                                {
+                                  "id": "205:116887",
+                                  "name": "Trao đổi",
+                                  "type": "ROUNDED_RECTANGLE",
+                                  "size": {
+                                    "x": 17,
+                                    "y": 18.200000762939453
+                                  },
+                                  "transform": {
+                                    "m00": 1,
+                                    "m01": 0,
+                                    "m02": 1,
+                                    "m10": 0,
+                                    "m11": 1,
+                                    "m12": 13
+                                  },
+                                  "fill": [
+                                    {
+                                      "type": "SOLID",
+                                      "color": {
+                                        "r": 0.7176470756530762,
+                                        "g": 0.8078431487083435,
+                                        "b": 0.7490196228027344,
+                                        "a": 1
+                                      },
+                                      "opacity": 1,
+                                      "visible": true,
+                                      "blendMode": "NORMAL",
+                                      "authoredColor": {
+                                        "space": "DEFAULT",
+                                        "c0": 0.7176470756530762,
+                                        "c1": 0.8078431487083435,
+                                        "c2": 0.7490196228027344,
+                                        "c3": 1
+                                      }
+                                    }
+                                  ],
+                                  "radius": 3,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "205:116888",
+                          "name": "Nội dung",
+                          "type": "TEXT",
+                          "size": {
+                            "x": 58.5,
+                            "y": 12
+                          },
+                          "transform": {
+                            "m00": 1,
+                            "m01": 0,
+                            "m02": 0,
+                            "m10": 0,
+                            "m11": 1,
+                            "m12": 74
+                          },
+                          "fill": [
+                            {
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.3960784375667572,
+                                "g": 0.45490196347236633,
+                                "b": 0.4156862795352936,
+                                "a": 1
+                              },
+                              "opacity": 1,
+                              "visible": true,
+                              "blendMode": "NORMAL",
+                              "authoredColor": {
+                                "space": "DEFAULT",
+                                "c0": 0.3960784375667572,
+                                "c1": 0.45490196347236633,
+                                "c2": 0.4156862795352936,
+                                "c3": 1
+                              }
+                            }
+                          ],
+                          "font": {
+                            "family": "Roboto",
+                            "style": "Regular",
+                            "postscript": ""
+                          },
+                          "fontSize": 9,
+                          "lineHeight": {
+                            "value": 1.3799999952316284,
+                            "units": "RAW"
+                          },
+                          "text": "15–21",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "205:116898",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 288,
+                    "y": 14
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 0,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 119
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.3960784375667572,
+                        "g": 0.45490196347236633,
+                        "b": 0.4156862795352936,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.3960784375667572,
+                        "c1": 0.45490196347236633,
+                        "c2": 0.4156862795352936,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 10,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Ngày trong tháng 10/2026 · Đơn vị: giao dịch",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "205:116840",
+          "name": "Hàng nội dung",
+          "type": "FRAME",
+          "size": {
+            "x": 312,
+            "y": 103
+          },
+          "transform": {
+            "m00": 1,
+            "m01": 0,
+            "m02": 24,
+            "m10": 0,
+            "m11": 1,
+            "m12": 218
+          },
+          "layout": "HORIZONTAL",
+          "gap": 10,
+          "children": [
+            {
+              "id": "205:116841",
+              "name": "Thẻ thông tin",
+              "type": "FRAME",
+              "size": {
+                "x": 151,
+                "y": 103
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 0,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 20,
+              "layout": "VERTICAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:116842",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 12
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.3960784375667572,
+                        "g": 0.45490196347236633,
+                        "b": 0.4156862795352936,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.3960784375667572,
+                        "c1": 0.45490196347236633,
+                        "c2": 0.4156862795352936,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 11,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Mua bán / Trao đổi",
+                  "children": []
+                },
+                {
+                  "id": "205:116843",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 34
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 35
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Bold",
+                    "postscript": ""
+                  },
+                  "fontSize": 25,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "248 / 96",
+                  "children": []
+                },
+                {
+                  "id": "205:116844",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 14
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 77
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.1568627506494522,
+                        "g": 0.45098039507865906,
+                        "b": 0.30980393290519714,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.1568627506494522,
+                        "c1": 0.45098039507865906,
+                        "c2": 0.30980393290519714,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 10,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "344 giao dịch trong kỳ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "205:116845",
+              "name": "Thẻ thông tin",
+              "type": "FRAME",
+              "size": {
+                "x": 151,
+                "y": 103
+              },
+              "transform": {
+                "m00": 1,
+                "m01": 0,
+                "m02": 161,
+                "m10": 0,
+                "m11": 1,
+                "m12": 0
+              },
+              "fill": [
+                {
+                  "type": "SOLID",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "opacity": 1,
+                  "visible": true,
+                  "blendMode": "NORMAL",
+                  "authoredColor": {
+                    "space": "DEFAULT",
+                    "c0": 1,
+                    "c1": 1,
+                    "c2": 1,
+                    "c3": 1
+                  }
+                }
+              ],
+              "radius": 20,
+              "layout": "VERTICAL",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "205:116846",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 15
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 12
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.3960784375667572,
+                        "g": 0.45490196347236633,
+                        "b": 0.4156862795352936,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.3960784375667572,
+                        "c1": 0.45490196347236633,
+                        "c2": 0.4156862795352936,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 11,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "Tranh chấp cần xử lý",
+                  "children": []
+                },
+                {
+                  "id": "205:116847",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 34
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 35
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.125490203499794,
+                        "g": 0.18039216101169586,
+                        "b": 0.14901961386203766,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.125490203499794,
+                        "c1": 0.18039216101169586,
+                        "c2": 0.14901961386203766,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Bold",
+                    "postscript": ""
+                  },
+                  "fontSize": 25,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "7",
+                  "children": []
+                },
+                {
+                  "id": "205:116848",
+                  "name": "Nội dung",
+                  "type": "TEXT",
+                  "size": {
+                    "x": 127,
+                    "y": 14
+                  },
+                  "transform": {
+                    "m00": 1,
+                    "m01": 0,
+                    "m02": 12,
+                    "m10": 0,
+                    "m11": 1,
+                    "m12": 77
+                  },
+                  "fill": [
+                    {
+                      "type": "SOLID",
+                      "color": {
+                        "r": 0.1568627506494522,
+                        "g": 0.45098039507865906,
+                        "b": 0.30980393290519714,
+                        "a": 1
+                      },
+                      "opacity": 1,
+                      "visible": true,
+                      "blendMode": "NORMAL",
+                      "authoredColor": {
+                        "space": "DEFAULT",
+                        "c0": 0.1568627506494522,
+                        "c1": 0.45098039507865906,
+                        "c2": 0.30980393290519714,
+                        "c3": 1
+                      }
+                    }
+                  ],
+                  "font": {
+                    "family": "Roboto",
+                    "style": "Regular",
+                    "postscript": ""
+                  },
+                  "fontSize": 10,
+                  "lineHeight": {
+                    "value": 1.3799999952316284,
+                    "units": "RAW"
+                  },
+                  "text": "3 mới · 4 đang xử lý",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "205:116915",
+      "name": "Text",
+      "type": "TEXT",
+      "size": {
+        "x": 0,
+        "y": 15
+      },
+      "transform": {
+        "m00": 1,
+        "m01": 0,
+        "m02": 0,
+        "m10": 0,
+        "m11": 1,
+        "m12": 785
+      },
+      "fill": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          },
+          "opacity": 1,
+          "visible": true,
+          "blendMode": "NORMAL",
+          "authoredColor": {
+            "space": "DEFAULT",
+            "c0": 0,
+            "c1": 0,
+            "c2": 0,
+            "c3": 1
+          }
+        }
+      ],
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "postscript": ""
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "value": 100,
+        "units": "PERCENT"
+      },
+      "text": " ",
+      "children": []
+    }
+  ]
+}

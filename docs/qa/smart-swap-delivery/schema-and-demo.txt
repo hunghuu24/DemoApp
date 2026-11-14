@@ -1,0 +1,6 @@
+﻿Bang        FK          Checks      Triggers    Migrations 
+----------- ----------- ----------- ----------- -----------
+         48         100          70          22          10
+Id                                   TrangThai                                TrangThaiGiaoDich                        SoVanDon    SoNguoiNhanDung
+------------------------------------ ---------------------------------------- ---------------------------------------- ----------- ---------------
+EB1CABBF-EC78-4AB9-99E4-D504B7DB537B DangBanGiao                              DangThucHien                                       3               2

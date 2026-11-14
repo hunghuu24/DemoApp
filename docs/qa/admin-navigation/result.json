@@ -1,0 +1,23 @@
+{
+    "date":  "2026-11-14",
+    "sectionMenu":  [
+                        "HOME",
+                        "USERS",
+                        "LISTINGS",
+                        "TRADES",
+                        "COMPLAINTS",
+                        "CATEGORIES",
+                        "REPORT"
+                    ],
+    "detailsKeepBackButton":  true,
+    "backendSourceChanged":  false,
+    "buildSuccessful":  true,
+    "lintErrors":  0,
+    "lintWarnings":  24,
+    "androidTest":  "nguoiDungKiemDuyetDanhMucVaThongKe",
+    "androidTestPassed":  true,
+    "seconds":  134.943,
+    "emulator":  "ReMarketQA",
+    "publicProductsAfterCleanup":  2,
+    "apkSha256":  "9482779D012916AE6942D52D7653E6A8357AF883128505F665F2F4AB5AE168D7"
+}

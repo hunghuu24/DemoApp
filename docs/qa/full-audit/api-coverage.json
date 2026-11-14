@@ -1,0 +1,1261 @@
+{
+  "generatedUtc": "2026-11-12T17:12:44.8707181+00:00",
+  "total": 121,
+  "observed": 121,
+  "withSuccessfulResponse": 121,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/donhang/baogia",
+      "statuses": {
+        "200": 5,
+        "400": 2,
+        "401": 1,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang",
+      "statuses": {
+        "201": 5,
+        "400": 2,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/donhang",
+      "statuses": {
+        "200": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/donhang/{id}",
+      "statuses": {
+        "200": 2,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang/{id}/hoithoai",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang/{id}/thanhtoan",
+      "statuses": {
+        "200": 4,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang/{id}/huy",
+      "statuses": {
+        "200": 2,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang/{id}/vanchuyen",
+      "statuses": {
+        "200": 5,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang/{id}/nhanhang",
+      "statuses": {
+        "200": 2,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/donhang/{id}/danhgia",
+      "statuses": {
+        "200": 2,
+        "403": 1,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/donhang/{id}/anh",
+      "statuses": {
+        "200": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/tindang",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/tindang/{id}/duyet",
+      "statuses": {
+        "200": 40,
+        "403": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hoithoai",
+      "statuses": {
+        "200": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hoithoai",
+      "statuses": {
+        "200": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hoithoai/{id}",
+      "statuses": {
+        "200": 1,
+        "404": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hoithoai/{id}/tinnhan",
+      "statuses": {
+        "200": 9,
+        "400": 1,
+        "404": 2,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hoithoai/{id}/phieu",
+      "statuses": {
+        "200": 2,
+        "400": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hoithoai/{id}/phieu/{phieuId}",
+      "statuses": {
+        "200": 2,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hoithoai/{id}/anh",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hoithoai/{id}/anh/{tepId}",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hoithoai/{id}/sanpham/anh",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hopthu",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hotro",
+      "statuses": {
+        "201": 2,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hotro",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hotro/{id}",
+      "statuses": {
+        "200": 1,
+        "404": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/hotro/{id}/phanhoi",
+      "statuses": {
+        "200": 1,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/bao-cao",
+      "statuses": {
+        "200": 2,
+        "400": 3,
+        "401": 1,
+        "403": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/nguoi-dung",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/nguoi-dung/{id}",
+      "statuses": {
+        "200": 2,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/nguoi-dung/{id}/khoa",
+      "statuses": {
+        "200": 2,
+        "400": 1,
+        "401": 1,
+        "403": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/nguoi-dung/{id}/mo-khoa",
+      "statuses": {
+        "200": 1,
+        "400": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/danh-muc",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/danh-muc",
+      "statuses": {
+        "201": 2,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/admin/danh-muc/{id}",
+      "statuses": {
+        "200": 1,
+        "400": 1,
+        "401": 1,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/san-pham",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/san-pham/{id}",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/san-pham/{id}/duyet",
+      "statuses": {
+        "200": 5,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/san-pham/{id}/an",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/giao-dich",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/giao-dich/{id}",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/giao-dich/{id}/media/{kind}/{file}",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/khieu-nai",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/giao-dich/{id}/khieu-nai",
+      "statuses": {
+        "201": 4,
+        "400": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/khieu-nai/{id}",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/khieu-nai/{id}/tiep-nhan",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/khieu-nai/{id}/quyet-dinh",
+      "statuses": {
+        "200": 6,
+        "401": 1,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/khieu-nai/{id}/xac-minh",
+      "statuses": {
+        "200": 6,
+        "400": 1,
+        "401": 1,
+        "403": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/hotro",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/hotro/{id}",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/hotro/{id}/phanhoi",
+      "statuses": {
+        "200": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/health/live",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/health/ready",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/hethong/trangthai",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/search",
+      "statuses": {
+        "200": 52,
+        "400": 8,
+        "401": 1,
+        "404": 2,
+        "422": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/dangky",
+      "statuses": {
+        "201": 30,
+        "400": 2,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/dangnhap",
+      "statuses": {
+        "200": 38,
+        "401": 4
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/lam-moi",
+      "statuses": {
+        "200": 1,
+        "401": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/dangxuat",
+      "statuses": {
+        "204": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/quenmatkhau",
+      "statuses": {
+        "202": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/datlaimatkhau",
+      "statuses": {
+        "204": 1,
+        "400": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/doimatkhau",
+      "statuses": {
+        "204": 1,
+        "400": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/taikhoan/toi",
+      "statuses": {
+        "200": 3,
+        "401": 12
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/taikhoan/toi",
+      "statuses": {
+        "200": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/taikhoan/anh-dai-dien",
+      "statuses": {
+        "200": 1,
+        "400": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/taikhoan/anh-dai-dien",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang",
+      "statuses": {
+        "200": 11,
+        "400": 4
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/tindang",
+      "statuses": {
+        "201": 44,
+        "400": 10,
+        "401": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang/danhmuc",
+      "statuses": {
+        "200": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang/trangchu",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang/{id}",
+      "statuses": {
+        "200": 11,
+        "404": 8
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/tindang/{id}",
+      "statuses": {
+        "200": 4,
+        "404": 1,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/tindang/{id}",
+      "statuses": {
+        "204": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang/cuatoi",
+      "statuses": {
+        "200": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang/{id}/quanly",
+      "statuses": {
+        "200": 3,
+        "404": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/tindang/{id}/gui-duyet",
+      "statuses": {
+        "200": 45,
+        "400": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/tindang/{id}/an",
+      "statuses": {
+        "200": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/tindang/{id}/da-ban",
+      "statuses": {
+        "200": 1,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/tindang/{id}/anh",
+      "statuses": {
+        "200": 56,
+        "400": 3,
+        "404": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/tindang/{id}/anh/{anhId}",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/tindang/{id}/anh/{anhId}",
+      "statuses": {
+        "200": 2,
+        "401": 1,
+        "404": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/tindang/{id}/anh/{anhId}/bia",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/trangchu",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/tongquan",
+      "statuses": {
+        "200": 1,
+        "403": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/traodoi/moncuatoi",
+      "statuses": {
+        "200": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/traodoi/tieuchi",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/traodoi",
+      "statuses": {
+        "200": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi",
+      "statuses": {
+        "201": 8,
+        "400": 2,
+        "403": 1,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/traodoi/{id}",
+      "statuses": {
+        "200": 4,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/phanhoi",
+      "statuses": {
+        "200": 5,
+        "403": 2,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/dexuatlai",
+      "statuses": {
+        "200": 2,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/huy",
+      "statuses": {
+        "200": 3,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/giaonhan",
+      "statuses": {
+        "200": 3,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/danhgia",
+      "statuses": {
+        "200": 3,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/hoithoai",
+      "statuses": {
+        "200": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/traodoi/{id}/anh/{sanPhamId}",
+      "statuses": {
+        "200": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/traodoi/{id}/bangchung",
+      "statuses": {
+        "200": 6,
+        "400": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/traodoi/{id}/bangchung/{fileId}",
+      "statuses": {
+        "200": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/evidence",
+      "statuses": {
+        "200": 2,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}/evidence/{file}",
+      "statuses": {
+        "200": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}/reviews",
+      "statuses": {
+        "200": 1,
+        "401": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/reviews",
+      "statuses": {
+        "200": 6,
+        "400": 1,
+        "404": 1,
+        "409": 7
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/preview",
+      "statuses": {
+        "200": 19,
+        "400": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/invitations",
+      "statuses": {
+        "201": 19,
+        "400": 1,
+        "403": 1,
+        "409": 4
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps",
+      "statuses": {
+        "200": 1,
+        "401": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}",
+      "statuses": {
+        "200": 14,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/responses",
+      "statuses": {
+        "200": 32,
+        "400": 1,
+        "404": 1,
+        "409": 5
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/proposals",
+      "statuses": {
+        "200": 5,
+        "400": 1,
+        "403": 1,
+        "404": 1,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}/versions",
+      "statuses": {
+        "200": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/cancel",
+      "statuses": {
+        "200": 10,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}/chat",
+      "statuses": {
+        "200": 2,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}/products/{productId}/image",
+      "statuses": {
+        "200": 1,
+        "404": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/notifications",
+      "statuses": {
+        "200": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/notifications/{id}/read",
+      "statuses": {
+        "204": 2,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/smart-swaps/{id}/delivery",
+      "statuses": {
+        "200": 20,
+        "401": 1,
+        "404": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/smart-swaps/{id}/delivery/contact",
+      "statuses": {
+        "200": 13,
+        "400": 2,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/shipments",
+      "statuses": {
+        "200": 5,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/smart-swaps/{id}/shipments/{shipmentId}/tracking",
+      "statuses": {
+        "200": 10,
+        "403": 1,
+        "409": 1
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/shipments/{shipmentId}/status",
+      "statuses": {
+        "200": 27,
+        "400": 2,
+        "409": 3
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/shipments/{shipmentId}/received",
+      "statuses": {
+        "200": 9,
+        "400": 2,
+        "403": 1,
+        "404": 1,
+        "409": 4
+      },
+      "observed": true,
+      "success": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/smart-swaps/{id}/issues",
+      "statuses": {
+        "200": 6,
+        "403": 2,
+        "409": 2
+      },
+      "observed": true,
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>remarket-api-development</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ReMarket.Infrastructure/ReMarket.Infrastructure.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.33" PrivateAssets="all" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.33" />
+  </ItemGroup>
+</Project>

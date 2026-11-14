@@ -1,0 +1,64 @@
+{
+    "checkedAtUtc":  "2026-11-14T13:19:19.9897258Z",
+    "issue":  "Three leftover Android UI test posts displayed solid-color fixture images",
+    "resolution":  "Hidden via owner-authorized API; no source or schema changes",
+    "hiddenFixtures":  {
+                           "value":  [
+                                         {
+                                             "id":  "73d0c079-3804-493b-b520-02ccf3bf7ce8",
+                                             "title":  "AndroidGroupccbfd1c0245d 3",
+                                             "before":  "DangHienThi",
+                                             "after":  "DaAn"
+                                         },
+                                         {
+                                             "id":  "e6d0846b-b5af-444a-931c-48f3effd33fe",
+                                             "title":  "AndroidGroupccbfd1c0245d 2",
+                                             "before":  "DangHienThi",
+                                             "after":  "DaAn"
+                                         },
+                                         {
+                                             "id":  "6507263e-e43f-4ac5-a06c-201adbcf79c4",
+                                             "title":  "AndroidGroupccbfd1c0245d 1",
+                                             "before":  "DangHienThi",
+                                             "after":  "DaAn"
+                                         }
+                                     ],
+                           "Count":  3
+                       },
+    "imageHttpChecks":  [
+                            {
+                                "title":  "AndroidGroupccbfd1c0245d 3",
+                                "postId":  "73d0c079-3804-493b-b520-02ccf3bf7ce8",
+                                "imageId":  "1e2ecc38-2219-4a44-b69f-5776f0c9cdb9",
+                                "status":  200,
+                                "contentType":  "image/jpeg",
+                                "bytes":  1119
+                            },
+                            {
+                                "title":  "AndroidGroupccbfd1c0245d 2",
+                                "postId":  "e6d0846b-b5af-444a-931c-48f3effd33fe",
+                                "imageId":  "16f1a874-dbac-4d21-88fa-c82947bcfaa9",
+                                "status":  200,
+                                "contentType":  "image/jpeg",
+                                "bytes":  1119
+                            },
+                            {
+                                "title":  "AndroidGroupccbfd1c0245d 1",
+                                "postId":  "6507263e-e43f-4ac5-a06c-201adbcf79c4",
+                                "imageId":  "28f0d472-dac4-4368-8888-ad3d5ed6e0b9",
+                                "status":  200,
+                                "contentType":  "image/jpeg",
+                                "bytes":  1119
+                            },
+                            {
+                                "title":  "Bàn trà gỗ nhỏ",
+                                "postId":  "059b02df-18dc-3b20-3ac5-5900f6e05700",
+                                "imageId":  "62328f0f-1a21-44d8-d21e-b87820291cb1",
+                                "status":  200,
+                                "contentType":  "image/jpeg",
+                                "bytes":  101559
+                            }
+                        ],
+    "homeContainsHiddenFixtures":  false,
+    "remainingImage":  "Ban tra go nho: image/jpeg, HTTP 200, visually inspected"
+}

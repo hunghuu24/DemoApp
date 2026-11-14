@@ -1,0 +1,12 @@
+﻿{
+    "checkedUtc":  "2026-11-12T18:33:22.6974766Z",
+    "deviceKind":  "Physical Android phone",
+    "apiBaseUrl":  "http://127.0.0.1:5080/",
+    "adbReverse":  true,
+    "debugApkInstalled":  true,
+    "backendReady":  true,
+    "sqlReady":  true,
+    "demoApiLogin":  "PASS",
+    "apiLogoutStatus":  204,
+    "backendLeftRunning":  true
+}

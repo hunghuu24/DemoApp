@@ -1,0 +1,290 @@
+﻿PASS Exact directed triangle; rotations deduplicated
+PASS Delivery orientation A -> C -> B -> A
+PASS Equal-value same-city new items score100 without cash
+PASS Input order does not change cycle identity
+PASS Empty graph returns empty items and message
+PASS Two nodes are not a three-person cycle
+PASS Self loop is excluded
+PASS Reciprocal 1-to-1 edge is not a triangle
+PASS Four-person cycle is excluded
+PASS Three products belonging to only two people are excluded
+PASS Repeated product cannot appear in a cycle
+PASS A missing directed demand edge breaks the cycle
+PASS Unrelated nodes do not hide valid cycle
+PASS Vietnamese case, accents, d-stroke and letter-digit boundaries normalized
+PASS Whole tokens avoid accidental substring matching
+PASS Generic empty wishes do not match every item
+PASS Ambiguous legacy negation is not treated as positive demand
+PASS Explicit positive keyword alternatives are supported
+PASS All tokens within a keyword alternative are required
+PASS Empty explicit keyword expression is not a wildcard
+PASS Parent category accepts descendants; reverse delivery remains a distinct cycle
+PASS Unrelated target category is rejected
+PASS Receiver minimum condition is enforced on delivered product
+PASS Minimum condition boundary is inclusive
+PASS Exact wanted value range is inclusive
+PASS Below wanted value minimum is excluded
+PASS Above wanted value maximum is excluded
+PASS Two net payers compensate the net recipient directly
+PASS Each participant conserves value after compensation
+PASS Money transfers are balanced without external payer
+PASS Transfer allocation matches every person's net balance
+PASS One VND above payer cap excludes cycle
+PASS Money recipient must also opt into compensation
+PASS No-compensation listings can exchange equal values
+PASS Cap is total outward cash, not a separate cap for each recipient
+PASS One net payer can settle two recipients within aggregate cap
+PASS Maximum supported prices do not overflow
+PASS Invalid zero-value product is not matched
+PASS Results ranked by transparent suitability score
+PASS Minimum suitability filters before counting and paging
+PASS Ranking precedes pagination and pages do not duplicate cycles
+PASS Optional anchor matches any position in canonical cycle
+PASS Beyond last page returns an empty page
+PASS Candidate overflow is explicit, not silently truncated
+PASS Graph edge budget returns an explicit limit error
+PASS Traversal budget never returns partial successful results
+PASS Search observes request cancellation even on empty data
+PASS Dense60-node graph exhaustively counts68440 directed cycles while retaining only requested top page
+PASS Generated directed graph agrees with independent oracle #0
+PASS Generated directed graph agrees with independent oracle #1
+PASS Generated directed graph agrees with independent oracle #2
+PASS Generated directed graph agrees with independent oracle #3
+PASS Generated directed graph agrees with independent oracle #4
+PASS Generated directed graph agrees with independent oracle #5
+PASS Generated directed graph agrees with independent oracle #6
+PASS Generated directed graph agrees with independent oracle #7
+PASS Generated directed graph agrees with independent oracle #8
+PASS Generated directed graph agrees with independent oracle #9
+PASS Generated directed graph agrees with independent oracle #10
+PASS Generated directed graph agrees with independent oracle #11
+PASS Generated directed graph agrees with independent oracle #12
+PASS Generated directed graph agrees with independent oracle #13
+PASS Generated directed graph agrees with independent oracle #14
+PASS Generated directed graph agrees with independent oracle #15
+PASS Generated directed graph agrees with independent oracle #16
+PASS Generated directed graph agrees with independent oracle #17
+PASS Generated directed graph agrees with independent oracle #18
+PASS Generated directed graph agrees with independent oracle #19
+PASS Generated directed graph agrees with independent oracle #20
+PASS Generated directed graph agrees with independent oracle #21
+PASS Generated directed graph agrees with independent oracle #22
+PASS Generated directed graph agrees with independent oracle #23
+PASS Generated directed graph agrees with independent oracle #24
+PASS Generated directed graph agrees with independent oracle #25
+PASS Generated directed graph agrees with independent oracle #26
+PASS Generated directed graph agrees with independent oracle #27
+PASS Generated directed graph agrees with independent oracle #28
+PASS Generated directed graph agrees with independent oracle #29
+PASS Generated directed graph agrees with independent oracle #30
+PASS Generated directed graph agrees with independent oracle #31
+PASS Generated directed graph agrees with independent oracle #32
+PASS Generated directed graph agrees with independent oracle #33
+PASS Generated directed graph agrees with independent oracle #34
+PASS Generated directed graph agrees with independent oracle #35
+PASS Generated directed graph agrees with independent oracle #36
+PASS Generated directed graph agrees with independent oracle #37
+PASS Generated directed graph agrees with independent oracle #38
+PASS Generated directed graph agrees with independent oracle #39
+PASS Generated directed graph agrees with independent oracle #40
+PASS Generated directed graph agrees with independent oracle #41
+PASS Generated directed graph agrees with independent oracle #42
+PASS Generated directed graph agrees with independent oracle #43
+PASS Generated directed graph agrees with independent oracle #44
+PASS Generated directed graph agrees with independent oracle #45
+PASS Generated directed graph agrees with independent oracle #46
+PASS Generated directed graph agrees with independent oracle #47
+PASS Generated directed graph agrees with independent oracle #48
+PASS Generated directed graph agrees with independent oracle #49
+PASS Generated directed graph agrees with independent oracle #50
+PASS Generated directed graph agrees with independent oracle #51
+PASS Generated directed graph agrees with independent oracle #52
+PASS Generated directed graph agrees with independent oracle #53
+PASS Generated directed graph agrees with independent oracle #54
+PASS Generated directed graph agrees with independent oracle #55
+PASS Generated directed graph agrees with independent oracle #56
+PASS Generated directed graph agrees with independent oracle #57
+PASS Generated directed graph agrees with independent oracle #58
+PASS Generated directed graph agrees with independent oracle #59
+PASS Generated directed graph agrees with independent oracle #60
+PASS Generated directed graph agrees with independent oracle #61
+PASS Generated directed graph agrees with independent oracle #62
+PASS Generated directed graph agrees with independent oracle #63
+PASS Generated directed graph agrees with independent oracle #64
+PASS Generated directed graph agrees with independent oracle #65
+PASS Generated directed graph agrees with independent oracle #66
+PASS Generated directed graph agrees with independent oracle #67
+PASS Generated directed graph agrees with independent oracle #68
+PASS Generated directed graph agrees with independent oracle #69
+PASS Generated directed graph agrees with independent oracle #70
+PASS Generated directed graph agrees with independent oracle #71
+PASS Generated directed graph agrees with independent oracle #72
+PASS Generated directed graph agrees with independent oracle #73
+PASS Generated directed graph agrees with independent oracle #74
+PASS Generated directed graph agrees with independent oracle #75
+PASS Generated directed graph agrees with independent oracle #76
+PASS Generated directed graph agrees with independent oracle #77
+PASS Generated directed graph agrees with independent oracle #78
+PASS Generated directed graph agrees with independent oracle #79
+PASS Generated directed graph agrees with independent oracle #80
+PASS Generated directed graph agrees with independent oracle #81
+PASS Generated directed graph agrees with independent oracle #82
+PASS Generated directed graph agrees with independent oracle #83
+PASS Generated directed graph agrees with independent oracle #84
+PASS Generated directed graph agrees with independent oracle #85
+PASS Generated directed graph agrees with independent oracle #86
+PASS Generated directed graph agrees with independent oracle #87
+PASS Generated directed graph agrees with independent oracle #88
+PASS Generated directed graph agrees with independent oracle #89
+PASS Generated directed graph agrees with independent oracle #90
+PASS Generated directed graph agrees with independent oracle #91
+PASS Generated directed graph agrees with independent oracle #92
+PASS Generated directed graph agrees with independent oracle #93
+PASS Generated directed graph agrees with independent oracle #94
+PASS Generated directed graph agrees with independent oracle #95
+PASS Generated directed graph agrees with independent oracle #96
+PASS Generated directed graph agrees with independent oracle #97
+PASS Generated directed graph agrees with independent oracle #98
+PASS Generated directed graph agrees with independent oracle #99
+PASS SQL model matches migration8
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/tindang [201]
+PASS Upload real Smart Swap image [200]
+PASS POST /api/tindang/09e3107a-6fa9-45ff-a35c-6a2387e026b8/gui-duyet [200]
+PASS POST /api/admin/tindang/09e3107a-6fa9-45ff-a35c-6a2387e026b8/duyet [200]
+PASS POST /api/tindang [201]
+PASS Upload real Smart Swap image [200]
+PASS POST /api/tindang/214c1126-5b55-4fc6-930c-23033f0747aa/gui-duyet [200]
+PASS POST /api/admin/tindang/214c1126-5b55-4fc6-930c-23033f0747aa/duyet [200]
+PASS POST /api/tindang [201]
+PASS Upload real Smart Swap image [200]
+PASS POST /api/tindang/7cc87bed-0e5f-4ee5-8143-72b44dd2bd48/gui-duyet [200]
+PASS POST /api/admin/tindang/7cc87bed-0e5f-4ee5-8143-72b44dd2bd48/duyet [200]
+PASS Structured wishes persist through real create/upload/review API
+PASS Anonymous cannot use search [401]
+PASS Invalid search query [400]
+PASS Invalid search query [400]
+PASS Invalid search query [400]
+PASS Invalid search query [400]
+PASS Invalid search query [400]
+PASS Invalid search query [400]
+PASS Invalid search query [400]
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Find cycle from SQL with no pre-registered circle
+PASS REST returns delivery A -> C -> B -> A
+PASS REST calculates per-person net compensation from SQL values
+PASS Each returned circle includes three distinct owners and listing versions
+PASS Search creates no transaction, circle, member, leg, money, hold, notification or offer
+PASS Search does not modify listing rowversion
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Anchor works for a noncanonical cycle position
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS REST pagination retains total count on empty page
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS No matching location returns200 empty result and message
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS City filter is accent-insensitive in SQL
+PASS Unavailable anchor has no private listing data [404]
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Only Smart-Swap-enabled products are considered
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: BanNhap
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: ChoDuyet
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: TuChoi
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: DaAn
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: DaBan
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: DangGiuCho
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Inactive listing excluded: DaTraoDoi
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Soft-deleted listing excluded
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Sale-only listing excluded even if old need exists
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Mixed sale/exchange listing is eligible when Smart Swap enabled
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Locked owner excluded from candidate SQL
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Hidden ancestor hides descendant product and wanted categories
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Unmet desired category excluded
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Unmet keyword demand excluded
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Delivered condition worse than wanted minimum excluded
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Received product above wanted range excluded
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Wanted exact value boundary works in SQL projection
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS SQL payer cap enforced
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Receiver compensation opt-in enforced
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Unreleased hold excludes item even when metadata expiry passed
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Released hold makes item discoverable again
+PASS POST /api/tindang [201]
+PASS Upload real Smart Swap image [200]
+PASS POST /api/tindang/f1e5e946-82ad-460d-b870-1f4824524c38/gui-duyet [200]
+PASS POST /api/admin/tindang/f1e5e946-82ad-460d-b870-1f4824524c38/duyet [200]
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Multiple items per owner yield alternative circles with one item per owner each
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS Search active SQL graph [200]
+PASS Search response is not cached as inventory
+PASS HTTP stable ranked pagination over SQL circles
+PASS Candidate limit cannot silently hide circles [422]
+PASS Existing client can edit without new fields [200]
+PASS Omitted criteria preserved during old-client edit
+PASS Explicit empty criteria clears optional constraints [200]
+PASS Explicit clear persisted
+PASS Invalid structured wish rejected [400]
+PASS Invalid structured wish rejected [400]
+PASS Invalid structured wish rejected [400]
+PASS Invalid structured wish rejected [400]
+PASS SQL CHECK rejects invalid wished range/condition
+PASS SQL CHECK rejects invalid wished range/condition
+PASS All search tests ran without any persisted Smart Swap circle
+Smart Swap graph/HTTP/SQL checks: 289 passed. Generated graphs and live SQL; no credentials printed.

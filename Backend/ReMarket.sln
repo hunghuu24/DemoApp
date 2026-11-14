@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C5EB3BD-3260-4EAF-AAD8-72D6A7658C4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReMarket.Domain", "src\ReMarket.Domain\ReMarket.Domain.csproj", "{7BB87DA3-FD32-45B7-9BCD-F37387F81AA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReMarket.Application", "src\ReMarket.Application\ReMarket.Application.csproj", "{0F82D371-D1E4-4648-A2E0-D5B0EDA499D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReMarket.Infrastructure", "src\ReMarket.Infrastructure\ReMarket.Infrastructure.csproj", "{A6F644C6-A3CE-4E3B-A47F-A23A2D9ED505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReMarket.Api", "src\ReMarket.Api\ReMarket.Api.csproj", "{8900F828-789B-4293-B89E-4E985FC82C7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{324A7A20-8752-4027-8459-B599F3268416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReMarket.DatabaseChecks", "tests\ReMarket.DatabaseChecks\ReMarket.DatabaseChecks.csproj", "{45A46228-181D-4C0B-80F4-7E2FDED3DF13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BB87DA3-FD32-45B7-9BCD-F37387F81AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB87DA3-FD32-45B7-9BCD-F37387F81AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB87DA3-FD32-45B7-9BCD-F37387F81AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB87DA3-FD32-45B7-9BCD-F37387F81AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F82D371-D1E4-4648-A2E0-D5B0EDA499D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F82D371-D1E4-4648-A2E0-D5B0EDA499D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F82D371-D1E4-4648-A2E0-D5B0EDA499D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F82D371-D1E4-4648-A2E0-D5B0EDA499D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F644C6-A3CE-4E3B-A47F-A23A2D9ED505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F644C6-A3CE-4E3B-A47F-A23A2D9ED505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F644C6-A3CE-4E3B-A47F-A23A2D9ED505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F644C6-A3CE-4E3B-A47F-A23A2D9ED505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8900F828-789B-4293-B89E-4E985FC82C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8900F828-789B-4293-B89E-4E985FC82C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8900F828-789B-4293-B89E-4E985FC82C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8900F828-789B-4293-B89E-4E985FC82C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A46228-181D-4C0B-80F4-7E2FDED3DF13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A46228-181D-4C0B-80F4-7E2FDED3DF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A46228-181D-4C0B-80F4-7E2FDED3DF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A46228-181D-4C0B-80F4-7E2FDED3DF13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BB87DA3-FD32-45B7-9BCD-F37387F81AA9} = {4C5EB3BD-3260-4EAF-AAD8-72D6A7658C4B}
+		{0F82D371-D1E4-4648-A2E0-D5B0EDA499D2} = {4C5EB3BD-3260-4EAF-AAD8-72D6A7658C4B}
+		{A6F644C6-A3CE-4E3B-A47F-A23A2D9ED505} = {4C5EB3BD-3260-4EAF-AAD8-72D6A7658C4B}
+		{8900F828-789B-4293-B89E-4E985FC82C7E} = {4C5EB3BD-3260-4EAF-AAD8-72D6A7658C4B}
+		{45A46228-181D-4C0B-80F4-7E2FDED3DF13} = {324A7A20-8752-4027-8459-B599F3268416}
+	EndGlobalSection
+EndGlobal

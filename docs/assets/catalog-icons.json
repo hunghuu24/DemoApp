@@ -1,0 +1,62 @@
+[
+  {
+    "name": "armchair",
+    "nodeId": "4:976",
+    "vectors": [
+      "4:977"
+    ],
+    "file": "ic_fg_armchair.xml",
+    "width": 30,
+    "height": 30
+  },
+  {
+    "name": "smartphone",
+    "nodeId": "4:979",
+    "vectors": [
+      "4:980"
+    ],
+    "file": "ic_fg_smartphone.xml",
+    "width": 30,
+    "height": 30
+  },
+  {
+    "name": "shirt",
+    "nodeId": "4:982",
+    "vectors": [
+      "4:983"
+    ],
+    "file": "ic_fg_shirt.xml",
+    "width": 30,
+    "height": 30
+  },
+  {
+    "name": "cooking-pot",
+    "nodeId": "4:985",
+    "vectors": [
+      "4:986"
+    ],
+    "file": "ic_fg_cooking_pot.xml",
+    "width": 30,
+    "height": 30
+  },
+  {
+    "name": "book-open",
+    "nodeId": "4:988",
+    "vectors": [
+      "4:989"
+    ],
+    "file": "ic_fg_book_open.xml",
+    "width": 30,
+    "height": 30
+  },
+  {
+    "name": "bike",
+    "nodeId": "4:991",
+    "vectors": [
+      "4:992"
+    ],
+    "file": "ic_fg_bike.xml",
+    "width": 30,
+    "height": 30
+  }
+]

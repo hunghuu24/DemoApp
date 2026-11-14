@@ -1,0 +1,4 @@
+Removed only task QA ADMIN role and revoked its sessions.
+Removed temporary QA credential file.
+Stopped only this task API host.
+Stopped task QA emulator on port5556.

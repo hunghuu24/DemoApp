@@ -1,0 +1,29 @@
+{
+  "frame": "205:115234",
+  "assets": [
+    {
+      "source": "find-back.svg",
+      "drawable": "ic_fg_smart_back.xml",
+      "width": "22.1728",
+      "height": "21.8",
+      "paths": 1
+    },
+    {
+      "source": "find-down.svg",
+      "drawable": "ic_fg_smart_down.xml",
+      "width": "18",
+      "height": "18",
+      "paths": 1
+    },
+    {
+      "source": "find-check.svg",
+      "drawable": "ic_fg_smart_check.xml",
+      "width": "13",
+      "height": "13",
+      "paths": 1
+    }
+  ],
+  "nativeStatusBar": true,
+  "dynamicProductImages": true,
+  "diagram": "205:115119"
+}

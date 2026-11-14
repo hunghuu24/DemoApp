@@ -1,0 +1,53 @@
+﻿
+(1 rows affected)
+
+(1 rows affected)
+
+(0 rows affected)
+
+(0 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+PASS Model matches migration snapshot
+PASS All 43 baseline tables have demo data; auth tables may start empty
+PASS Seed is idempotent across all tables
+PASS Canonical email unique
+PASS Negative compensation
+PASS No self exchange
+PASS Sender must belong to chat
+PASS Rating range
+PASS 5/6 cannot complete swap
+PASS Cannot revoke finalized consent
+PASS Final compensation amount immutable
+PASS Receipt must match swap leg
+PASS No review before completion
+PASS One active reservation per item
+PASS Compensation payee must join transaction
+PASS Do not close unverified dispute
+PASS Need current 3/3 consent before handover
+PASS 1-1 requires both receipts
+PASS 6/6 completes swap and allows two partner reviews
+PASS Rowversion rejects stale writes
+Database checks: 20 passed, 0 failed. Negative/positive mutation checks rolled back.

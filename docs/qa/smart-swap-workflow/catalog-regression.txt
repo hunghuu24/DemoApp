@@ -1,0 +1,95 @@
+﻿PASS Register real Product owner [201]
+PASS Login real Product owner [200]
+PASS Register real Other owner [201]
+PASS Login real Other owner [200]
+PASS Register real Moderator [201]
+PASS Login real Moderator [200]
+PASS Hidden category ancestors excluded
+PASS Anonymous cannot create [401]
+PASS Negative price validation [400]
+PASS Short description validation [400]
+PASS Unknown condition rejected [400]
+PASS Cannot post under hidden ancestor [400]
+PASS Create product and draft atomically [201]
+PASS Draft owner and state from server
+PASS Private draft excluded from public detail [404]
+PASS Other user cannot preview/manage draft [404]
+PASS Other user cannot edit product [404]
+PASS Cannot submit without cover image [400]
+PASS Content decoding rejects forged image MIME [400]
+PASS Other owner cannot upload image [404]
+PASS Upload image through real multipart API [200]
+PASS First upload becomes cover
+PASS Draft image private to owner/admin [404]
+PASS Invalid bearer on image challenges for client refresh [401]
+PASS Owner reads private image [200]
+PASS Image re-encoded preserving aspect ratio
+PASS Generated filenames cannot traverse paths
+PASS Second product image [200]
+PASS Stale upload version rejected [409]
+PASS Rejected uploads leave no orphan file
+PASS Switch cover under unique SQL index [200]
+PASS Exactly one cover
+PASS Upload within eight-image limit [200]
+PASS Upload within eight-image limit [200]
+PASS Upload within eight-image limit [200]
+PASS Upload within eight-image limit [200]
+PASS Upload within eight-image limit [200]
+PASS Upload within eight-image limit [200]
+PASS Ninth image rejected [400]
+PASS Delete cover image [200]
+PASS Cover reassigned and physical file removed
+PASS Concurrent form writes cannot overwrite each other
+PASS Submit draft for moderation [200]
+PASS Submitted listing waits for review
+PASS Pending listing excluded from search
+PASS USER cannot approve own listing [403]
+PASS ADMIN moderation queue uses SQL
+PASS ADMIN rejects with reason [200]
+PASS Owner receives rejection reason
+PASS ADMIN approves through API [200]
+PASS Approved detail public [200]
+PASS Approved image publicly readable [200]
+PASS Search ignores accents and combines price/category-tree/condition filters
+PASS Empty search returns a real empty page
+PASS Price filter changes SQL results
+PASS Location filter changes SQL results
+PASS Page zero rejected [400]
+PASS Page size bounded [400]
+PASS Reversed price interval rejected [400]
+PASS Unknown sort rejected [400]
+PASS Home sections use approved SQL records
+PASS My listing filters and badges computed from SQL
+PASS My listings never include another owner
+PASS Edit a published listing [200]
+PASS Content edits require fresh moderation
+PASS Edited listing withdrawn until review [404]
+PASS ADMIN approves through API [200]
+PASS Owner hides listing [200]
+PASS Hidden listing images no longer public [404]
+PASS ADMIN approves through API [200]
+PASS Cannot sell a reserved item outside its transaction [409]
+PASS Cannot overwrite reserved product [409]
+PASS Confirm sold persists to SQL [200]
+PASS Sold state returned
+PASS Sold listing excluded from buyers [404]
+PASS Sold product immutable [409]
+PASS Other user cannot delete [404]
+PASS Owner soft deletes sold listing [204]
+PASS Deleted listing unavailable to management [404]
+PASS Soft delete preserves relational history
+PASS Deleted listing excluded from my tabs
+PASS Even owner cannot read soft-deleted images [404]
+PASS ADMIN approves through API [200]
+PASS ADMIN approves through API [200]
+PASS ADMIN approves through API [200]
+PASS Real pagination totals across multiple SQL rows
+PASS Stable pages do not overlap
+PASS Ascending price sorting applies before SQL paging
+PASS Descending price sort
+PASS Out-of-range page safely empty
+PASS Category counts include descendants and omit deleted listings
+PASS Hiding category parent withdraws descendant products
+PASS Hidden category also protects detail route [404]
+PASS ADMIN cannot self-approve its own product [403]
+Listing HTTP/SQL checks: 94 passed. No credentials or tokens printed.

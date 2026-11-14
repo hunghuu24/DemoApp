@@ -1,0 +1,474 @@
+﻿[
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/api404-error.png",
+        "sha256":  "E22535886348524DC62983F54A8642B7123EAE2CDE50394AEE221B3874685198"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/catalog-empty.png",
+        "sha256":  "1F14C4EA290709894B48B85050DB16823F234F658318F393690DD11EBF659801"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/change-password.png",
+        "sha256":  "FABD3EDDA3483BA25272980738442D6C0373A1C1BD0FE61081F6E2EF290F24C4"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/edit-profile.png",
+        "sha256":  "01EBAA33FF47E0717AF36BBAE51ED3A27D63386A7978AC240D6F77571082AD8F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/forgot-password.png",
+        "sha256":  "23216F4AC8B891C3729AEE202A8AE2A7DF229467C0EC81170FE8FE028A7C243A"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/listing-320-font130.png",
+        "sha256":  "1E921802352706F0B8A1AC0D2D71EFBB05E9E505800317F62A70A47D69263562"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/listing-validation.png",
+        "sha256":  "11440091A2BDC190CC80F7B69FC1A59BDB7F103668C2DF7C4B1D95A5A885E5A2"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/login.png",
+        "sha256":  "1B2B099E0C4471C5BEE065618F394EA7671D16F3A78A6776DB6E6A9FC5643D34"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/profile.png",
+        "sha256":  "C6DEF0CECC2FD6516EDABAF2642CB21324C3821C84603AC652E55B111EB5D349"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/register.png",
+        "sha256":  "8888E9558D732AA209DF9D429498D7BFA62B5A08AECD51C2778D45F357523499"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/settings.png",
+        "sha256":  "BD08A06496818CD1AA597E6E01A3D7F917A02F75BD27BEDDD91B9B27F33FCD12"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/account/splash.png",
+        "sha256":  "A59CDB95E14DF7CF2A133A435F460FAADDC56C21615330C4F68094C0FC37C2D3"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/admin-menu.png",
+        "sha256":  "A3709FABD9139DABCDA4F2786BB11E97F1A56E99B953EEA7B4AA65E7FF71E7C5"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/approved-listing.png",
+        "sha256":  "3610D1EE4907E068C0E9945CE500B979C4B061E839AC06CEB4FC574810F07C50"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/categories.png",
+        "sha256":  "3EB2E36D7E0D358B1B5A93B22CCAA92EFE7FD575D19C8F2425619B6DF16AEB44"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/category-form.png",
+        "sha256":  "587BEB1189AA0067129E36B43B417DB546F1C7EDB183A2AB4F590A55B29FE6B5"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/complaints.png",
+        "sha256":  "3BB8CE194D4F72756B4EAA705433F8EB82EA88B35AA68348BFF79557B9DB6DB4"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/completed-by-third-user.png",
+        "sha256":  "A12CB8901BECD63CFABE5DC85D710B62BBD0ECE27B46AF2007BD0FB76F0F0F65"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/create-dispute.png",
+        "sha256":  "B19CB4EC65E076471CC0E33B626498D3FD6A8E17B1F20D5F3352B2DFFF16B2A9"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/dashboard.png",
+        "sha256":  "0AFB73E5AE8F44D17DC1773A3F67F4BC02F00346C547355369BE616F5722F170"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/dispute-decision.png",
+        "sha256":  "933A3C3D7CDC169620A8C615DF29330FB7A28A9D625D7F96A6BF41B34620CAE8"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/dispute-still-open.png",
+        "sha256":  "E102EB7C699E461CEB9664F54C77BE8441D422EEA6A68073139F8A34B4F37FCB"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/evidence-detail.png",
+        "sha256":  "D0C089EA7424F4DD2C3AF3CDE3F67BA7482AA9B6EE51131FF8DC3DAF2B39182A"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/listings.png",
+        "sha256":  "0D0413C4AD8ADD7408D052C62222BD5E605F4ADEBF419831A5077FD854B3A610"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/lock-dialog.png",
+        "sha256":  "D687121409577F14D0338B7E63165D0B272E3C27FD1E0B33D18E3F18424A4F43"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/moderation-checklist.png",
+        "sha256":  "E43F2570FEFF7EF2BF7D36E9BA04F2C10DFB06192360CFC4EEBA89EDFBD87441"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/pending-listing.png",
+        "sha256":  "5B78BB0B46A63184095BE55083135E5702BD01EF81F9C2AFE261EFD1A2B555F7"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/reject-dialog.png",
+        "sha256":  "F26D0195F882CAC17B39972A7D22FFA343B769A25561FBD5CF9D336B8BB56A0B"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/resolved-still-two-of-three.png",
+        "sha256":  "9B4C9DDC2F4B26B510AF1D90EE66E4168FB30B65C57D7A2B158768A6A6F3F943"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/smart-swap-two-of-three.png",
+        "sha256":  "D9EE6CC3F34C38FA85F7B687DA92C14CFDF25FF06CFDA561CB910BE2B0489B0B"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/statistics.png",
+        "sha256":  "18067C4F5DA132EBA1F64D156A90CA316D9005E2A80A64B595C30E4EE53B0C91"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/trades.png",
+        "sha256":  "75A9FAAB5AC7A3308AC0A1038DEAB0741C840E9340EAECDE8C331467A987AE8C"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/user-detail.png",
+        "sha256":  "CF104589ED8C78D88E590711BE6C7173447A0E823EC20C23FA6E85628348BDA7"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/user-locked.png",
+        "sha256":  "C002199BFB13116547A4C05D90174394E58D788C80249C4C466C3C649FBEC805"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/user-unlocked.png",
+        "sha256":  "545FE699CFACDF77D9F29318E2CFEFCD6ED39B90D736B01E5EB4015FDFD42BBE"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/users.png",
+        "sha256":  "4D4AB2570F9F1FCBA7210B5BC8AAB782C1B745313F2BA6A4D37DF5BF372583D4"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/admin/verify-execution.png",
+        "sha256":  "858C2842836380CAB54BC62F2A1CAC02526865FF6E679A3683D7C80A97530DD0"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/categories.png",
+        "sha256":  "F089AB8A7176177D028EE001E68B3D11B48957FFBF052A68374A2BC8689BD059"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/category-list.png",
+        "sha256":  "3FF3FDFCB09A97B23768CA8FBB0D65CA67C30AD2201F374DAAE5985BDD5F9A3F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/home.png",
+        "sha256":  "91F43099EC13CF9D6A095D02452658750B87FE9DBA42FD59CF8126F69C59CFAF"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/listing-form.png",
+        "sha256":  "548D237AEDE6E0DAAD681A2C96AE403C7F60CDD8B0A2B88C9455E513F28A3935"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/listing-hidden.png",
+        "sha256":  "B5B6DB2A8E7B7027101763E8A3ACDE07FE56C69DFD37235EDD5AAB8A598754ED"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/listing-manage.png",
+        "sha256":  "976C1413A7D13C53C7C8412BA6CBF51D6C515A8D0406D192B95E18BC75370F98"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/listing-preview.png",
+        "sha256":  "2BE4B932F89982E12DA1C6E9334BC7D84BB5624B2B7BCDEAAD8963942E993954"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/listing-sold.png",
+        "sha256":  "8E9A65EE2E692A7C1D0C0D5B809DBF757913E676ADD61E48D37167BE581DA825"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/listing-success.png",
+        "sha256":  "898CEC8820D9883583D4DF658E71F696A57925EA91536C53D376C5473B13FCAB"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/my-listings.png",
+        "sha256":  "DA949BAAE9788A6536A511DA193A4B26D026B665E96D5424A5B1FB29A2622271"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/product-detail.png",
+        "sha256":  "943FC093C59A26ADAD438AF86AFC2FFBBD9F552BC4F2BFE5B7805F67A3093426"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/search-empty.png",
+        "sha256":  "8AD9CEE26A17F94DADF7390B0053883F555B571E71C178E406F3E1BD4AA7046B"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/search-filter.png",
+        "sha256":  "5815E5A04B1F5C372D28A0A7EA1020F70C824CBF2461CE8B86A9D0D1E6B17F39"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/search-pagination.png",
+        "sha256":  "596D06112E609D094B5768BFBEBB51A9A608A105C40514FB79A509973FF6572F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/search.png",
+        "sha256":  "5815E5A04B1F5C372D28A0A7EA1020F70C824CBF2461CE8B86A9D0D1E6B17F39"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/catalog/sold-confirmation.png",
+        "sha256":  "F234080F0F1F5F7DAE23A69A37F2A191DD1BC6119C6D80C7A2787FFD40A734CF"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/admin-support-list.png",
+        "sha256":  "56F2DE627AF65F03A3F0402C0DF67C4DCBC572FC9B57A339D59A69CD58AED098"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/admin-support-processing.png",
+        "sha256":  "880E482A42100D87AC646459F4308F4EDB7347D3AFCC50F6A45BA9F36E7D4082"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/chat-discount-accepted.png",
+        "sha256":  "46FB776801779E7204BC7FC20DB1BA90003968BB351AC0967F047D2E97289B6A"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/checkout-discount.png",
+        "sha256":  "F927C0BF1CB0833D02D697AAA3235822A84ECDE3ECF1692006DA88BE5FE44D55"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/checkout-top.png",
+        "sha256":  "55369ADB0600AFF31703BA4E1DFF57A005C5736293B96675F2AEA6F7CE8743D8"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/checkout-wide.png",
+        "sha256":  "C16FBCC90D48F9B3406CB430E9A8EA77E5AA81403F086F0FA26C133388CE63CA"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/coupon-form.png",
+        "sha256":  "2ACE2A4EFC879D33FAF40DC13EF200D8F14E822D072468A4274A8C721DDD6E4F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/inbox-seller.png",
+        "sha256":  "57C750B33512C83171B3180FAF03FFF1F4E031A4BA7ED79E4884357A84CD2380"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/order-cancelled-unpaid.png",
+        "sha256":  "CC96E38F744360604E497F28871CF8329162BB86730318C05E4BD4DC132B389F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/order-completed.png",
+        "sha256":  "F846E66A0FF74B5772E0DAECABA9FA3EE6330DE46B3B6A8FBB10D2BB8D556372"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/order-delivered.png",
+        "sha256":  "6CE2EA0110E245E8CCE13545397A0D2DAF6CB347961A0627D49D48842103EEA1"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/order-paid.png",
+        "sha256":  "42CC3D1A76E0ECA825F693F79C692A0C6AA6636F7F0B30D6A4B66C1F4B81985E"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/order-pending.png",
+        "sha256":  "9F6C7348119AD7C0382BC1435A109D48E52A0BC539C2F475276FBD429BA49BBA"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/order-refunded.png",
+        "sha256":  "3B6F2155FFD1203718538DDF44C96991F67C707E0926EB35D8C154A792948D7A"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/orders-empty.png",
+        "sha256":  "F94FAF65EA46B87C5C4A4EA4DF1E8A14D46D0A960DBCE9F3AFA421FDF90EBB5B"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/orders-seller.png",
+        "sha256":  "FCEE5B5E46C1FDB2599BBB27D3503C9EF6E128A91B5FDEB8E55C25C23ECE421A"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/rating-form.png",
+        "sha256":  "125C596C2CE55EDF75E801F428FF174366F2E348CBC78564BEE8F54DE3CD8FF9"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/rating-success.png",
+        "sha256":  "8EA8EB0C79525D4E1BB2AB12F2B7375781FEF4AD2119AC6744B7048B642FF70E"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/seller-shipped.png",
+        "sha256":  "1B7C6C9AE5989C88D7261911036FC8FA77E5D713AC126CEACB3C469C60C1D556"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/support-form.png",
+        "sha256":  "173D20E2A0474C096E98F8EFD0E26DDD1402F57167C0C76D6ECC9951997E1B9D"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/commerce/support-resolved.png",
+        "sha256":  "377395188F3E654270C847735D16D75FEF11619F0A8269853625517DB24C54E2"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/agreement-accepted.png",
+        "sha256":  "B52E96B29AB91F54ED6124F01E4FB34FB8DA8D2DDC6EB6F6ECAFD7C59943DB05"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/completed.png",
+        "sha256":  "9F40A942DC258F08CBE2FB6CFAC7FD49DABB27E2220A4AA928D41EDAA78C9E2E"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/counter-awaiting-response.png",
+        "sha256":  "53869BCCB551D4A9CAA42B115337540374C5BEE470C34A791F9E707BF2300C8F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/counter-form.png",
+        "sha256":  "DD964A3779DC556126A35C8AF2F1E341FBC2299163EC9ADB1223F6E63423C780"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/create-offer.png",
+        "sha256":  "D3CAC9CF836FE3C71879BAE931C468DC454768EDCB0AD50C564D4E275B1E5410"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/exchange-chat.png",
+        "sha256":  "0177C699A6F82C9196A40BB3352B43108F4F14F9239BF17889C8EC43C799E8BB"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/explore.png",
+        "sha256":  "0B64B771B77F3CB2216FB24CDB89979D474EA748306504471966A164F6B9BD77"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/handover-form.png",
+        "sha256":  "8322535CCE5FF2A437337A600E0FFAC92122171757C4AB0C8497165F6936AD70"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/listing-pending.png",
+        "sha256":  "02CA2295348710BC813119DEBDC5F355C42DB8DA930F00DE9877431996115727"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/my-listings.png",
+        "sha256":  "1982C16E8EB1A98962FAB1A55C31FAA1CD090C2CA2459F302D779AE4450F05BA"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/offer-cancelled.png",
+        "sha256":  "52F3C8311791C3FE56BD0D0A38298B0B6435B5BF9C52B56989A40931DE7E707C"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/offer-sent.png",
+        "sha256":  "E27E7130C79D36BD604DC26EC9C16DEC5E9DA486B2E67D4AC7D2BE66F6BAEBAA"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/offers-received.png",
+        "sha256":  "AD014AFD6BDF1D17298EDAC63A0028B270968E3551D84EDB38643518635FC0A0"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/post-form-bottom.png",
+        "sha256":  "60BCC23A0BB2A8327B1CAF56D857719771AD996E10B469D572ED68D510111E85"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/post-form-top.png",
+        "sha256":  "C86F9823F21855725B8025040A458727549573F276401BDA9C8E3CA6F377EF86"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/product-detail.png",
+        "sha256":  "9770FD36F26506C33FC69E577184138A23042ABF6EB16D0B0E8F9433CAF20830"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/review-form.png",
+        "sha256":  "3397CC31DF55DDDB9346E0ABE66D1424F2C607458B55E08AC14F27871FD602EC"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/review-success.png",
+        "sha256":  "BA1B858B51FE0704E04A6CA5837A22DA36363E73AA29FC631C9260162408C2F5"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/search-filter.png",
+        "sha256":  "7EA63824553322D977E343B74E0E05941296F92CD46CFD097ABAA62D39112255"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/selector-empty.png",
+        "sha256":  "9461D233042512B53AD817984BC080448F1BC564F711F85EAAD7074F8834D300"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/exchange/waiting-partner.png",
+        "sha256":  "888A667988AAD7C6DE162281C79E82B71B12E88FCDD3CF49700699E6F287ADF0"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/cancelled-circle.png",
+        "sha256":  "542E2F929A62B7086B9289601715000A3507ECFED4757EE8DA8B9B3188AE3234"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/compensation-sheet.png",
+        "sha256":  "BD9332386DA5FAD81ADA473CB60F01F4AA9DC5531870F72D800D0935CC829F08"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/cycle-preview.png",
+        "sha256":  "430DEB0F70DC781E2AB75EBA96C768433406276751A335A3614971F46A77E739"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/delivery-contact.png",
+        "sha256":  "1A676D90807616EA1C279262E6435D6F003281D81FD0E38F3F4FCC9B486CEB3D"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/diagram-direction-corrected.png",
+        "sha256":  "D71F82C64C037B383A0FD96561F8D89FBC7E2734DC38DCD5B9E0840B9EF35E32"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/find-cycle.png",
+        "sha256":  "81ABCDC45C585CE964B81B81BFC54AB6B406BDA4BA09807E613BC03C1EBDAA3A"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/find-empty-selection.png",
+        "sha256":  "B23FECEE1C1E144B963F52563A92912F1460B7F833E574103FCC4913E1F94C50"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/group-chat.png",
+        "sha256":  "72779736055DF88F9DB27B23F52C9FD5E909CAF636590325450911DD27F81F68"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/invitation-waiting.png",
+        "sha256":  "C30D456F6074CFF604C4CD2960F3CEA3F3B92ABE0166818903528FB2C2FCA9FC"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/matching-cycles.png",
+        "sha256":  "74FA3D2B6FFAE9AE0BB7EA03C923EEB7D6C7A4CE16AFEFA745017D94A4A1B263"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/no-matching-cycle.png",
+        "sha256":  "0E2DB7B96C87AA3E4E576B40E66DF9863A3C10C9D5C9F51F09551283A81D5842"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/one-of-three-received.png",
+        "sha256":  "0E6818E5F47D9388AB9D6AADA374299FDB982D216ED146683E6601414E491522"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/paused-circle.png",
+        "sha256":  "4CDE30189447D6881BB145E8255951678CD6174DE4800180EB91F65FAF57A030"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/rejected-circle.png",
+        "sha256":  "7DE317D5B7F20102ED8B059E0E372BCACD794A9849E7396D6DFD022F4467309F"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/report-issue-form.png",
+        "sha256":  "937920C27DAA30AE087FE6E15E0214CC6CBB7274569F1E98951FAFBEA75B7062"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/reviews-persisted.png",
+        "sha256":  "31FE66BB6AF7E43C846D42F3696D699241F8D045BE8BC07F1137AADE3A0D0262"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/shipping-tracking.png",
+        "sha256":  "7B838D7A671F0DC9E45DA341CFBF56D6A7AA85064A0016CE6F01F7AE0456CBFB"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/status-notification.png",
+        "sha256":  "3678EC3AE3CADBCF62352D070E057D418AE49E6D7F09A3C17A7D856456D8A026"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/three-consents.png",
+        "sha256":  "9237248A7CBE1CB01123C4D87CC7629D9386C873973434BDAF061A6065E2A4A9"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/three-of-three-completed.png",
+        "sha256":  "62312569E9E0B367B07406CD7EB41A64E12DF336BE5A2BC904C8D92D6511FE28"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/two-member-reviews.png",
+        "sha256":  "797B14709527846D9F4F738AF765E027C63C2D3EA2420CE44FAD37FC5C6753D3"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/two-of-three-consents.png",
+        "sha256":  "936628CAB1BA0C29F1759DEC04F33AA4A8743EABAA480A8A77BED56A32F68BF4"
+    },
+    {
+        "path":  "docs/qa/full-audit/screenshots-final/smart-swap/two-of-three-not-complete.png",
+        "sha256":  "302B072F0DC7B04B2B292174EA55EEA4E6AB3F72003ADA6839E78866C9D4AEDB"
+    }
+]

@@ -1,0 +1,11 @@
+﻿  ReMarket.Domain -> D:\Project\App_Ban_Do_Cu\Backend\src\ReMarket.Domain\bin\Release\net8.0\ReMarket.Domain.dll
+  ReMarket.Application -> D:\Project\App_Ban_Do_Cu\Backend\src\ReMarket.Application\bin\Release\net8.0\ReMarket.Application.dll
+  ReMarket.Infrastructure -> D:\Project\App_Ban_Do_Cu\Backend\src\ReMarket.Infrastructure\bin\Release\net8.0\ReMarket.Infrastructure.dll
+  ReMarket.Api -> D:\Project\App_Ban_Do_Cu\Backend\src\ReMarket.Api\bin\Release\net8.0\ReMarket.Api.dll
+  ReMarket.DatabaseChecks -> D:\Project\App_Ban_Do_Cu\Backend\tests\ReMarket.DatabaseChecks\bin\Release\net8.0\ReMarket.DatabaseChecks.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.31

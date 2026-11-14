@@ -1,0 +1,28 @@
+﻿{
+    "checkedUtc":  "2026-11-12T17:50:39.2954845Z",
+    "schema":  {
+                   "BusinessTables":  48,
+                   "ForeignKeys":  100,
+                   "CheckConstraints":  70,
+                   "Triggers":  22,
+                   "Migrations":  11
+               },
+    "migrations":  [
+                       "20261107151401_KhoiTaoCoSoDuLieu",
+                       "20261107151408_ThemRangBuocNghiepVu",
+                       "20261107155311_TaiKhoanJwtVaKhoiPhuc",
+                       "20261108165930_TinDangMuaBan",
+                       "20261110141612_MuaBanThuongLuongVaHoTro",
+                       "20261110141855_ThuTuLichSuMoPhong",
+                       "20261111155701_TraoDoiMotMot",
+                       "20261112061936_TieuChiTimSmartSwap",
+                       "20261112070453_LoiMoiVaThuongLuongSmartSwap",
+                       "20261112080514_GiaoNhanSmartSwap",
+                       "20261112143941_QuanTriDanhMucVaTranhChap"
+                   ],
+    "originalDeliveryDemo":  {
+                                 "CircleState":  "DangBanGiao",
+                                 "TransactionState":  "DangThucHien",
+                                 "Received":  2
+                             }
+}

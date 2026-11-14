@@ -1,0 +1,171 @@
+﻿PASS Workflow model matches migration9
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/taikhoan/dangky [201]
+PASS POST /api/taikhoan/dangnhap [200]
+PASS POST /api/tindang [201]
+PASS Upload real listing photo [200]
+PASS POST /api/tindang/c34e37f5-cc15-4e68-90d6-7ccd6744681b/gui-duyet [200]
+PASS POST /api/admin/tindang/c34e37f5-cc15-4e68-90d6-7ccd6744681b/duyet [200]
+PASS POST /api/tindang [201]
+PASS Upload real listing photo [200]
+PASS POST /api/tindang/ac7f006b-0d48-440b-8b2c-4937427512ad/gui-duyet [200]
+PASS POST /api/admin/tindang/ac7f006b-0d48-440b-8b2c-4937427512ad/duyet [200]
+PASS POST /api/tindang [201]
+PASS Upload real listing photo [200]
+PASS POST /api/tindang/be6530b0-e259-4ec4-8a5d-8c6aea31d63f/gui-duyet [200]
+PASS POST /api/admin/tindang/be6530b0-e259-4ec4-8a5d-8c6aea31d63f/duyet [200]
+PASS Anonymous cannot list circles [401]
+PASS POST /api/smart-swaps/preview [200]
+PASS Preview shows three real profiles and proposed net cash
+PASS Selecting and previewing do not create transactions
+PASS Malformed proposal key rejected [400]
+PASS Nonparticipant cannot initiate circle [403]
+PASS Initiator must explicitly confirm initial plan [400]
+PASS Forged preview hash rejected [409]
+PASS Changed listing version invalidates prior preview [409]
+PASS POST /api/smart-swaps/preview [200]
+PASS Concurrent invitation retry [201]
+PASS Concurrent invitation retry [201]
+PASS Concurrent retry creates exactly one invitation and circle
+PASS Invitation is pending with creator vote only and no inventory hold
+PASS Invitation key cannot be reused with changed payload [409]
+PASS Duplicate pending directed circle rejected [409]
+PASS Private circle resource protected [404]
+PASS Private circle resource protected [404]
+PASS Private circle resource protected [404]
+PASS Outsider cannot vote [404]
+PASS Both invitees receive stored actionable notifications
+PASS Cannot mark another user's notification [404]
+PASS Notification read owned [204]
+PASS Read notification is idempotent [204]
+PASS Group chat has linked structured version1 message
+PASS POST /api/hoithoai/2dc2e263-6df2-4e59-b505-fa8e947dbeaa/tinnhan [200]
+PASS POST /api/hoithoai/2dc2e263-6df2-4e59-b505-fa8e947dbeaa/tinnhan [200]
+PASS POST /api/hoithoai/2dc2e263-6df2-4e59-b505-fa8e947dbeaa/tinnhan [200]
+PASS All three members can negotiate in the same real group chat
+PASS Group chat membership enforced [404]
+PASS Outsider cannot send group messages [404]
+PASS Consent must explicitly acknowledge the entire plan [400]
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS Two of three consents cannot start official transaction
+PASS SQL trigger blocks premature ready/closed state
+PASS SQL trigger blocks premature ready/closed state
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS Third consent atomically starts official transaction and holds all three products
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS Repeated consent does not duplicate votes
+PASS Held product removed from public catalog [404]
+PASS Participant can read private held product image [200]
+PASS Private circle image ownership enforced [404]
+PASS Foreign product not a circle image [404]
+PASS Cannot modify payment solely between the other two members [403]
+PASS Negotiated aggregate payer cap enforced [400]
+PASS Outsider cannot propose plan [404]
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/proposals [200]
+PASS New version resets ALL three consents, including proposer, and blocks handover
+PASS Counter keeps inventory and immutable old amounts/three consents in history
+PASS Negotiated total outgoing equals incoming
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/proposals [200]
+PASS Proposal retry keeps one version and linked message
+PASS Proposal idempotency key cannot change payload [409]
+PASS Consent to superseded version rejected [409]
+PASS Stale base version cannot replace a newer proposal [409]
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS Counter still needs third fresh consent
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS Three fresh consents reactivate without duplicate holds
+PASS One structured chat message per version, no retry duplicates
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/proposals [200]
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/proposals [200]
+PASS Every participant can propose related cash changes; each version resets consensus
+PASS POST /api/smart-swaps/929fa939-b947-47c5-8e95-2d66eb20334f/responses [200]
+PASS One rejection cancels whole pending counter and releases all owned holds
+PASS Rejected circle cannot continue [409]
+PASS Released product is public again [200]
+PASS Invitee list includes received circles and final state
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS Expired last vote cannot revive circle [409]
+PASS Expiry is persisted even when mutation returns409
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/f093ceec-7924-42f2-8d79-a399fb2f495b/responses [200]
+PASS POST /api/smart-swaps/f093ceec-7924-42f2-8d79-a399fb2f495b/responses [200]
+PASS POST /api/smart-swaps/f093ceec-7924-42f2-8d79-a399fb2f495b/proposals [200]
+PASS Expiration worker cancels counter and restores three products
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/1890552e-a281-45bd-b453-9bd8ea584eea/responses [200]
+PASS POST /api/smart-swaps/1890552e-a281-45bd-b453-9bd8ea584eea/responses [200]
+PASS POST /api/smart-swaps/1890552e-a281-45bd-b453-9bd8ea584eea/cancel [200]
+PASS Explicit cancel releases all three products before handover
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS Expiry and reads preserve a disputed transaction
+PASS Cannot cancel disputed transaction [409]
+PASS POST /api/smart-swaps/a7a2b3cb-5d1d-4d85-9daa-af9c3b7a1631/cancel [200]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/76edddce-2dbb-47af-970c-d6f461999015/responses [200]
+PASS POST /api/tindang/c34e37f5-cc15-4e68-90d6-7ccd6744681b/an [200]
+PASS Final acceptance rechecks product withdrawn after invitation [409]
+PASS Unavailable product causes no partial reservation
+PASS POST /api/smart-swaps/76edddce-2dbb-47af-970c-d6f461999015/cancel [200]
+PASS Cancelling unreserved invitation does not unhide withdrawn product [404]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/a63fb3ca-1fa8-4627-af00-92577f074a23/responses [200]
+PASS POST /api/smart-swaps/a63fb3ca-1fa8-4627-af00-92577f074a23/responses [200]
+PASS No counter after any handover evidence exists [409]
+PASS No cancel after handover [409]
+PASS POST /api/smart-swaps/a63fb3ca-1fa8-4627-af00-92577f074a23/cancel [200]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS Legacy circle without new creator metadata is read-only and not expired by worker
+PASS POST /api/smart-swaps/4611302b-f923-4239-9a6b-61290a9b490e/cancel [200]
+PASS POST /api/tindang [201]
+PASS Upload real listing photo [200]
+PASS POST /api/tindang/a54cb5a6-2ace-465a-a88e-d0c3aad84f5e/gui-duyet [200]
+PASS POST /api/admin/tindang/a54cb5a6-2ace-465a-a88e-d0c3aad84f5e/duyet [200]
+PASS POST /api/tindang [201]
+PASS Upload real listing photo [200]
+PASS POST /api/tindang/6c45743b-6f2b-4643-9a2e-bd6fa3976a71/gui-duyet [200]
+PASS POST /api/admin/tindang/6c45743b-6f2b-4643-9a2e-bd6fa3976a71/duyet [200]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/ad766b46-0010-4535-b9e8-2d43d71ed906/responses [200]
+PASS POST /api/smart-swaps/d8510a4b-8be9-4c7f-b500-541f3599308a/responses [200]
+PASS Concurrent final votes for overlapping circles yield one success and one409
+PASS Losing circle acquires no partial inventory holds
+PASS POST /api/smart-swaps/d8510a4b-8be9-4c7f-b500-541f3599308a/cancel [200]
+PASS POST /api/smart-swaps/ad766b46-0010-4535-b9e8-2d43d71ed906/responses [200]
+PASS Failed competing acceptance can retry after stock release
+PASS POST /api/smart-swaps/ad766b46-0010-4535-b9e8-2d43d71ed906/cancel [200]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/821d14a0-9e68-4215-bd37-92361c4f82b0/responses [200]
+PASS Shared stock locks serialize official Smart Swap against order creation
+PASS POST /api/smart-swaps/821d14a0-9e68-4215-bd37-92361c4f82b0/cancel [200]
+PASS POST /api/tindang [201]
+PASS Upload real listing photo [200]
+PASS POST /api/tindang/da366dab-6e5c-4daf-ae29-f472267373d1/gui-duyet [200]
+PASS POST /api/admin/tindang/da366dab-6e5c-4daf-ae29-f472267373d1/duyet [200]
+PASS POST /api/smart-swaps/preview [200]
+PASS POST /api/smart-swaps/invitations [201]
+PASS POST /api/smart-swaps/83fef3b3-368e-4e5b-9ffe-dc141bea4145/responses [200]
+PASS POST /api/traodoi [201]
+PASS Smart Swap and1-to-1 cannot reserve the same product twice
+PASS POST /api/traodoi/23c6cf01-f811-4c68-bf2c-3777e407cf56/huy [200]
+PASS POST /api/smart-swaps/83fef3b3-368e-4e5b-9ffe-dc141bea4145/cancel [200]
+PASS Database has at most one live hold per product across workflows
+Smart Swap workflow HTTP/SQL checks: 170 passed. Three real participant accounts, versioned consensus and concurrent stock checks.
