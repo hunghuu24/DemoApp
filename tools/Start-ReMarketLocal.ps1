@@ -1,64 +1,49 @@
-param([string]$DeviceSerial, [switch]$BackendOnly)
+param([string]$DeviceSerial, [switch]$BackendOnly, [switch]$AutoConnect)
 $ErrorActionPreference = 'Stop'
-$projectRoot = Split-Path $PSScriptRoot -Parent
-$backendRoot = Join-Path $projectRoot 'Backend'
-$apiRoot = Join-Path $backendRoot 'src/ReMarket.Api'
-$runtimeRoot = Join-Path $backendRoot '.local/runtime'
-. (Join-Path $backendRoot 'scripts/Use-DotNet8.ps1')
-
-# Reuse an existing ReMarket host; never terminate another service on this port.
-$running = $false
-try {
-    $state = Invoke-RestMethod 'http://127.0.0.1:5080/api/hethong/trangthai' -TimeoutSec 3
-    $running = $state.tenUngDung -eq 'ReMarket'
-} catch { }
-if (-not $running) {
-    if (Get-NetTCPConnection -LocalPort 5080 -State Listen -ErrorAction SilentlyContinue) {
-        throw 'Port 5080 is occupied. Check the existing process before starting ReMarket.'
-    }
-    $env:ASPNETCORE_ENVIRONMENT = 'Development'
-    & (Join-Path $backendRoot 'scripts/Initialize-Authentication.ps1')
-    & dotnet build (Join-Path $apiRoot 'ReMarket.Api.csproj') --configuration Release --nologo --verbosity minimal
-    if ($LASTEXITCODE -ne 0) { throw 'Backend build failed.' }
-    $null = New-Item -ItemType Directory -Path $runtimeRoot -Force
-    $dotnetPath = (Get-Command dotnet.exe).Source
-    $serverProcess = Start-Process -FilePath $dotnetPath -WorkingDirectory $apiRoot `
-        -ArgumentList @('bin/Release/net8.0/ReMarket.Api.dll','--urls','http://127.0.0.1:5080') `
-        -WindowStyle Hidden -RedirectStandardOutput (Join-Path $runtimeRoot 'api.stdout.log') `
-        -RedirectStandardError (Join-Path $runtimeRoot 'api.stderr.log') -PassThru
-    [pscustomobject]@{ pid=$serverProcess.Id; startedUtc=[DateTime]::UtcNow.ToString('o'); url='http://127.0.0.1:5080' } |
-        ConvertTo-Json | Set-Content (Join-Path $runtimeRoot 'api-process.json') -Encoding UTF8
-}
-$ready = $false
-for ($attempt = 0; $attempt -lt 20; $attempt++) {
+. (Join-Path $PSScriptRoot 'ReMarketLocal.Common.ps1')
+if ($BackendOnly -or -not $AutoConnect) { Ensure-ReMarketBackend }
+if ($BackendOnly) { Write-Output ('Backend + SQL ready: ' + $script:RmUrl + '/swagger'); return }
+if ($AutoConnect) {
+    $guard = New-Object Threading.Mutex($false, ($script:RmMutexName + '-WatcherStart'))
+    $locked = $false
     try {
-        $null = Invoke-WebRequest 'http://127.0.0.1:5080/health/ready' -UseBasicParsing -TimeoutSec 2
-        $ready = $true; break
-    } catch { Start-Sleep -Milliseconds 500 }
-}
-if (-not $ready) { throw "Backend/SQL is not ready. See $runtimeRoot and README SQL configuration." }
-Write-Output 'Backend + SQL ready: http://127.0.0.1:5080/swagger'
-if ($BackendOnly) { return }
-
-$adbCommand = Get-Command adb.exe -ErrorAction SilentlyContinue
-$adbPath = if ($adbCommand) { $adbCommand.Source } else { $null }
-if (-not $adbPath) {
-    $localProperties = Join-Path $projectRoot 'Android/local.properties'
-    if (Test-Path -LiteralPath $localProperties) {
-        $sdkLine = Get-Content -LiteralPath $localProperties | Where-Object { $_ -match '^sdk\.dir=' } | Select-Object -First 1
-        if ($sdkLine) {
-            $sdkPath = $sdkLine.Substring(8).Replace('\\','\').Replace('\:',':').Replace('\ ',' ')
-            $candidate = Join-Path $sdkPath 'platform-tools/adb.exe'
-            if (Test-Path -LiteralPath $candidate) { $adbPath = $candidate }
-        }
+        try { $locked = $guard.WaitOne(15000) } catch [Threading.AbandonedMutexException] { $locked = $true }
+        if (-not $locked) { throw 'Another reconnect worker is starting. Retry Run.' }
+        $worker = Get-ReMarketWatcher
+        if ($null -eq $worker) {
+            $null = New-Item -ItemType Directory -Path $script:RmRuntimeRoot -Force
+            $workerScript = Join-Path $script:RmProjectRoot 'tools/Watch-ReMarketLocal.ps1'
+            $arguments = '-NoProfile -NonInteractive -ExecutionPolicy Bypass -File "' + $workerScript + '"'
+            # ShellExecute creates a separate hidden console. Redirected/inherited pipes
+            # would keep Gradle's Exec task waiting for a long-running descendant.
+            $worker = Start-Process -FilePath (Join-Path $PSHOME 'powershell.exe') -ArgumentList $arguments -WindowStyle Hidden -PassThru
+            [pscustomobject]@{ pid=$worker.Id; startedUtc=$worker.StartTime.ToUniversalTime().ToString('o') } |
+                ConvertTo-Json | Set-Content -LiteralPath (Join-Path $script:RmRuntimeRoot 'watcher-process.json') -Encoding UTF8
+            $workerPid = $worker.Id
+        } else { $workerPid = $worker.ProcessId }
+        Write-Output ('Local API reconnect worker active (PID ' + $workerPid + ').')
+    } finally {
+        if ($locked) { $guard.ReleaseMutex() }
+        $guard.Dispose()
+    }
+    $deadline = [DateTime]::UtcNow.AddSeconds(60)
+    do {
+        $state = Get-ReMarketState
+        if ($state -and $state.coSoDuLieuSanSang) { break }
+        Start-Sleep -Milliseconds 500
+    } while ([DateTime]::UtcNow -lt $deadline)
+    if (-not $state -or -not $state.coSoDuLieuSanSang) {
+        throw 'Backend/SQL not ready. See Backend/.local/runtime/watcher-transcript.log and local-status.json.'
     }
 }
-if (-not $adbPath) { throw 'Backend is ready. Add Android SDK platform-tools to PATH, then rerun to connect the phone.' }
-$devices = @(& $adbPath devices | ForEach-Object { if ($_ -match '^(\S+)\s+device\s*$') { $Matches[1] } })
-if ($DeviceSerial) { $devices = @($devices | Where-Object { $_ -eq $DeviceSerial }) }
-if ($devices.Count -ne 1) { throw 'Connect one authorized device, or select it with -DeviceSerial SERIAL, then rerun. Backend remains running.' }
-& $adbPath -s $devices[0] reverse tcp:5080 tcp:5080
-if ($LASTEXITCODE -ne 0) { throw 'ADB reverse failed. Check the device connection.' }
-Write-Output ('Connected device: '+$devices[0])
-Write-Output 'Run the Android app with API URL http://127.0.0.1:5080/ (configured in Android/gradle.properties).'
-Write-Output 'Rerun this script after ADB disconnect/reconnect. Starting Android Studio alone does not start the Backend.'
+Write-Output ('Backend + SQL ready: ' + $script:RmUrl + '/swagger')
+$devices = @(Connect-ReMarketDevices (Get-ReMarketAdb) $DeviceSerial)
+foreach ($device in $devices) {
+    if ($device.apiForwarded) { Write-Output ('API connected: ' + $device.serial) }
+    else { Write-Warning ('Device ' + $device.serial + ': ' + $device.state + '. Authorize/reconnect Wireless debugging in Android Studio.') }
+}
+if ($AutoConnect -and -not @($devices | Where-Object { $_.apiForwarded }).Count) {
+    Write-Warning 'Waiting for an authorized phone/emulator. API port 5080 will be connected automatically when it appears.'
+} elseif (-not $AutoConnect -and -not @($devices | Where-Object { $_.apiForwarded }).Count) {
+    throw 'No API connection to an authorized device. Connect the phone or use -AutoConnect to wait in the background.'
+}

@@ -59,23 +59,34 @@ Hiện có 48 bảng nghiệp vụ và 11 migrations. Host bình thường khôn
 
 ## Khởi động demo local nhanh
 
-Workspace hiện cấu hình API `http://127.0.0.1:5080/` trong `Android/gradle.properties`, dùng được trên điện thoại thật hoặc Emulator qua ADB reverse. Sau khi kết nối một thiết bị trong Android Studio, chạy PowerShell tại root:
+Workspace cấu hình API `http://127.0.0.1:5080/` trong `Android/gradle.properties`. Sau mỗi lần mở máy:
+
+1. Cho điện thoại và máy tính vào cùng Wi-Fi, bật **Wireless debugging** trên điện thoại. Trong Android Studio, chọn **Pair Devices Using Wi-Fi** nếu chưa ghép đôi, rồi đợi điện thoại hiện trạng thái online.
+2. Chọn điện thoại và bấm **Run** cấu hình `app`.
+
+`REMARKET_AUTO_START_LOCAL=true` đã được bật. Trước `preDebugBuild`, task `prepareReMarketLocalApi` kiểm tra/khởi động Backend và SQL, nối cổng API của thiết bị về máy tính và bật tiến trình hỗ trợ ẩn. Tiến trình này ghi nhớ định danh thiết bị đã được cấp phép, tra mDNS để kết nối lại bằng địa chỉ/cổng hiện tại, tự nối lại `tcp:5080` và khởi động lại Backend nếu tiến trình API bị dừng. Định danh lưu trong `Backend/.local/runtime/known-wireless.json`, không lưu mật khẩu hay mã ghép đôi và không tự cấp phép thiết bị mới. Lần Run sau khi khởi động Windows sẽ chuẩn bị lại các tiến trình này. Task vẫn chạy khi APK đã up-to-date và khi Gradle dùng configuration cache.
+
+Để mở app đã cài mà không chạy Android Studio, nhấp đúp [Start-ReMarket.cmd](Start-ReMarket.cmd). Hoặc chạy tại root:
 
 ```powershell
-./tools/Start-ReMarketLocal.ps1
+./tools/Start-ReMarketLocal.ps1 -AutoConnect
 # Nếu có nhiều thiết bị, chọn đúng serial từ adb devices:
 ./tools/Start-ReMarketLocal.ps1 -DeviceSerial 'SERIAL'
 ```
 
-Script build/khởi động Backend Development ở nền khi chưa chạy, kiểm tra SQL sẵn sàng rồi nối cổng `5080` của thiết bị về máy tính. Không migration/seed hoặc reset dữ liệu. Sau đó bấm Run trong Android Studio. SQL phải đã cấu hình và chạy migrations theo phần trên. Log/PID host nằm trong `Backend/.local/runtime/`. Có thể dùng `-BackendOnly` khi chỉ cần API.
+SQL phải đã cấu hình và chạy migrations theo phần trên; dịch vụ SQL Server cần đang chạy. Script sử dụng user-secrets JWT đã có, giữ nguyên dữ liệu và phiên đăng nhập; không migration/seed/reset. Backend được kiểm tra trước khi cho build tiếp. Dependency .NET đã restore được tái sử dụng khi cấu hình project không đổi, giúp khởi động local không phải truy cập NuGet mỗi lần. Có thể dùng `-BackendOnly` khi chỉ cần API.
 
-Chạy lại lệnh sau khi khởi động máy hoặc khi ADB bị ngắt/kết nối lại (USB hoặc Wireless debugging). Android Studio không tự khởi động Backend. Thông báo “Chưa kết nối được ReMarket” cần kiểm tra host và cổng ADB trước; đổi tài khoản không giải quyết lỗi mạng.
+Trạng thái nằm trong `Backend/.local/runtime/local-status.json`; log API là `api.stdout.log`/`api.stderr.log`, log tiến trình hỗ trợ là `watcher-transcript.log`. Có thể chạy `./tools/Test-ReMarketLocal.ps1` khi đã kết nối đúng một điện thoại để kiểm tra đường truyền thực từ điện thoại tới API và SQL. Kết quả ở `docs/qa/local-connectivity/`. Thêm `-ExerciseRecovery` sẽ chủ động ngắt cổng nối, kết nối lại ADB và dừng **host do helper tạo** để thử khôi phục; dùng khi không có thao tác đang diễn ra trong app.
+
+Để tự quản lý Backend hoặc build CI, đặt `REMARKET_AUTO_START_LOCAL=false` (hoặc `-PREMARKET_AUTO_START_LOCAL=false`) và chạy `./tools/Stop-ReMarketWatcher.ps1` nếu tiến trình hỗ trợ đang chạy. Release và API URL ngoài localhost không kích hoạt cơ chế này.
+
+Wireless debugging cần được bật và máy tính đã ghép đôi. ADB dùng mDNS để tìm thiết bị đã ghép đôi; nếu thiết bị hiện offline/unauthorized, kiểm tra Wi-Fi, Wireless debugging và trạng thái ghép đôi trong Android Studio. [Hướng dẫn ADB chính thức](https://developer.android.com/tools/adb#connect-to-a-device-over-wi-fi).
 
 ## Chạy Android Emulator
 
 Trong Android Studio, chọn **File → Open → `D:\Project\App_Ban_Do_Cu\Android`** rồi chờ Gradle Sync hoàn tất. Đây là thư mục chứa `settings.gradle.kts` và `gradlew.bat`. Nếu thấy lỗi `Directory '...App_Ban_Do_Cu' does not contain a Gradle build`, IDE đang liên kết nhầm thư mục gốc: mở lại thư mục `Android` như trên. Không chạy `gradle init` để tạo project khác. Workspace gốc cũng đã sửa `.idea/gradle.xml` để liên kết tới `Android`; nếu vẫn mở workspace gốc, đóng/mở lại và Sync để IDE nạp cấu hình đã sửa.
 
-Tạo AVD bằng Device Manager, khởi động thiết bị rồi chạy lệnh demo local trên. Nếu muốn Emulator truy cập trực tiếp máy tính không qua ADB reverse, build với `-PREMARKET_API_BASE_URL=http://10.0.2.2:5080/`; đây là giá trị fallback trong build script khi không có Gradle property.
+Tạo AVD bằng Device Manager, khởi động thiết bị rồi bấm Run; bước chuẩn bị API tự chạy như với điện thoại. Nếu muốn Emulator truy cập trực tiếp máy tính không qua ADB reverse, build với `-PREMARKET_API_BASE_URL=http://10.0.2.2:5080/`; đây là giá trị fallback trong build script khi không có Gradle property.
 
 ```powershell
 cd Android

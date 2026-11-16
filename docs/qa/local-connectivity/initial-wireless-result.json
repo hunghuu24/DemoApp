@@ -1,0 +1,77 @@
+﻿{
+    "checkedUtc":  "2026-11-16T13:24:41.2477028Z",
+    "recoveryExercised":  true,
+    "windowsRebootPerformed":  false,
+    "checks":  [
+                   {
+                       "name":  "One authorized physical phone",
+                       "passed":  true,
+                       "detail":  1
+                   },
+                   {
+                       "name":  "Backend + SQL + migrations ready",
+                       "passed":  true,
+                       "detail":  "ReMarket"
+                   },
+                   {
+                       "name":  "Repeated startup reuses one watcher",
+                       "passed":  true,
+                       "detail":  16980
+                   },
+                   {
+                       "name":  "Real Admin login",
+                       "passed":  true,
+                       "detail":  "JWT received; value not logged"
+                   },
+                   {
+                       "name":  "Cold startup precondition",
+                       "passed":  true,
+                       "detail":  "Backend and watcher stopped; SQL and phone left running"
+                   },
+                   {
+                       "name":  "Debug build starts API and watcher automatically",
+                       "passed":  true,
+                       "detail":  28880
+                   },
+                   {
+                       "name":  "JWT survives Backend restart",
+                       "passed":  true,
+                       "detail":  "Existing signing key and database session preserved"
+                   },
+                   {
+                       "name":  "Cached Debug build still prepares API",
+                       "passed":  true,
+                       "detail":  "Task runs even when APK tasks are UP-TO-DATE"
+                   },
+                   {
+                       "name":  "Lost forwarding recovers 1",
+                       "passed":  true,
+                       "detail":  1.37
+                   },
+                   {
+                       "name":  "Lost forwarding recovers 2",
+                       "passed":  true,
+                       "detail":  2.94
+                   },
+                   {
+                       "name":  "Lost forwarding recovers 3",
+                       "passed":  true,
+                       "detail":  3.36
+                   },
+                   {
+                       "name":  "Wireless reconnect request accepted",
+                       "passed":  true,
+                       "detail":  "Only the selected phone transport; no adb kill-server"
+                   },
+                   {
+                       "name":  "Wireless reconnect restores API automatically",
+                       "passed":  false,
+                       "detail":  30.16
+                   },
+                   {
+                       "name":  "Test JWT revoked after logout",
+                       "passed":  true,
+                       "detail":  "Only this test login was logged out"
+                   }
+               ]
+}
